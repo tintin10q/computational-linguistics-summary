@@ -21,7 +21,7 @@ So what you can read from this table is that 4030 German words were classified a
 
 So that is how you read these tables. 
 
-Here was my code to create the [[Evaluating Classification models]] scores.
+Here was my code to create the [Evaluating Classification models](Evaluating%20Classification%20models.md) scores.
 
 
 ```python
@@ -47,7 +47,7 @@ def recall(contingency_table, label):
     
     tp = result[index]
     
-    fn = sum(map(lambda x : x[[True if i == index else False for i in range(len(ct))]], ct.T))
+    fn = sum(map(lambda x : x[True if i == index else False for i in range(len(ct))](True%20if%20i%20==%20index%20else%20False%20for%20i%20in%20range(len(ct))), ct.T))
     
     return tp / (tp + fn)
     

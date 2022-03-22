@@ -1,8 +1,8 @@
 # What is an alphabet?
 
-An **alphabet** is a (finite) set of symbols that can be used to form [[Sentences]] or [[Words|words]]. 
+An **alphabet** is a (finite) set of symbols that can be used to form [sentences](Sentences.md) or [words](Words.md). 
 
-An alphabeth is the set of symbols that can be used to construct valid sequences in a [[Languages|language]].   
+An alphabeth is the set of symbols that can be used to construct valid sequences in a [language](Languages.md).   
 
 Some examples: 
 - {a,b,c}

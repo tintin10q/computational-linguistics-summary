@@ -1,7 +1,7 @@
 # Naive Bayes Classifier
 Using baysian statistics to decide on a class. Given this what would the class be if we consider the chance for all classes. You take the percentage for that has the highest class. There are also 2 assumptions you have to make.
 
-This is the simplest linear generative probabilisitc [[Classification|clasifier]]. Given a document d, it returns a probability of certancy so that is nice.
+This is the simplest linear generative probabilisitc [clasifier](Classification.md). Given a document d, it returns a probability of certancy so that is nice.
 
 Given a document d, it returns the class c with the highest posterior probability given the document. Because the probability of a document is constant we can simply the bayes rule to $$c = \text{argmax}_{c \in C}~p(c|d)$$
 
@@ -11,7 +11,7 @@ For text the assumptions are bag of words and naive baiyes.
 ## Bag of words 
 Bag of words assumption says that you deal with a bag of words instead of a text. A bag is a set where items can occure multiple times. A multi set. 
 
-![[Pasted image 20220215090517.png]]
+![Pasted image 20220215090517](Pasted%20image%2020220215090517.png)
 
 ## Naive Bayes assumption
 Here you assume that the tokens in the bag are all independent based on the class. So a class doesn't cause that words are in it. Atleast that is what we assume. Because this allows us to just multiply probabilities. 
@@ -19,14 +19,14 @@ Here you assume that the tokens in the bag are all independent based on the clas
 The second is commonly called the naive Bayes assumption: this is the condi-
 tional independence assumption that the probabilities P( fi |c)
 
-![[Pasted image 20220215090607.png]]
+![Pasted image 20220215090607](Pasted%20image%2020220215090607.png)
 
 If you don't assume this you  can't multiply them becasue you also need to multipy the probability of them both occuring at the same time. 
 
 ## Prior 
 Prior is what you tought beforehand of how likely the output class will be. It is like bias. It is like the naive classifier if you could not consider any data. So you would just simply say ok the language is chineese because that is the most spoken.
 
-![[Pasted image 20220215090454.png]]
+![Pasted image 20220215090454](Pasted%20image%2020220215090454.png)
 
 The prior probabilities for each class are approximated as $p(c) = \frac{N_{\text{classes}}}{N_{\text{documents}}}$ 
 
@@ -119,7 +119,7 @@ Then we smooth so add 1.
 
 Now we can make probabilities from this:
 
-![[Pasted image 20220216154345.png]]
+![Pasted image 20220216154345](Pasted%20image%2020220216154345.png)
 
 Now we can Test lets say we have: "I liked the movie a lot!"
 
@@ -141,4 +141,4 @@ argmax(p(neg|test), p(pos|test)) = 0.0297 = neg
 We assign the label neg to the test text.
 
 # Naieve Bayes for language models 
-Are Naive bayes a good fit for [[Language Modeling|language models]]? No they are not. With langauge models we try to predict how fluent a sentence is. For this we exploit the previous sequence. Because of the bag of words assumption we throw all this information away. 
+Are Naive bayes a good fit for [language models](Language%20Modeling.md)? No they are not. With langauge models we try to predict how fluent a sentence is. For this we exploit the previous sequence. Because of the bag of words assumption we throw all this information away. 

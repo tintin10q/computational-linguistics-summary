@@ -4,19 +4,19 @@ Hi, this is the summary for computational linguistics course from Tilburg Univer
 
 There are 4 topics:
 
-- [[Data/index|Data]]
-- [[Classification/index|Classification]]
-- [[Prediction/index|Prediction]]
-- [[Languages/index|Languages]]
+- [Data](Data/index.md)
+- [Classification](Classification/index.md)
+- [Prediction](Prediction/index.md)
+- [Languages](Languages/index.md)
 
 There are also some notes that are not in a topic. These are:
 
-- [[Goals]]
-- [[Learning]]
-- [[Things that he said come at the exam]]
-- [[Questions]]
+- [Goals](Goals.md)
+- [Learning](Learning.md)
+- [Things that he said come at the exam](Things%20that%20he%20said%20come%20at%20the%20exam.md)
+- [Questions](Questions.md)
 
-![[Pasted image 20220322123634.png]]
+![Pasted image 20220322123634](Pasted%20image%2020220322123634.png)
 
 # Disclaimer 
 Although I have tried my best to make sure this summary is correct, I will take no responsibility for mistakes that might lead to you having a lower grade. 
@@ -32,6 +32,6 @@ here:
 - [Tikkie](https://tikkie.me/pay/tvc88f91200qmq9fujar)
 
 
-![[tikkies.webp|Tikkie qr code valid till april 4]]
+![Tikkie qr code valid till april 4](tikkies.webp)
 
 >Every model is wrong, but some models are usefull.

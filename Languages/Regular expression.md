@@ -1,6 +1,6 @@
 # Regular expression
 
-Regular expressions are a domain specific language for the consise description and parsing of [[regular languages]]. 
+Regular expressions are a domain specific language for the consise description and parsing of [regular languages](regular%20languages.md). 
 
 Regular langues officially start and end with /. So you have /regular expression/. Often you leave these / out.
 
@@ -12,7 +12,7 @@ The grammar for this language looks like this:
 - A → oB
 - B → d
 
-Regular languages can be expressions in regular expressions which can be expressed in [[finite state automata]]. This is great because this makes regular expressions really fast to parse.
+Regular languages can be expressions in regular expressions which can be expressed in [finite state automata](finite%20state%20automata.md). This is great because this makes regular expressions really fast to parse.
 
 ## Symbols
 You can parse symbols at a position by just including them in the regular expression /hello/ parses the word hello. But what if we want to parse multiple words. Then we have to define a regular expression where one position of the sentence can have multiple symbols. This is done with character ranges.

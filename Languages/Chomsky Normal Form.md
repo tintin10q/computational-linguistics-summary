@@ -1,4 +1,4 @@
-A [[grammar]] is in **Chomsky Normal Form** if each production rule has one of the following forms:
+A [Grammar](grammar.md) is in **Chomsky Normal Form** if each production rule has one of the following forms:
 
 -   A → BC
 -   A → x
@@ -12,4 +12,4 @@ This are the bullet points from the slide. A grammar is in CNF if:
 - Rules have either terminals or sequence of two non-terminals as the right-hand side.
 
 
-You can rewrite any [[Context free grammars]] to chomsky normal form. This means you can also rewrite any [[regular languages|regular grammar]] to comsky normal form.
+You can rewrite any [Context free grammars](Context%20free%20grammars.md) to chomsky normal form. This means you can also rewrite any [regular grammar](regular%20languages.md) to comsky normal form.

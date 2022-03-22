@@ -22,15 +22,15 @@ Often these annotations are hand corrected versions of an automated system which
 # PoS Tagging
 The process of **automatically** assigning PoS tags to words in a corpus. This process takes a tokenized corpus as input and outputs a sequence of PoS tags for each input token. 
 
-First of all why not just have a list of words and their PoS tags? We could even use dictionaries for this. We can't do this because of [[Ambiguity|ambiguity]]. PoS tagging aims to resolve this ambiguity.  
+First of all why not just have a list of words and their PoS tags? We could even use dictionaries for this. We can't do this because of [ambiguity](Ambiguity.md). PoS tagging aims to resolve this ambiguity.  
 
-PoS tagging is usefull for [[parsing]], named entity recognition and coreference resolution and more!
+PoS tagging is usefull for [parsing](parsing.md), named entity recognition and coreference resolution and more!
 
 ## Baseline
-Most of the [[Type|types]] in a corpus are nouns. The baseline is to assume everything is a noun. This will get you an accuracy of around 60% on types, but much lower on tokens.  
+Most of the [types](Type.md) in a corpus are nouns. The baseline is to assume everything is a noun. This will get you an accuracy of around 60% on types, but much lower on tokens.  
 
 ## Most frequent 
 We can already do better by looking at the most frequent examples of tags. Cat can be a verb, but it is almost always a noun. If you hit an ambiguous word then you just assign the most frequent PoS tag (which is noun). However, if you do this you are bound to make mistakes because you are ignoring the lower frequency explicitly. 
 
 ## Context
-Can we do better? We can look at words that come before to predict a PoS just like with [[Language Modeling]]. You can also look at words that come after (preceding words).
+Can we do better? We can look at words that come before to predict a PoS just like with [Language Modeling](Language%20Modeling.md). You can also look at words that come after (preceding words).
