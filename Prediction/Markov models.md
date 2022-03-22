@@ -25,7 +25,7 @@ This is usually just embeded in A by augmenting Q with the BoS state.
 
 So usually this a row in A with only beginning of sequence symbols. It is the inital state.
 
-![Pasted image 20220223185953](Pasted%20image%2020220223185953.png)
+![Pasted image 20220223185953](Pasted%20image%2020220223185953.webp)
 
 Looking at this table really makes it more concrete. The idea is that the sum of an the entire row is one. The sum of a collum does not have to be one. 
 

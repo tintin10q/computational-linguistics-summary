@@ -16,7 +16,7 @@ The grammer makes use of auxiliary symbol which is called **nonterminals**. Thes
 - Pre-terminals like PrN and V are [Parts of Speech](Parts%20of%20Speech.md). Or atomic non-terminals. The production rules indicate which sequences they can generate.
 - [Constituents](Constituency.md) (NP and VP) are abstract units which absolve complex syntactic functions. 
 
-![Pasted image 20220314185901](Pasted%20image%2020220314185901.png)
+![Pasted image 20220314185901](Pasted%20image%2020220314185901.webp)
 
 
 The grammer rules are kind of defined like inductive rules.
@@ -59,19 +59,19 @@ Usually the non terminals are capatilized.
 
 ## Palendrone example
 
-![Pasted image 20211127131012](Pasted%20image%2020211127131012.png)
+![Pasted image 20211127131012](Pasted%20image%2020211127131012.webp)
 
 The idea is that it sort of does not matter what P is here. 
 
 When still talking about palendrome. 
 
-![Pasted image 20211127130856](Pasted%20image%2020211127130856.png)
+![Pasted image 20211127130856](Pasted%20image%2020211127130856.webp)
 
 S is a start. 
 
 So you can define a grammer like this:
 
-![Pasted image 20211127131455](Pasted%20image%2020211127131455.png)
+![Pasted image 20211127131455](Pasted%20image%2020211127131455.webp)
 
 This is an example of a grammer which only allows strings of a and b.
 
@@ -81,18 +81,18 @@ In this course we are only looking at context free languages. There are a lot of
 
 You can also have more grammers for the same language. 
 
-![Pasted image 20211127131955](Pasted%20image%2020211127131955.png)
+![Pasted image 20211127131955](Pasted%20image%2020211127131955.webp)
 
 This makes sense because the cpu also looked very different for everyone. 
 
 ## More exampels with digit
-![Pasted image 20211127132201](Pasted%20image%2020211127132201.png)
+![Pasted image 20211127132201](Pasted%20image%2020211127132201.webp)
 
 Here there is one non terminal Dig that can be rewritten to each digit. 
 
 We can also now define Digs wich is atleast two digits. With this we can define any sequence of numbers. 
 
-![Pasted image 20211127132647](Pasted%20image%2020211127132647.png)
+![Pasted image 20211127132647](Pasted%20image%2020211127132647.webp)
 
 So we can do Digs -> Dig* to say Digs is 0 or more Dig
 
@@ -151,8 +151,8 @@ Represent the non terminals as data types.
 
 The concrete syntax is the syntax like above the abstract is how you would define it in haskell with data types. 
 
-![Pasted image 20211127142739](Pasted%20image%2020211127142739.png)
+![Pasted image 20211127142739](Pasted%20image%2020211127142739.webp)
 
 You can also take the tree and bring it back to the string. 
 
-![Pasted image 20211127142855](Pasted%20image%2020211127142855.png)
+![Pasted image 20211127142855](Pasted%20image%2020211127142855.webp)

@@ -34,7 +34,7 @@ VS
 ### Generative clasifiers
 Generative clasifiers learn a model of how the data are generated and could because of this also generate new data. Classification happens by choosing the class that most likely generated the data. It's like the reverse.
 
-![Pasted image 20220216114704](Pasted%20image%2020220216114704.png)
+![Pasted image 20220216114704](Pasted%20image%2020220216114704.webp)
 
 ### Linear clasifiers
 Linear clasifiers can only draw a linear decision boundary. 
@@ -42,7 +42,7 @@ Linear clasifiers can only draw a linear decision boundary.
 ### Non-Linear clasifiers
 Non-Linear clasifiers can draw a non-linear decision boundary. 
 
-![Pasted image 20220216114812](Pasted%20image%2020220216114812.png)
+![Pasted image 20220216114812](Pasted%20image%2020220216114812.webp)
 
 ----
 

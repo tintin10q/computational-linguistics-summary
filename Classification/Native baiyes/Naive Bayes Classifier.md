@@ -11,7 +11,7 @@ For text the assumptions are bag of words and naive baiyes.
 ## Bag of words 
 Bag of words assumption says that you deal with a bag of words instead of a text. A bag is a set where items can occure multiple times. A multi set. 
 
-![Pasted image 20220215090517](Pasted%20image%2020220215090517.png)
+![Pasted image 20220215090517](Pasted%20image%2020220215090517.webp)
 
 ## Naive Bayes assumption
 Here you assume that the tokens in the bag are all independent based on the class. So a class doesn't cause that words are in it. Atleast that is what we assume. Because this allows us to just multiply probabilities. 
@@ -19,7 +19,7 @@ Here you assume that the tokens in the bag are all independent based on the clas
 The second is commonly called the naive Bayes assumption: this is the condi-
 tional independence assumption that the probabilities P( fi |c)
 
-![Pasted image 20220215090607](Pasted%20image%2020220215090607.png)
+![Pasted image 20220215090607](Pasted%20image%2020220215090607.webp)
 
 If you don't assume this you  can't multiply them becasue you also need to multipy the probability of them both occuring at the same time. 
 
@@ -119,7 +119,7 @@ Then we smooth so add 1.
 
 Now we can make probabilities from this:
 
-![Pasted image 20220216154345](Pasted%20image%2020220216154345.png)
+![Pasted image 20220216154345](Pasted%20image%2020220216154345.webp)
 
 Now we can Test lets say we have: "I liked the movie a lot!"
 

@@ -6,7 +6,7 @@ If every state has a transition for each possible input than it is **total**.
 
 They are deterministic when each state has only one path for each state.
 
-![Pasted image 20211212163706](images/Pasted%20image%2020211212163706.png)
+![Pasted image 20211212163706](images/Pasted%20image%2020211212163706.webp)
 
 We can express this in a tuple of 5 things.
 
@@ -32,15 +32,15 @@ We call deterministic finate atomata DFA.
 
 These are actually equavelant. We can express every DFA as a NFA and otherwise. The idea is to make them as NFA and then compile them to DFA so you can run them without worry.  
 
-![Pasted image 20211212165403](Pasted%20image%2020211212165403.png)
-![Pasted image 20211212165450](Pasted%20image%2020211212165450.png)
+![Pasted image 20211212165403](Pasted%20image%2020211212165403.webp)
+![Pasted image 20211212165450](Pasted%20image%2020211212165450.webp)
 Example:
-![Pasted image 20211212165625](Pasted%20image%2020211212165625.png)
+![Pasted image 20211212165625](Pasted%20image%2020211212165625.webp)
 
 The empty set is like to stop state. 
 
 You can actually simplfy it to:
-![Pasted image 20211212165811](Pasted%20image%2020211212165811.png)
+![Pasted image 20211212165811](Pasted%20image%2020211212165811.webp)
 
 So this means that you can use the alogritm to turn a NFA into a DFA but this won't give you the only one or the smallest one. A better way is to do a simulation this gives you the best. 
 

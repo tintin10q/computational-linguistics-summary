@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Classification/Classification.md",
+            "file": "Topics.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Classification/Classification.md",
+                "file": "Topics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "5bdbc50d5c571c52",
   "lastOpenFiles": [
-    "Classification/Classification.md",
-    "Classification/contingency table.md",
-    "Data/Sentences.md",
-    "Languages/Alphabeth.md",
-    "README.md",
     "Topics.md",
-    "Prediction/markov assumption.md",
-    "Things that he said come at the exam.md",
+    "README.md",
     "Questions.md",
-    "Learning.md"
+    "Learning.md",
+    "Goals.md",
+    "Prediction/Viterbi Algorithm.md",
+    "Prediction/Smoothing.md",
+    "Prediction/Prediction.md",
+    "Prediction/perplexity.md",
+    "Prediction/Overfitting.md"
   ]
 }

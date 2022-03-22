@@ -166,4 +166,4 @@ We conclude that the word is not in the language.
 
 Ok so you basically want to look at all the cells left of a cell you are checking. 
 
-![Pasted image 20220314195726](Pasted%20image%2020220314195726.png)
+![Pasted image 20220314195726](Pasted%20image%2020220314195726.webp)

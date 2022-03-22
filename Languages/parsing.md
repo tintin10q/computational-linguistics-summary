@@ -10,7 +10,7 @@ L is a function that returns the [language](app://obsidian.md/language) from a [
 
 If the parser thinks this is the case we also want a proof or evidence that this is the case. This usually takes the form of a [parse tree](parsetree.md). So this is a tree to go from the grammar to s!
 
-![Pasted image 20220314184733](Pasted%20image%2020220314184733.png)
+![Pasted image 20220314184733](Pasted%20image%2020220314184733.webp)
 
 You can also represent parse trees with brackets. But this is only done because of language limitations. Haskell can represent parse trees without problems. 
 
@@ -22,7 +22,7 @@ So this is like definig regualer expression that find something! If they find so
 
 ## Parser generator
 
-You give this a grammar and it generates a parser for your grammar.
+You give this a grammar, and it generates a parser for your grammar.
 
 -   External program
 -   Based on a bottom up algorithm, usually LL or LR
@@ -51,6 +51,6 @@ Both approaches place certain but different restrictions on the grammar that you
 
 
 ## Complexity 
-![Pasted image 20220314190559](Pasted%20image%2020220314190559.png)
+![Pasted image 20220314190559](Pasted%20image%2020220314190559.webp)
 
 If a tree is deep or long then the sentence tends to be more complex. 

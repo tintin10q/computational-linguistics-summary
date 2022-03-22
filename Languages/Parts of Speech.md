@@ -2,7 +2,7 @@
 
 PoS are clusters of words which have a similar behavior in a language. For instance, they have a similar context of occuring, or they can be combined with the same set of morphological affixes. PoS tags are also called lexical clusters. 
 
-You should think of examples as: Nouns, Verbs, Adjectives, Pronouns etc. These parts of speech again contain smaller parts which are even more consistant with themselves. For instance past verbs, present verbs or irregular verbs etc. Different languages have different PoS tags. The more closer a language the more close the PoS. 
+You should think of examples as: Nouns, Verbs, Adjectives, Pronouns etc. These parts of speech again contain smaller parts which are even more consistant with themselves. For instance past verbs, present verbs or irregular verbs etc. Different languages have different PoS tags. The closer a language the more close the PoS. 
 
 ## Open Class words
 One very famous PoS is the open class of words. This includes nouns, verbs, adjectives, adverbs. This calss is called **productive** because it changes often. New words are added to this class all the time. Other words disapear or go undercover. Typically, open class words are content words. This means the words that convey the contents of a message. Most lanagues have all 4 major open classes.

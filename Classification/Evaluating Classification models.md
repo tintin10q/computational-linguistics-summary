@@ -31,7 +31,7 @@ Whenever you get results from your model you get:
 
 From these we can come up with intrinsic evaluations.
 
-![Pasted image 20220216130019](Pasted%20image%2020220216130019.png)
+![Pasted image 20220216130019](Pasted%20image%2020220216130019.webp)
 
 ## Acuracy 
 Acuracy is the number of correclty classified points. Simple.
