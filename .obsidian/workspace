@@ -1,0 +1,102 @@
+{
+  "main": {
+    "id": "eb60cefcdd36bace",
+    "type": "split",
+    "children": [
+      {
+        "id": "5bdbc50d5c571c52",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "README.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6454f4edc3eb73d8",
+    "type": "split",
+    "children": [
+      {
+        "id": "4be0a25b760ded3b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ac1240a0645d95b5",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "3ea4c791fba411ff",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "zip",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "9262c5443211b186",
+    "type": "split",
+    "children": [
+      {
+        "id": "f780af9db9288697",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "700413f21a89de12",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "README.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 303
+  },
+  "active": "5bdbc50d5c571c52",
+  "lastOpenFiles": [
+    "README.md",
+    "Topics.md",
+    "Prediction/markov assumption.md",
+    "Things that he said come at the exam.md",
+    "Questions.md",
+    "Learning.md",
+    "Goals.md",
+    "Prediction/Viterbi Algorithm.md",
+    "Prediction/Smoothing.md",
+    "Prediction/Prediction.md"
+  ]
+}

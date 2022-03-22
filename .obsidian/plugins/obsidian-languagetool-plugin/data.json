@@ -1,0 +1,7 @@
+{
+  "serverUrl": "http://localhost:8081",
+  "glassBg": true,
+  "shouldAutoCheck": true,
+  "pickyMode": false,
+  "staticLanguage": "en"
+}
