@@ -7,12 +7,8 @@
         "id": "5bdbc50d5c571c52",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Topics.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "graph",
+          "state": {}
         }
       }
     ],
@@ -69,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Topics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +83,15 @@
   },
   "active": "5bdbc50d5c571c52",
   "lastOpenFiles": [
-    "Topics.md",
-    "README.md",
-    "Questions.md",
-    "Learning.md",
-    "Goals.md",
-    "Prediction/Viterbi Algorithm.md",
-    "Prediction/Smoothing.md",
-    "Prediction/Prediction.md",
-    "Prediction/perplexity.md",
-    "Prediction/Overfitting.md"
+    "Languages/Ambiguity.md",
+    "Data/Type.md",
+    "Data/index.md",
+    "Data/data.md",
+    "Classification/Native baiyes/Bayes rule.md",
+    "Classification/Native baiyes/Naive Bayes Classifier.md",
+    "Classification/contingency table.md",
+    "Data/Corpus.md",
+    "Data/Lexicon.md",
+    "Topics.md"
   ]
 }

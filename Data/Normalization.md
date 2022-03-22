@@ -11,5 +11,5 @@ When analyzing a text normalization can be usefull. Normalization is the act of 
 
 Sometimes you want to create a bag of words after you have done lemmatization if you don't care about the variability between dog and dogs. 
 
-You can also use [regular expressions](Regular%20expression.md) to transfer words that you consider the same into the same word. Or transfer all email addreses to EMAIL. Or you could say DAYOFWEEK for each week day. 
+You can also use [regular expressions](Languages/Regular%20expression.md) to transfer words that you consider the same into the same word. Or transfer all email addreses to EMAIL. Or you could say DAYOFWEEK for each week day. 
 

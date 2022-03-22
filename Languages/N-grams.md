@@ -1,5 +1,5 @@
 # N-Grams
-When doing [Normalization](Normalization.md) of a sequence your first intuition when working with a language that has spaces might be to split the words along the spaces, but often having shorter splits of maybe 2-3 symbols gives better results. These remaining symbols are N-grams. So when splitting this sentence: "Attack at dawn" up into 3-Grams you get:  ["Att", "ack", " at", "Daw", "n"]
+When doing [Normalization](Data/Normalization.md) of a sequence your first intuition when working with a language that has spaces might be to split the words along the spaces, but often having shorter splits of maybe 2-3 symbols gives better results. These remaining symbols are N-grams. So when splitting this sentence: "Attack at dawn" up into 3-Grams you get:  ["Att", "ack", " at", "Daw", "n"]
 
 ## Word N-Gram
 A word N-Gram is a sequence of n words:
@@ -11,7 +11,7 @@ A word N-Gram is a sequence of n words:
 
 
 ## Encoding position
-[Naive Bayes Classifier](Naive%20Bayes%20Classifier.md) is bad for making [language models](Language%20Modeling.md) because the bag of words assumption but the idea where it splits of the words to normalize the probability can also be used for making language models. 
+[Naive Bayes Classifier](Classification/Native%20baiyes/Naive%20Bayes%20Classifier.md) is bad for making [language models](Prediction/Language%20Modeling.md) because the bag of words assumption but the idea where it splits of the words to normalize the probability can also be used for making language models. 
 
 ## Predicting N-grams
 A great usecase for N-grams is using them for language models. 
@@ -37,7 +37,7 @@ Because there are probably a lot more sequences of the lenght then the sequence 
 So every time you multiply the probability of the word by the probability of the sequence before it. This you repeat for the entire sequence. 
 
 ### Problems 
-Language is infinite which makes language models age, but it also means that you can come up with sequences that are not in the corpus. The higher the n of an n-gram the lower the chance that the n-gram appears at all in the corpus. Or the larger the n-gram, the higher the chance that we won't find it anywhere in a fintie corpus. This is solved by assuming the [markov assumption](markov%20assumption.md).
+Language is infinite which makes language models age, but it also means that you can come up with sequences that are not in the corpus. The higher the n of an n-gram the lower the chance that the n-gram appears at all in the corpus. Or the larger the n-gram, the higher the chance that we won't find it anywhere in a fintie corpus. This is solved by assuming the [markov assumption](Prediction/markov%20assumption.md).
 
 ### Log space
 Whenever you deal with chained probabilites it is best to convert all probabilites to logs so that we can sum insteadof multiplying and avoid having very little nubmers. This is a risk because of underflow. (Computers can't deal well with very small numbers). Another benifit is that we can sum instead of having to multiply. 
@@ -57,5 +57,5 @@ End of sequence is abrivated so EoS.
 Beginning of sequence is abrivated so BoS. 
 
 ## Overfitting
-The longer the N-gram choice the better you can fit the specific training data you have which means the more chance of [Overfitting](Overfitting.md). The more overfitting the less general your model becomes. 
+The longer the N-gram choice the better you can fit the specific training data you have which means the more chance of [Overfitting](Prediction/Overfitting.md). The more overfitting the less general your model becomes. 
 
