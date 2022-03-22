@@ -7,8 +7,12 @@
         "id": "5bdbc50d5c571c52",
         "type": "leaf",
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "Classification/Native baiyes/Naive Bayes Classifier.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -65,6 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Classification/Native baiyes/Naive Bayes Classifier.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -83,12 +88,12 @@
   },
   "active": "5bdbc50d5c571c52",
   "lastOpenFiles": [
-    "Languages/Ambiguity.md",
+    "Classification/Native baiyes/Naive Bayes Classifier.md",
     "Data/Type.md",
+    "Classification/Native baiyes/Bayes rule.md",
+    "Languages/Ambiguity.md",
     "Data/index.md",
     "Data/data.md",
-    "Classification/Native baiyes/Bayes rule.md",
-    "Classification/Native baiyes/Naive Bayes Classifier.md",
     "Classification/contingency table.md",
     "Data/Corpus.md",
     "Data/Lexicon.md",

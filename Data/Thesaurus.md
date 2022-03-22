@@ -5,7 +5,7 @@ The most famous thesaurus for enlish is wordnet. There are also **glosses** whic
 
 So you can traverse this tree, and then you can see how long it takes to get to another catogory. This is called the path lenght or maximum similarity. Two words are more similar the shorter the path that connects them.
 
-![Pasted image 20220213185844](images/Pasted%20image%2020220213185844.png)
+![Pasted image 20220213185844](../images/Pasted%20image%2020220213185844.png)
 
 So here the path length between vehicle and plant is 3? But don't forget that here the plant is a synset of words that are in the synset plants. 
 

@@ -1,5 +1,5 @@
 # Evaluating Classification Models
-After you have made your [Classification](Classification/Classification.md) system how do you evalutate it against other options?
+After you have made your [Classification](Classification.md) system how do you evalutate it against other options?
 
 ## Intrinsic Evauation 
 Define a metric and check wich system does best.
@@ -31,7 +31,7 @@ Whenever you get results from your model you get:
 
 From these we can come up with intrinsic evaluations.
 
-![Pasted image 20220216130019](images/Pasted%20image%2020220216130019.webp)
+![Pasted image 20220216130019](../images/Pasted%20image%2020220216130019.webp)
 
 ## Acuracy 
 Acuracy is the number of correclty classified points. Simple.
@@ -68,7 +68,7 @@ Often you don't make one more significant than the other, and you just set $\bet
 When there are more than two classes, we compute the F-measure for all classes seperatly and then average them assigning equal importance. **This is usefull when good performance is necessary in all the classes**, regardless of the requency in which they appear. Because if you do it like this one class that has bad performance will decrease the averaged F1 score a lot. 
 
 ### Micro averaging
-With micro averaging you collect all the decisions for all the classes in a single [contingency table](Classification/contingency%20table.md) and then compute precision and recall from that table. This is usefull when good performance is more imporatnt for the most frequent classes. 
+With micro averaging you collect all the decisions for all the classes in a single [contingency table](contingency%20table.md) and then compute precision and recall from that table. This is usefull when good performance is more imporatnt for the most frequent classes. 
 
 ## Statisical test
 You can often not use statistical test like t-test because often classification samples are not normally distrobuted. 
