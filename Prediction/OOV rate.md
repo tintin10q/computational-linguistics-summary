@@ -1,0 +1,2 @@
+# OOV rate
+When testing a [[Language Modeling|language model]] there might be words in the testing set that the language model has never seen before. This can be expresed in the OOV rate. The OOV rate is the percentage of words in the test set which never occur in training. If it is high, there is a representationess problem. 

@@ -1,6 +1,6 @@
 # Topics 
 
-Hi, this is the summary for computational linguistics course from Tilburg University (for now up till the midterm) created by Quinten Cabo. 
+Hi, this is the computational linguistics summary (for now up till the midterm) created by Quinten Cabo. 
 
 There are 4 topics:
 
