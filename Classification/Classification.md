@@ -22,7 +22,7 @@ Rule based is **robust** because you can make rules for even very rare cases whi
 But language is too complex for this and changes too much to do it like this. It is probably **expensive** to write. You have to get the domain knolege and if it is ambigous then you have to write a lot of rules.
 
 ## Supervised learning
-The oposite of rule based systems is supervised [Learning](Other/Learning.md). Here the idea is that you have a large set of datapoints where you already know the correct classification, and you try to build a model that can predict the points you already have. The idea is that the model will learn the rules itself. The hope is then that the model will also do well on new data this depends on bias and [overfitting](Prediction/Overfitting.md). This is the most important. **We don't want to prove ourself correct we want to make a generalizable model**. This removes the need to write rules but has many other problems.  
+The oposite of rule based systems is supervised [[Other/Learning.md]]. Here the idea is that you have a large set of datapoints where you already know the correct classification, and you try to build a model that can predict the points you already have. The idea is that the model will learn the rules itself. The hope is then that the model will also do well on new data this depends on bias and [[Prediction/Overfitting.md|overfitting]]. This is the most important. **We don't want to prove ourself correct we want to make a generalizable model**. This removes the need to write rules but has many other problems.  
 
 ## Types of supervised learning classifiers 
 
@@ -34,7 +34,7 @@ VS
 ### Generative clasifiers
 Generative clasifiers learn a model of how the data are generated and could because of this also generate new data. Classification happens by choosing the class that most likely generated the data. It's like the reverse.
 
-![Pasted image 20220216114704](images/Pasted%20image%2020220216114704.webp)
+![[images/Pasted image 20220216114704.webp]]
 
 ### Linear clasifiers
 Linear clasifiers can only draw a linear decision boundary. 
@@ -42,7 +42,7 @@ Linear clasifiers can only draw a linear decision boundary.
 ### Non-Linear clasifiers
 Non-Linear clasifiers can draw a non-linear decision boundary. 
 
-![Pasted image 20220216114812](images/Pasted%20image%2020220216114812.webp)
+![[images/Pasted image 20220216114812.webp]]
 
 ----
 

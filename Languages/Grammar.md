@@ -1,5 +1,5 @@
 # Grammers
-A grammer is a language for defining [languages](Languages/Languages.md).  If you write rules for a language then these rules are also called the grammar. The individual rules you write are called a production. Grammars define the structure of the [sentences](Data/Sentences.md) in the language.
+A grammer is a language for defining [[Languages/Languages.md|languages]].  If you write rules for a language then these rules are also called the grammar. The individual rules you write are called a production. Grammars define the structure of the [[Data/Sentences.md|sentences]] in the language.
 
 A grammar consits of multiple productions. Productions can be seen as rewrite rules. If the left side matches you can replace it with the other side. Also if you already have something that is part of the language you can make more things in the language.
 
@@ -13,10 +13,10 @@ The symbol from the alphabeth are also called **terminals**. $\epsilon$ is also 
 
 The grammer makes use of auxiliary symbol which is called **nonterminals**. These are not part of the alphabet and hence cannot be part of the final word/sentence. The non terminals are supposed to be replaced with terminals when your parsing. This is called a rewrite rule. Non terminals can be of two types. 
 
-- Pre-terminals like PrN and V are [Parts of Speech](Languages/Parts%20of%20Speech.md). Or atomic non-terminals. The production rules indicate which sequences they can generate.
-- [Constituents](Languages/Constituency.md) (NP and VP) are abstract units which absolve complex syntactic functions. 
+- Pre-terminals like PrN and V are [[Languages/Parts of Speech.md]]. Or atomic non-terminals. The production rules indicate which sequences they can generate.
+- [[Languages/Constituency.md|Constituents]] (NP and VP) are abstract units which absolve complex syntactic functions. 
 
-![Pasted image 20220314185901](images/Pasted%20image%2020220314185901.webp)
+![[images/Pasted image 20220314185901.webp]]
 
 
 The grammer rules are kind of defined like inductive rules.
@@ -29,11 +29,11 @@ The start state is nice because if you can get from an input to the start state 
 We usually read the rules left to right but you can always go back if you want. 
 
 ## Writing down the rules
-There are diffent ways to write downs the rules. There are also different formats. Once such format is the  [Chomsky Normal Form](Languages/Chomsky%20Normal%20Form.md).
+There are diffent ways to write downs the rules. There are also different formats. Once such format is the  [[Languages/Chomsky Normal Form.md]].
 
 Also remember that the rules in a grammar for a langauage HAS to be finite. Otherwise you would also have to consider another rule. 
 
-You can use non terminals on both sides. This allows for good abstraction. This is done using [Constituency](Languages/Constituency.md).
+You can use non terminals on both sides. This allows for good abstraction. This is done using [[Languages/Constituency.md]].
 
 
 ## Example
@@ -59,19 +59,19 @@ Usually the non terminals are capatilized.
 
 ## Palendrone example
 
-![Pasted image 20211127131012](images/Pasted%20image%2020211127131012.webp)
+![[images/Pasted image 20211127131012.webp]]
 
 The idea is that it sort of does not matter what P is here. 
 
 When still talking about palendrome. 
 
-![Pasted image 20211127130856](images/Pasted%20image%2020211127130856.webp)
+![[images/Pasted image 20211127130856.webp]]
 
 S is a start. 
 
 So you can define a grammer like this:
 
-![Pasted image 20211127131455](images/Pasted%20image%2020211127131455.webp)
+![[images/Pasted image 20211127131455.webp]]
 
 This is an example of a grammer which only allows strings of a and b.
 
@@ -81,18 +81,18 @@ In this course we are only looking at context free languages. There are a lot of
 
 You can also have more grammers for the same language. 
 
-![Pasted image 20211127131955](images/Pasted%20image%2020211127131955.webp)
+![[images/Pasted image 20211127131955.webp]]
 
 This makes sense because the cpu also looked very different for everyone. 
 
 ## More exampels with digit
-![Pasted image 20211127132201](images/Pasted%20image%2020211127132201.webp)
+![[images/Pasted image 20211127132201.webp]]
 
 Here there is one non terminal Dig that can be rewritten to each digit. 
 
 We can also now define Digs wich is atleast two digits. With this we can define any sequence of numbers. 
 
-![Pasted image 20211127132647](images/Pasted%20image%2020211127132647.webp)
+![[images/Pasted image 20211127132647.webp]]
 
 So we can do Digs -> Dig* to say Digs is 0 or more Dig
 
@@ -151,8 +151,8 @@ Represent the non terminals as data types.
 
 The concrete syntax is the syntax like above the abstract is how you would define it in haskell with data types. 
 
-![Pasted image 20211127142739](images/Pasted%20image%2020211127142739.webp)
+![[images/Pasted image 20211127142739.webp]]
 
 You can also take the tree and bring it back to the string. 
 
-![Pasted image 20211127142855](images/Pasted%20image%2020211127142855.webp)
+![[images/Pasted image 20211127142855.webp]]

@@ -1,19 +1,19 @@
 # Data
 This is the data topic. The notes in about this topic are:
 
-- [Corpus](Data/Corpus.md)
-- [Data](Data.md)
-- [Lemma](Data/Lemma.md)
-- [Levels of analysis](Data/Levels%20of%20analysis.md)
-- [Lexicon](Data/Lexicon.md)
-- [Morphemes](Data/Morphemes.md)
-- [Normalization](Data/Normalization.md)
-- [Thesaurus](Data/Thesaurus.md)
-- [Token](Data/Token.md)
-- [Treebank](Data/Treebank.md)
-- [Type](Data/Type.md)
-- [Words](Data/Words.md)
-- [Symbol](Data/Symbol.md)
-- [Sentences](Data/Sentences.md)
+- [[Data/Corpus.md]]
+- [[Data.md]]
+- [[Data/Lemma.md]]
+- [[Data/Levels of analysis.md]]
+- [[Data/Lexicon.md]]
+- [[Data/Morphemes.md]]
+- [[Data/Normalization.md]]
+- [[Data/Thesaurus.md]]
+- [[Data/Token.md]]
+- [[Data/Treebank.md]]
+- [[Data/Type.md]]
+- [[Data/Words.md]]
+- [[Data/Symbol.md]]
+- [[Data/Sentences.md]]
 
-You can also go back to the [index](index.md).
+You can also go back to the [[index.md]].
