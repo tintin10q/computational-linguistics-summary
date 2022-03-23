@@ -12,4 +12,4 @@ This is the prediction topic. The notes in about this topic are:
 - [Smoothing](Smoothing.md)
 - [Viterbi Algorithm](Viterbi%20Algorithm.md)
 
-You can also go back to the [index](index.md).
+You can also go back to the [[index]]
