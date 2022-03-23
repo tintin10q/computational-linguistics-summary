@@ -23,4 +23,4 @@ This is the languages topic. The notes in about this topic are:
 - [regular languages](regular%20languages.md)
 - [Zipfian Distribution](Zipfian%20Distribution.md)
 
-You can also go back to the [[index]]
+You can also go back to the [index](index.md)
