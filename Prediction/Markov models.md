@@ -25,7 +25,7 @@ This is usually just embeded in A by augmenting Q with the BoS state.
 
 So usually this a row in A with only beginning of sequence symbols. It is the inital state.
 
-![Pasted image 20220223185953](Pasted%20image%2020220223185953.webp)
+![Pasted image 20220223185953](../images/Pasted%20image%2020220223185953.webp)
 
 Looking at this table really makes it more concrete. The idea is that the sum of an the entire row is one. The sum of a collum does not have to be one. 
 
@@ -36,11 +36,11 @@ We can do this like any other machine learning problem. In this case the loss/co
 
 
 ## Trade of
-Higher N-grams are more constraining and precise, but more sparce. If we have 20k [types](Type.md), then there are:
+Higher N-grams are more constraining and precise, but more sparce. If we have 20k [types](../Data/Type.md), then there are:
 - 20K$^2$ bigrams = $4*10^8$. 
 - 20K$^{3}$ trigrams = $8 * 10^{12}$. 
 - 20K$^{4}$ tetragrams = $1.6 * 10^{17}$. 
 
 So you need to have the data to support this otherwise you will hit something you have not seen before too often. 
 
-THIS is why [Normalization](normalization.md) is important because it reduces the number of different histrories from which you can predict. 
+THIS is why [Normalization](../Data/Normalization.md) is important because it reduces the number of different histrories from which you can predict. 

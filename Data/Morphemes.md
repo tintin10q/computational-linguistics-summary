@@ -1,14 +1,14 @@
 # Morphemes
 Morphemes are the smallest meaning-bearng unit of languages. But this is controversial. 
 
-So when doing [Lemmatization](Data/Lemma.md) you turn a word into its lemma form. The lemma of apes is ape. Here you removed ths 's'. The parts you remove every are **affixes** and the part that stays behind is the **stem**. Both stems and affixes are **morphenes**. 
+So when doing [lemmatization](Lemma.md) you turn a word into its lemma form. The lemma of apes is ape. Here you removed ths 's'. The parts you remove every are **affixes** and the part that stays behind is the **stem**. Both stems and affixes are **morphenes**. 
 
 - **Stems** is the mean meaning bearing unit in a word.
 - **Affixes** are the strings that modify stems in some way.
 
 For something to be a morphene it has to have meaning. For instance if you have walk then if you remove anything of this:  
 
-`['alk', 'Tlk', 'Tak', 'Tal', 'lk', 'ak', 'al', 'k', 'l', 'k', 'a', 'l', 'a', 'lk', 'Tk', 'Tl', 'k', 'l', 'k', 'T', 'l', 'T', 'ak', 'Tk', 'Ta', 'k', 'a', 'k', 'T', 'a', 'T', 'al', 'Tl', 'Ta', 'l', 'a', 'l', 'T', 'a', 'T']`
+>['alk', 'Tlk', 'Tak', 'Tal', 'lk', 'ak', 'al', 'k', 'l', 'k', 'a', 'l', 'a', 'lk', 'Tk', 'Tl', 'k', 'l', 'k', 'T', 'l', 'T', 'ak', 'Tk', 'Ta', 'k', 'a', 'k', 'T', 'a', 'T', 'al', 'Tl', 'Ta', 'l', 'a', 'l', 'T', 'a', 'T']
 
 These all have no meaning. 
 

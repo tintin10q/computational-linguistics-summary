@@ -1,5 +1,5 @@
 # Language modeling
-Can we build a model which automatically [learns](Other/Learning.md) which sequences are part of a [langauge](Languages.md) and which are not?  Yes we can. Language is sequence of things and is not random. What comes before affects what comes next. 
+Can we build a model which automatically [learns](../Other/Learning.md) which sequences are part of a [langauge](../Languages/Languages.md) and which are not?  Yes we can. Language is sequence of things and is not random. What comes before affects what comes next. 
 
 The model will try to [predict](Prediction.md) what comes next in the sequence of words. If the model is very wrong about what comes next then maybe it is not in the language. Humans do the same thing we always try to predict what comes next when others speak. You can say that the higher the score of a text the more fluent it is.
 
@@ -15,11 +15,11 @@ Language models are usually a means to an end, rarely the goal. They are usefull
 - Scoring machine generated language.
 - Investigae language processing in humans to inform the developent of bots.
 - Speech/handwriting recognition. Disambiguation, if you a piece of unclear text could be multiple things you could pick the one the language model says is more likely. 
-- Spelling correction if more alternatives have the same [edit distance](Edit%20distance.md).
+- Spelling correction if more alternatives have the same [edit distance](../Languages/Edit%20distance.md).
 - Scoring machine translation models or translation options. 
 
 ## Generating language
-If the model knows the probability distribution of a language then you could also give it an unfinished sequence of [symbols](Symbol.md) and the model could tell you which next sequence of symbols has the higest probability to appear next in the sequence when following the probability distibution (what we already know or what happened before). So language models can actually predict what is the most likely to come next. 
+If the model knows the probability distribution of a language then you could also give it an unfinished sequence of [symbols](../Data/Symbol.md) and the model could tell you which next sequence of symbols has the higest probability to appear next in the sequence when following the probability distibution (what we already know or what happened before). So language models can actually predict what is the most likely to come next. 
 
 You could then take the sequence of symbols that was the most likely and add it to the sequence you had to further the sequence. Now after you have done this once you can ofcourse do another prediction on the new sequence and there you go now your generating language. Because language models can do this we call them **generative models**. 
 

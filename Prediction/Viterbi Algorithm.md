@@ -11,10 +11,10 @@ The idea is just to compute the best path for the first part of the sequence. Th
 
 This means we can start from 3. To calculate the best one we need 2, to calculate the best one we need 1.  Then we hit the base condition, so we calculate 1 and return it. Now that it returned we can use it to calcuate 2 and return that now that 2 returned we can calcualte 3. So basically you leave the work until you finished another problem. 
 
-Using the recursion we get $O(Q^nT)$ where n is the n in [N-grams](N-grams.md). This is also called the **order of the model**. So n = 2 is a bigram. So this makes it much better and you need a lot of data to get higher n. 
+Using the recursion we get $O(Q^nT)$ where n is the n in [N-grams](../Languages/N-grams.md). This is also called the **order of the model**. So n = 2 is a bigram. So this makes it much better and you need a lot of data to get higher n. 
 
 ## In practice 
-Create a matrix M with as many rows as there are states $q \in Q$ and as many collums as there are events $o \in T$ to be decoded (so that is the [sentence](Sentences.md) you want to tag + BoS and EoS). 
+Create a matrix M with as many rows as there are states $q \in Q$ and as many collums as there are events $o \in T$ to be decoded (so that is the [sentence](../Data/Sentences.md) you want to tag + BoS and EoS). 
 
 The value of each cell $M_{qo}$ is computed as follows: $p(t_{o}|t_{o-n:o-1})p(w_{o}|t_{o})$. So it's the prior multiplied by the likelyhood. This means that each cell contains the posterior probability of findinf each tag given the current word after having observed everything that came before. 
 
@@ -89,7 +89,7 @@ The trelis represents the probability that the HMM is in state $q \in Q$ after s
 
 The value of each cell at sucesive states is computed by **multiplying the current transition and emission probabilities by the most probabable sequence** which could lead to that cell. This means we have to find the probable sequence. We do this by taking the max(transition probability * each collum of the A matrix - BOS).
 
-![Pasted image 20220308194114](Pasted%20image%2020220308194114.webp)
+![Pasted image 20220308194114](../images/Pasted%20image%2020220308194114.webp)
 
 Now the max 0.4. Now we can multiply this with the emmision probability of the current word (dog) so we get: 0.4 * [0, 0, 0.5, 0.1] = [0, 0, 0.2, 0.04]. This becomes the new collum in the trelis. 
 
@@ -120,7 +120,7 @@ So as you can see we need 3 pieces of information each time.
 
 So let's continue:
 
-![Pasted image 20220308195301](Pasted%20image%2020220308195301.webp)
+![Pasted image 20220308195301](../images/Pasted%20image%2020220308195301.webp)
 
 We found that 0.1 is the highest after multiplication. Then we multiply it with the emmision which is [0, 0, 0, 0.8] so 0.1 * [0, 0, 0, 0, 0.8] which becomes [0, 0, 0, 0.08]. Now we can fill that in, and we should mark the thirth collum.
 

@@ -3,7 +3,7 @@ A ziphian distribution is often seen with [Natural languages](Natural%20language
 
 How frequent a word is can be expressed in the rank. The most frequent word has rank 1, the second most frequent word has rank 2 etc. 
 
-![Pasted image 20220224133421](Pasted%20image%2020220224133421.webp)
+![Pasted image 20220224133421](../images/Pasted%20image%2020220224133421.webp)
 
 The right is in log space and the left is absolute.
 

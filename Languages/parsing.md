@@ -6,11 +6,11 @@ Parsing can be described by a problem statement.
 
 Given a grammar G and a string s. Does s belong to L(G). Or s∈L(G)
 
-L is a function that returns the [language](app://obsidian.md/language) from a [grammar](app://obsidian.md/grammar).
+L is a function that returns the [languages](Languages.md) from a [grammar](Grammar.md).
 
 If the parser thinks this is the case we also want a proof or evidence that this is the case. This usually takes the form of a [parse tree](parsetree.md). So this is a tree to go from the grammar to s!
 
-![Pasted image 20220314184733](Pasted%20image%2020220314184733.webp)
+![Pasted image 20220314184733](../images/Pasted%20image%2020220314184733.webp)
 
 You can also represent parse trees with brackets. But this is only done because of language limitations. Haskell can represent parse trees without problems. 
 
@@ -51,6 +51,6 @@ Both approaches place certain but different restrictions on the grammar that you
 
 
 ## Complexity 
-![Pasted image 20220314190559](Pasted%20image%2020220314190559.webp)
+![Pasted image 20220314190559](../images/Pasted%20image%2020220314190559.webp)
 
 If a tree is deep or long then the sentence tends to be more complex. 

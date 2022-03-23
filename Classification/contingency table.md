@@ -1,7 +1,7 @@
 # Contingency table 
 A contingency table shows all the classfications that have been done with the real value. In a contingency table you can see exaclty how things were wrongly classified as what. 
 
-## Example
+# Example
 Here is an example table in a result when classifing languages.
 
 | Language | German | French | Dutch | Italian | English |
@@ -21,7 +21,7 @@ So what you can read from this table is that 4030 German words were classified a
 
 So that is how you read these tables. 
 
-Here was my code to create the [Evaluating Classification models](Classification/Evaluating%20Classification%20models.md) scores.
+Here was my code to create the [Evaluating Classification models](Evaluating%20Classification%20models.md) scores.
 
 
 ```python
@@ -47,7 +47,7 @@ def recall(contingency_table, label):
     
     tp = result[index]
     
-    fn = sum(map(lambda x : x[True if i == index else False for i in range(len(ct|[len(ct|[ct|[len(ct|[len(ct|[ct|[ct|[len(ct|[ct|[ct|[ct))](len(ct))]])]])]])]])]])))))))))), ct.T))
+    fn = sum(map(lambda x : x[True if i == index else False for i in range(len(ct))](True%20if%20i%20==%20index%20else%20False%20for%20i%20in%20range(len(ct))), ct.T))
     
     return tp / (tp + fn)
     
@@ -58,3 +58,4 @@ def F_measure(contingency_table, label, Beta=1):
     R = recall(contingency_table, label)
     return ((Beta**2 + 1) * P*R) / (Beta**2 * P + R)
 ```
+
