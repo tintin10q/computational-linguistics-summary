@@ -5,7 +5,7 @@ Computational lingistics is about analysing and producting language with compute
 Studies linguistic sounds to construct **inventories of sounds with a linguistic role**. A phonetic is a basic sound. There is a fixed list of basic sounds that humans can make. From these sounds words are formed. The idea of phonology is to analyse the languages by looking at the basic units. Because switching them up changes the meaning. **We won't look at this one much if at all**
 
 ## Segmentation
-In the context of CL segmentation is the task of splitting text or speech into [Symbol](Symbol.md)s of the appropriate granularity. So in a text words a symbols but they are made up of letter symbols etc. 
+In the context of CL segmentation is the task of splitting text or speech into [[Data/Symbol]]s of the appropriate granularity. So in a text words a symbols but they are made up of letter symbols etc. 
 
 Segmenting speech is harder because it is unclear where the spaces are. Fun fact spaces where only invented 4 centeries ago!
 

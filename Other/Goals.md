@@ -1,3 +1,5 @@
+# Goals
+
 The goals of looking at natural languages are:
 
 - Infer the componets symbols of a language, their roles, the rules for combining them, and their meaning.

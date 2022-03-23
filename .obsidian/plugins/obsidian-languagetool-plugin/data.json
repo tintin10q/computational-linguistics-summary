@@ -1,5 +1,6 @@
 {
   "serverUrl": "http://localhost:8081",
+  "urlMode": "custom",
   "glassBg": true,
   "shouldAutoCheck": true,
   "pickyMode": false,

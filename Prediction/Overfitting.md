@@ -1,6 +1,6 @@
 # Overfitting
 
-Overfitting is when you make your supervised [Learning](learning.md) model to focused on the training data that you have. When this happens your model will be great at predicting your training data but it will suck at predicting data that you have not seen before especially if it is close to the decision bounary. 
+Overfitting is when you make your supervised [Learning](Other/Learning.md) model to focused on the training data that you have. When this happens your model will be great at predicting your training data but it will suck at predicting data that you have not seen before especially if it is close to the decision bounary. 
 
 This can generally be seen in big difference in training scores and test scores where training scores are high and test scores a low. 
 

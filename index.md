@@ -11,12 +11,12 @@ There are 4 topics:
 
 There are also some notes that are not in a topic. These are:
 
-- [Goals](Goals.md)
-- [Learning](Learning.md)
-- [Things that he said come at the exam](Things%20that%20he%20said%20come%20at%20the%20exam.md)
-- [Questions](Questions.md)
+- [Goals](Other/Goals.md)
+- [Learning](Other/Learning.md)
+- [Things that he said come at the exam](Other/Things%20that%20he%20said%20come%20at%20the%20exam.md)
+- [Questions](Prediction/Questions.md)
 
-![Pasted image 20220322123634](Pasted%20image%2020220322123634.webp)
+![Pasted image 20220322123634](images/Pasted%20image%2020220322123634.webp)
 
 # Disclaimer 
 Although I have tried my best to make sure this summary is correct, I will take no responsibility for mistakes that might lead to you having a lower grade. 
@@ -32,6 +32,6 @@ here:
 - [Tikkie](https://tikkie.me/pay/tvc88f91200qmq9fujar)
 
 
-![Tikkie qr code valid till april 4](tikkies.webp)
+![Tikkie qr code valid till april 4](images/tikkies.webp)
 
 >Every model is wrong, but some models are usefull.

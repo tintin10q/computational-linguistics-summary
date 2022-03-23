@@ -24,4 +24,4 @@ Examples of natural langauges are:
 - German 
 
 
-Natural languages often follow a [Zipfian Distribution](Zipfian%20Distribution.md).
+Natural languages often follow a [[Languages/Zipfian Distribution]].

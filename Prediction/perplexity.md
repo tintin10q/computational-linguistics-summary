@@ -5,7 +5,7 @@ Perplexity is the standard way to intricially evaulate wheter a predication syst
 What the prediction system expects is caused by the training data. 
 
 ## More formally
-At any new token in the data, the langauge model outputs a probability for every possible type as a continuation give nthe previously observed histroy and the transtion probabiltiy matrix it [learned](Learning.md) on tsome other data. 
+At any new token in the data, the langauge model outputs a probability for every possible type as a continuation give nthe previously observed histroy and the transtion probabiltiy matrix it [learned](Other/Learning.md) on tsome other data. 
 
 **The higher the probability a model assigns to new valid sentences , the better the language model.**
 
@@ -20,7 +20,7 @@ So basically you have to normalize the perplexity to compare language models. Wh
 2. Fine tune the model on different corpus (test data)
 3. Test the model to check how it fits on new data (validation data). 
 
-NEVER test on the same data you trained on and NEVER validate on the test data! **[Learning](Learning.md) is not remembering.** If it were it wouldn't be usefull.  
+NEVER test on the same data you trained on and NEVER validate on the test data! **[Learning](Other/Learning.md) is not remembering.** If it were it wouldn't be usefull.  
 
 Again you can only compare perplexity of different models if you use the same test set. Because otherwise the probability distrobution is not the same. So the result states have to be the same.
 

@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Classification/Native baiyes/Naive Bayes Classifier.md",
+            "file": "Prediction/Viterbi Algorithm.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Classification/Native baiyes/Naive Bayes Classifier.md",
+                "file": "Prediction/Viterbi Algorithm.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "5bdbc50d5c571c52",
   "lastOpenFiles": [
-    "Classification/Native baiyes/Naive Bayes Classifier.md",
-    "Data/Type.md",
-    "Classification/Native baiyes/Bayes rule.md",
-    "Languages/Ambiguity.md",
-    "Data/index.md",
-    "Data/data.md",
-    "Classification/contingency table.md",
-    "Data/Corpus.md",
-    "Data/Lexicon.md",
-    "Topics.md"
+    "Prediction/Viterbi Algorithm.md",
+    "Prediction/Decoding.md",
+    "Languages/Alphabeth.md",
+    "Other/Things that he said come at the exam.md",
+    "Prediction/Questions.md",
+    "Other/Learning.md",
+    "index.md",
+    "Other/Goals.md",
+    "README.md",
+    "images/tikkies.webp"
   ]
 }

@@ -1,5 +1,5 @@
 # Words 
-What is a word? This is a hard question to awnser and is very language dependant. Today one might say it is the characters between spaces? But spaces actually didn't exist yet until 400 years ago. There are also langauges without words. This is why we have to talk about [Morphemes](Morphemes.md) to define it better and to segment words.
+What is a word? This is a hard question to awnser and is very language dependant. Today one might say it is the characters between spaces? But spaces actually didn't exist yet until 400 years ago. There are also langauges without words. This is why we have to talk about [[Data/Morphemes]] to define it better and to segment words.
 
 This is also why when doing analysis you want to tokenize your text which is basically deciding what the words are from the string. 
 

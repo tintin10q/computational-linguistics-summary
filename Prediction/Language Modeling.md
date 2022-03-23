@@ -1,5 +1,5 @@
 # Language modeling
-Can we build a model which automatically [learns](learning.md) which sequences are part of a [langauge](Languages.md) and which are not?  Yes we can. Language is sequence of things and is not random. What comes before affects what comes next. 
+Can we build a model which automatically [learns](Other/Learning.md) which sequences are part of a [langauge](Languages.md) and which are not?  Yes we can. Language is sequence of things and is not random. What comes before affects what comes next. 
 
 The model will try to [predict](Prediction.md) what comes next in the sequence of words. If the model is very wrong about what comes next then maybe it is not in the language. Humans do the same thing we always try to predict what comes next when others speak. You can say that the higher the score of a text the more fluent it is.
 

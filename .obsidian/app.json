@@ -3,5 +3,6 @@
   "alwaysUpdateLinks": true,
   "promptDelete": false,
   "legacyEditor": false,
-  "livePreview": true
+  "livePreview": true,
+  "newLinkFormat": "absolute"
 }
