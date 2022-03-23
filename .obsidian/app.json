@@ -2,7 +2,6 @@
   "vimMode": true,
   "alwaysUpdateLinks": true,
   "promptDelete": false,
-  "legacyEditor": false,
-  "livePreview": true,
-  "newLinkFormat": "absolute"
+  "legacyEditor": true,
+  "livePreview": true
 }
