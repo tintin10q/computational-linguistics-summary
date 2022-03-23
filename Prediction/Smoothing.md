@@ -3,14 +3,14 @@
 Increasing all the probabilities by a little bit so you don't have impossible continuations (zero probability). 
 
 ## The problem
-When training [language models](Language%20modeling.md) you always have the problem that [Natural languages](Natural%20languages.md) are infinite. This means that any sample that you train your model on is actually just a small sample of the entire data or population. It is a **finite number** of [tokens](Token.md), [types](Type.md) and [lemmas](Lemma.md). This also means that the model will encounter things it has never seen before in the future. This will cause the model to say that a sequence is ungrammatical. Most often this is true and what we want, but it could be false. 
+When training [[Language Modeling|language models]] you always have the problem that [[Natural languages]] are infinite. This means that any sample that you train your model on is actually just a small sample of the entire data or population. It is a **finite number** of [[Token|tokens]], [[Type|types]] and [[Lemma|lemmas]]. This also means that the model will encounter things it has never seen before in the future. This will cause the model to say that a sequence is ungrammatical. Most often this is true and what we want, but it could be false. 
 
 ### Unkown words  (OOV words)
 
-If the model encounters a word it didn't see in training it can't even start looking for transitions from the preceeding [N-gram](N-grams.md). This can be quanitified in the [OOV rate](OOV%20rate.md) (persentage of never seen before words in the test set). Because langauage is infinite the OOV rate will always be more than 0 when using the model in the wild. 
+If the model encounters a word it didn't see in training it can't even start looking for transitions from the preceeding [[N-grams|N-gram]]. This can be quanitified in the [[OOV rate]] (persentage of never seen before words in the test set). Because langauage is infinite the OOV rate will always be more than 0 when using the model in the wild. 
 
 ### Zipfian 
-Becuase natural language follows a [Zipfian Distribution](Zipfian%20Distribution.md) there are a lot of words that only appear once in a [corpus](Corpus.md) less but still a lot of words that appear twice in a corpus but not a lot of words that often appear in a corpus. 
+Becuase natural language follows a [[Zipfian Distribution]] there are a lot of words that only appear once in a [[Corpus|corpus]] less but still a lot of words that appear twice in a corpus but not a lot of words that often appear in a corpus. 
 
 Because there are few words that appear often and a lot of words that appear once or twice in a corpus the sequences that contain rare words are frequent. So transitions with rare words are frequent but hard to predict. Because you can't just have of the same words. So how do you estimate rare transitions?
 
@@ -26,9 +26,9 @@ Basically we say rare things are the same. We leverage the relationship between 
 You can look at this by saying that you reserve some probability mass for unkown words. 
 
 ### The zero problem
-Replacing words that the model hasn't seen before with a special token solves part of the problem but what if the model encounters a transition that it has not seen before? This means an N-Gram that doesn't appear in the transition matrix. Then the model will think that the probability of it occuring is zero. As soon as this happens the model will get stuck because [Markov models](Markov%20models.md) uses the Markov chains which means that if you multiply by 0 or take the log of 0 you get problems. So we can not afford the probability of a word or transition to be 0. 
+Replacing words that the model hasn't seen before with a special token solves part of the problem but what if the model encounters a transition that it has not seen before? This means an N-Gram that doesn't appear in the transition matrix. Then the model will think that the probability of it occuring is zero. As soon as this happens the model will get stuck because [[Markov models]] uses the Markov chains which means that if you multiply by 0 or take the log of 0 you get problems. So we can not afford the probability of a word or transition to be 0. 
 
-![Pasted image 20220224152619](Pasted%20image%2020220224152619.webp)
+![[Pasted image 20220224152619.webp]]
 
 In this example the continuation painfull, horible and boring is zero and that is a problem. 
 
@@ -37,7 +37,7 @@ To sove this zero probability problem we apply **smoothing**. What it does is th
 
 So if we were to apply smoothing on the model from the pricture from before we would get:
 
-![Pasted image 20220224152946](Pasted%20image%2020220224152946.webp)
+![[Pasted image 20220224152946.webp]]
 
 Now everything is above zero. 
 
@@ -50,7 +50,7 @@ For transitions this means that transitions with a frequency of 0 in the trainin
 
 G. Cassani calls Laplace smoothing a quick and dirty solution. Because with large vocabularies and not so high frequencies, smoothed probabiblies are too different from the non-smoothed ones.  The reason for this is basically that because there are only 100 percentage points to give out and even if we assign a little probability to unobserved transitions, there are still really a lot of unobserved transitions. This makes it so that the probability ditribution shifts a lot. This is captured in the image below:
 
-![Pasted image 20220224154616](Pasted%20image%2020220224154616.webp)
+![[Pasted image 20220224154616.webp]]
 
 We want that what we don't observe gets a small probability but because there are so many things we didn't observe adding 1 to everything makes what we didn't observe a lot more likely than we would like. 
 

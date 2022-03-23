@@ -1,7 +1,7 @@
 # Language modeling
-Can we build a model which automatically [learns](Other/Learning.md) which sequences are part of a [langauge](Languages.md) and which are not?  Yes we can. Language is sequence of things and is not random. What comes before affects what comes next. 
+Can we build a model which automatically [[Learning|learns]] which sequences are part of a [[Languages/Languages|langauge]] and which are not?  Yes we can. Language is sequence of things and is not random. What comes before affects what comes next. 
 
-The model will try to [predict](Prediction.md) what comes next in the sequence of words. If the model is very wrong about what comes next then maybe it is not in the language. Humans do the same thing we always try to predict what comes next when others speak. You can say that the higher the score of a text the more fluent it is.
+The model will try to [[Prediction/Prediction|predict]] what comes next in the sequence of words. If the model is very wrong about what comes next then maybe it is not in the language. Humans do the same thing we always try to predict what comes next when others speak. You can say that the higher the score of a text the more fluent it is.
 
 ## Probabilities 
 A language model is first trained on a bunch of correct text of a language. This gives the model a **large probability distribution of sequences in the language**. When the model recieves a new (unfinished sequence) it can assign a probability to sequences of symbols that might come next in the sequence.  
@@ -15,11 +15,11 @@ Language models are usually a means to an end, rarely the goal. They are usefull
 - Scoring machine generated language.
 - Investigae language processing in humans to inform the developent of bots.
 - Speech/handwriting recognition. Disambiguation, if you a piece of unclear text could be multiple things you could pick the one the language model says is more likely. 
-- Spelling correction if more alternatives have the same [edit distance](Edit%20distance.md).
+- Spelling correction if more alternatives have the same [[Edit distance|edit distance]].
 - Scoring machine translation models or translation options. 
 
 ## Generating language
-If the model knows the probability distribution of a language then you could also give it an unfinished sequence of [symbols](Symbol.md) and the model could tell you which next sequence of symbols has the higest probability to appear next in the sequence when following the probability distibution (what we already know or what happened before). So language models can actually predict what is the most likely to come next. 
+If the model knows the probability distribution of a language then you could also give it an unfinished sequence of [[Symbol|symbols]] and the model could tell you which next sequence of symbols has the higest probability to appear next in the sequence when following the probability distibution (what we already know or what happened before). So language models can actually predict what is the most likely to come next. 
 
 You could then take the sequence of symbols that was the most likely and add it to the sequence you had to further the sequence. Now after you have done this once you can ofcourse do another prediction on the new sequence and there you go now your generating language. Because language models can do this we call them **generative models**. 
 
@@ -37,7 +37,7 @@ With extrinisc evaluation you evaluate how much impact a model has on a downstre
  
  So how do we do intrisic evaluation? You feed the model new data and check how well it predicts each token in the sentences and how well it scores sentence probabilities. 
  
- A good language model will **fit the new data well**. This means it will usually predict the correct word type or assign a high probabilitiy to the sequences in the new data. This type of evualtion is called [perplexity](perplexity.md). 
+ A good language model will **fit the new data well**. This means it will usually predict the correct word type or assign a high probabilitiy to the sequences in the new data. This type of evualtion is called [[perplexity]]. 
  
  # Bi-directional models 
  

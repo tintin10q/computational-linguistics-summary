@@ -1,1 +1,20 @@
-{}
+{
+  "obsidian-link-converter:convert-md-to-wikis-in-active-file": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "W"
+    }
+  ],
+  "obsidian-link-converter:convert-wikis-to-mdlink-under-folder": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "M"
+    }
+  ]
+}

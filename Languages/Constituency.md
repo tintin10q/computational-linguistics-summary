@@ -1,6 +1,6 @@
 ## Constituency
 
-You can use [[Languages/Grammar.md]] rules to make constiuencts out of terminals. For instance if you have the terminals {0,1,2,3,4,5,6,7,8,9} then you could define the constiguent N. For instance defined as: 
+You can use [[Grammar]] rules to make constiuencts out of terminals. For instance if you have the terminals {0,1,2,3,4,5,6,7,8,9} then you could define the constiguent N. For instance defined as: 
 
 N  = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
 

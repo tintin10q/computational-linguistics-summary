@@ -4,14 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "2cbabca69a26af9f",
+        "id": "4a0bd48fa0336008",
         "type": "leaf",
         "state": {
-          "type": "markdown",
+          "type": "image",
           "state": {
-            "file": "Languages/Context free grammars.md",
-            "mode": "source",
-            "source": false
+            "file": "images/Pasted image 20220314195726.png"
           }
         }
       }
@@ -69,7 +67,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Languages/Context free grammars.md",
+                "file": "images/Pasted image 20220314195726.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,17 +84,17 @@
     "direction": "horizontal",
     "width": 303
   },
-  "active": "2cbabca69a26af9f",
+  "active": "4a0bd48fa0336008",
   "lastOpenFiles": [
-    "Languages/Context free grammars.md",
-    "Data/Sentences.md",
-    "Languages/Languages.md",
-    "index.md",
-    "Languages/Grammar.md",
-    "Data/Type.md",
-    "Data/index.md",
-    "Data/Corpus.md",
-    "Languages/finite state automata.md",
-    "Languages/Edit distance.md"
+    "images/Pasted image 20220314195726.png",
+    "images/Pasted image 20220314195726.webp",
+    "images/Pasted image 20220322123634.png",
+    "images/Pasted image 20220322123634.webp",
+    "images/Pasted image 20220217165311.png",
+    "images/Pasted image 20220216130019.webp",
+    "images/Pasted image 20220216130019.png",
+    "images/Pasted image 20220216120004.png",
+    "images/Pasted image 20220216115618.png",
+    "images/Pasted image 20220216115427.png"
   ]
 }

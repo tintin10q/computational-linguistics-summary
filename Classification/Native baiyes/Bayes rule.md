@@ -34,7 +34,7 @@ $$C = \text{argmax}_{c \in C} P(c) \prod_{f \in F} p(f|c)$$
 
 So here you take as your prediction the max posterior probability of the top part of the bayes calculation which is the product of the probability of the features given the class. 
 
-Because you multiply a lot of probabilites computers are bad at this and causes [underfolowing](https://en.wikipedia.org/wiki/Floating-point_arithmetic)
+Because you multiply a lot of probabilites computers are bad at this and causes [[https://en.wikipedia.org/wiki/Floating-point_arithmetic]]
 
 So instead we do we can move from probability space to log space and when we do that you have to move to sum instead of multiplication:
 

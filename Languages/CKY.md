@@ -1,10 +1,10 @@
 # CKY algoritm 
-The CKV algorithm is a dynamic programming solution to parsing [[Languages/Context free grammars.md]]. 
+The CKV algorithm is a dynamic programming solution to parsing [[Context free grammars]]. 
 
 ## Example
 
 ### A grammer
-This grammar is in [[Languages/Chomsky Normal Form.md]]:
+This grammar is in [[Chomsky Normal Form]]:
 
 - S -> AB | BC
 - A -> BA | a
@@ -166,4 +166,4 @@ We conclude that the word is not in the language.
 
 Ok so you basically want to look at all the cells left of a cell you are checking. 
 
-![[images/Pasted image 20220314195726.webp]]
+![[Pasted image 20220314195726.webp]]

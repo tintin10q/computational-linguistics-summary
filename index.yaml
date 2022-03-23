@@ -1,4 +1,10 @@
+template:
+    iconUrl: /favicon.svg
+    theme: blue
+
 page:
+  siteTitle: Computational Linguistics Summary
+  description: The summary for the Computational Linguistics course of Tilburg University by Quinten.
   headHtml: |
     <script>
       window.MathJax = {
@@ -9,4 +15,59 @@ page:
         }
       };
     </script>
+    <script>
+    
+    let registerServiceWorker = async () => {
+          if ('serviceWorker' in navigator) 
+          {
+            try 
+            {
+              const registration = await navigator.serviceWorker.register('/sw.js', {scope: '/',});
+          if (registration.installing) 
+          {
+            console.log('Service worker installing');
+          } 
+          else if (registration.waiting) 
+          {
+            console.log('Service worker installed');
+          } 
+          else if (registration.active) 
+          {
+            console.log('Service worker active');
+          }
+        } 
+        catch (error) 
+        {
+          console.error(`Registration failed with ${error}`);
+        }
+      }
+    };
+    registerServiceWorker();
+    </script>
     <script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-tomorrow.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/combine/npm/prismjs@1.23.0/prism.min.js,npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+
+    <meta property="og:image" content="/favicon.svg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://metatags.io/">
+    <meta property="twitter:title" content="Computational Linguistics Summary">
+    <meta property="twitter:description" content="The summary for the Computational Linguistics course of Tilburg University by Quinten.">
+    <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+    <!-- PWA Meta tags -->
+    <link rel="manifest" href="manifest.json"> 
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+    <link rel="manifest" href="/images/icons/site.webmanifest">
+    <link rel="mask-icon" href="/images/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/images/icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="msapplication-config" content="/images/icons/browserconfig.xml">
+    <meta name="theme-color" content="#25acff">
+
+
+
