@@ -4,13 +4,13 @@ A regular language is a [[Languages/Languages]] that can be described by a gramm
  - S → xB
  - B → b
 
-This defines a langauges of a sequence of x and then one b at the end. 
+This defines a languages of a sequence of x and then one b at the end. 
 
-Where x is a possibly empty **sequence** of terminals and A and B are nonterminals. Every right hand side has at most one non terminal that must occur at the end.
+Where x is a possibly empty **sequence** of terminals and A and B are non-terminals. Every right-hand side has at most one non-terminal that must occur at the end.
 
-You can see the overlap between [[finite state automata]]. You have one state and you can go to another. 
+You can see the overlap between [[finite state automata]]. You have one state, and you can go to another. 
 
-We call a language regular if it can be described by a regular grammer. Those are grammars like the above.
+We call a language regular if it can be described by a regular grammar. Those are grammars like the above.
 
 Regular languages can be described by [[Regular expression|regular expression]].
 

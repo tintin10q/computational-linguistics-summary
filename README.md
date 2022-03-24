@@ -13,7 +13,7 @@ There are also some notes that are not in a topic. These are:
 - [[Goals]]
 - [[Learning]]
 - [[Things that he said come at the exam]]
-- [[Questions]]
+- [[Other/Questions]]
 
 ![[network.webp]]
 

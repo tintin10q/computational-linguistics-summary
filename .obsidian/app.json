@@ -4,5 +4,13 @@
   "promptDelete": false,
   "legacyEditor": false,
   "livePreview": true,
-  "newLinkFormat": "absolute"
+  "newLinkFormat": "absolute",
+  "spellcheckDictionary": [
+    "Copora",
+    "Lexica",
+    "Lesk",
+    "s,t",
+    "Examplessa",
+    "Quinten"
+  ]
 }

@@ -1,4 +1,4 @@
-# Corpus 
+# Corpuss
 
 The main resource for data are corpora.
 
@@ -14,23 +14,23 @@ So structured data. Copora are made by different people this also makes them var
 	-	Age, gender, education, ethnicity....
 - What language(s) is it?
 - When was the text produced?
-	- Syncronic corpus is if no time period information is in the corpus. 
+	- Synchronic corpus is if no time period information is in the corpus. 
 	- Diachronic is when there is a time dimension. 
 - For which goal or function was the corpus produced?
-	-	Genre, medium, adiance
+	-	Genre, medium
 
-These questions make corpera vary.
+These questions make corpora vary.
 
 ## Choosing a corpus based on this is important.
 Sentences in languages are mostly infinite. This is why choosing a corpus that is representative of the phenomenon you want to model is very important. Your model will only be as good as the data you base it on. 
 
 ## Properties of a corpus
-- Crawled/manually currated 
+- Crawled/manually curated 
 	- Crawled is fetched from the internet 
 - Balanced/imbalanced
 - Single author/more authors 
 - Diachronic/Synchronic 
-	- Diachronic is organised along time dimention
+	- Diachronic is organized along the time dimension
 	- Synchronic is not organized along the time dimension
 - Written/spoken/mixed/video (the modal)
 - Single language/multi-language/parallel 

@@ -1,18 +1,19 @@
-# Edit distance
-When you see a mispelled word for instance snowbakl. Did the writer mean snowball or snowplow? Both are valid but if you as a human look at this your intiution will say snowball. Why is this? This can be quantified with the edit distance. 
+# Edit distance 
+
+When you see a mispelled word for instance snowbakl. Did the writer mean snowball or snowplow? Both are valid but if you as a human look at this your intuition will say snowball. Why is this? This can be quantified with the edit distance. 
 
 If you want to go from snowbakl to snowball you need one step but if you want to go from snowbakl to snowplow you need 4 steps. 
 
-(Also sidenote another reason why snowbakl is more likely is that the k is next to the l on an US keyboard which makes it a likely mistake. )
+> Another reason why snowbakl is more likely is that the k is next to the l on a US keyboard which makes it a likely mistake. 
 
 ## Transformations 
 The steps are called transformations. You get the edit distance by counting the minimum number of needed transformations from one word to another. How are transformations defined? 
 
-- Insert -> Insert a new character. 
-- Delete -> Delete a character. 
-- Substitue -> Switch a character for another.  
+- Insert → Insert a new character. 
+- Delete → Delete a character. 
+- Substitute → Switch a character for another.  
 
-You could also ban subsitutions (and replace them with delete-insert) which basically means subsitutions count for 2 transformation.
+You could also ban substitutions (and replace them with delete-insert) which basically means substitutions count for 2 transformation.
 
 ## Examples 
 
@@ -21,11 +22,12 @@ You could also ban subsitutions (and replace them with delete-insert) which basi
 ![[Pasted image 20220217165328.webp]]
 
 ## How to find the shortest path
+
 This is expressed in dynamic programming. You identify sub problems and then solve those and then combine the solution you found to solve the bigger problem.
 
 The search space is very large, but caching helps, and also you can keep track of the minimum you have found so far and then discard branches that go further than that. 
 
-The in the lecture he gives an algoritm for it:
+The in the lecture he gives an algorithm for it:
 
 ```python
 def D(source: str, target: str) -> int:
@@ -38,12 +40,12 @@ def D(source: str, target: str) -> int:
 	return D(n,m)
 ```
 
-So if the item in the source is the target then move on if its not find out the shortest distance.  
+So if the item in the source is the target then move on if it's not find out the shortest distance.  
 
-#### Allignment 
-To get the best allignment we have to store **back pointers** in each cell, so we know where we came from when we reached a transformation. 
+#### Alignment 
+To get the best alignment we have to store **back pointers** in each cell, so we know where we came from when we reached a transformation. 
 
-Then we **trace back** our steps and favor the substitution every time we can. 
+Then we **trace back** our steps and favour the substitution every time we can. 
 
 
 ## Graphically

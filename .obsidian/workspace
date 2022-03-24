@@ -7,9 +7,11 @@
         "id": "4a0bd48fa0336008",
         "type": "leaf",
         "state": {
-          "type": "image",
+          "type": "markdown",
           "state": {
-            "file": "images/Pasted image 20220314195726.png"
+            "file": "README.md",
+            "mode": "source",
+            "source": false
           }
         }
       }
@@ -38,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "zip",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -67,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "images/Pasted image 20220314195726.png",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,15 +88,15 @@
   },
   "active": "4a0bd48fa0336008",
   "lastOpenFiles": [
-    "images/Pasted image 20220314195726.png",
-    "images/Pasted image 20220314195726.webp",
-    "images/Pasted image 20220322123634.png",
-    "images/Pasted image 20220322123634.webp",
-    "images/Pasted image 20220217165311.png",
-    "images/Pasted image 20220216130019.webp",
-    "images/Pasted image 20220216130019.png",
-    "images/Pasted image 20220216120004.png",
-    "images/Pasted image 20220216115618.png",
-    "images/Pasted image 20220216115427.png"
+    "README.md",
+    "Prediction.md",
+    "Languages.md",
+    "index.md",
+    "Data.md",
+    "Classification.md",
+    "Prediction/Viterbi Algorithm.md",
+    "Prediction/Smoothing.md",
+    "Prediction/Prediction.md",
+    "Prediction/perplexity.md"
   ]
 }
