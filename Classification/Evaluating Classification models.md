@@ -1,5 +1,5 @@
 # Evaluating Classification Models
-After you have made your [classification](Classification/Classification.md) system how do you evaluate it against other options?
+After you have made your [classification](../Classification.md) system how do you evaluate it against other options?
 
 ## Intrinsic Evaluation
 Define a metric and check which system does best.
@@ -31,7 +31,7 @@ Whenever you get results from your model you get:
 
 From these we can come up with intrinsic evaluations.
 
-![Pasted image 20220216130019](Pasted%20image%2020220216130019.webp)
+![Pasted image 20220216130019](../images/Pasted%20image%2020220216130019.webp)
 
 ## Acuracy 
 Acuracy is the number of correctly classified points. Simple.
@@ -94,7 +94,7 @@ def recall(contingency_table, label):
     
     tp = result[index]
     
-    fn = sum(map(lambda x : x[True if i == index else False for i in range(len(ct))](True%20if%20i%20==%20index%20else%20False%20for%20i%20in%20range(len(ct))), ct.T))
+    fn = sum(map(lambda x : x[[len(ct))](ct|True if i == index else False for i in range(len(ct|[len(ct|[len(ct|[len(ct))](ct))]])))]])), ct.T))
     
     return tp / (tp + fn)
     

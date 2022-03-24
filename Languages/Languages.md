@@ -4,7 +4,7 @@ Languages are the set of valid combinations of an [alphabeth](Alphabeth.md) foll
 
 Let's do another definition:
 
-A language is a set of [sentences](Sentences.md) build from an [alphabeth](Alphabeth.md) which for some reason we call correct. This reason is that the sentences follow the grammar rules we defined for the language. 
+A language is a set of [sentences](../Data/Sentences.md) build from an [alphabeth](Alphabeth.md) which for some reason we call correct. This reason is that the sentences follow the grammar rules we defined for the language. 
 
 [Parsing](parsing.md) is the act of proving that some input belongs to a language (set). 
 

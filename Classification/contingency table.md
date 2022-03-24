@@ -47,7 +47,7 @@ def recall(contingency_table, label):
     
     tp = result[index]
     
-    fn = sum(map(lambda x : x[True if i == index else False for i in range(len(ct))](True%20if%20i%20==%20index%20else%20False%20for%20i%20in%20range(len(ct))), ct.T))
+    fn = sum(map(lambda x : x[[len(ct))](ct|True if i == index else False for i in range(len(ct|[len(ct|[len(ct|[len(ct))](ct))]])))]])), ct.T))
     
     return tp / (tp + fn)
     

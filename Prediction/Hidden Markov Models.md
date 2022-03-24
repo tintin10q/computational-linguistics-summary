@@ -1,5 +1,5 @@
 # Hidden Markov Models 
-This is like a [markov model](Markov%20models.md) but we also care about hidden states. In PoS tagging we don't observe the states we want to predict as we do in [Language Modeling](Language%20Modeling.md). Basically the [PoS](Parts%20of%20Speech.md) tags are hidden. We observe a sequence of words and want to find the best sequence of tags for that particular sequence of words out of all possible sequence of tags.
+This is like a [markov model](Markov%20models.md) but we also care about hidden states. In PoS tagging we don't observe the states we want to predict as we do in [Language Modeling](Language%20Modeling.md). Basically the [PoS](../Languages/Parts%20of%20Speech.md) tags are hidden. We observe a sequence of words and want to find the best sequence of tags for that particular sequence of words out of all possible sequence of tags.
 
 A Hidden Markov Model (HMM) consists of the following components:
 - Q - A finite set of N states.
@@ -40,7 +40,7 @@ This is also calculated with ML: $$p(w_{i}|t_{i}) = \frac{c(t_{i},w_{i})}{c(t_{i
 
 This divides the number of times a specific word is tagged as a certain tag. 
 
-So we want to know the likeliest tag for a word, but we compute the likeliest word after observing a tag. This is like [Bayes rule](Bayes%20rule.md). We aim for the posterior but compute the likelihood and the prior, and then estimate the posterior. 
+So we want to know the likeliest tag for a word, but we compute the likeliest word after observing a tag. This is like [Bayes rule](../Classification/Native%20baiyes/Bayes%20rule.md). We aim for the posterior but compute the likelihood and the prior, and then estimate the posterior. 
 
 
 ## Assumptions 

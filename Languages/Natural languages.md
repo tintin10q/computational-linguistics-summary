@@ -6,7 +6,7 @@ Natural languages are languages that are:
 - There is redundancy 
 - Subjected to change a lot
 - Context dependent. 
-- [Ambiguos](Languages/Ambiguity.md)
+- [Ambiguos](Ambiguity.md)
 
 It in't 
 - Formal logic

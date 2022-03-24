@@ -2,7 +2,7 @@
 This is the data topic. The notes in about this topic are:
 
 - [Corpus](Data/Corpus.md)
-- [data](Data/data.md)
+- [data](Data/Data.md)
 - [Lemma](Data/Lemma.md)
 - [Levels of analysis](Data/Levels%20of%20analysis.md)
 - [Lexicon](Data/Lexicon.md)

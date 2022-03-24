@@ -1,5 +1,5 @@
 # Markov Assumption 
-The Markov assumption says (in the language modelling domain) that the conditional probability of a word appearing next in the sequence can be approximated by looking at its local history instead of the entire history. In this case the preceding history is an [n-gram](N-grams.md) of words which indicates how far you look back. This can be expressed with maths: $$p(W_{1},...,W_{m}) `\approx \prod^{m}_{i = 1}(p(W_{i}|W_{i-n:i-1}))$$
+The Markov assumption says (in the language modelling domain) that the conditional probability of a word appearing next in the sequence can be approximated by looking at its local history instead of the entire history. In this case the preceding history is an [n-gram](../Languages/N-grams.md) of words which indicates how far you look back. This can be expressed with maths: $$p(W_{1},...,W_{m}) `\approx \prod^{m}_{i = 1}(p(W_{i}|W_{i-n:i-1}))$$
 
 The sequence of symbols you consider trying to predict the next symbols is called the context. The bigger the N in N-gram the bigger the context.
 
@@ -12,7 +12,7 @@ So if you use this model and try to predict what comes after "a tree has" and yo
 
 So here we are working under the assumption: $\text{p}(\text{a tree has}|\text{leaves}) \approx \text{p}(\text{has}|\text{leaves})$
 
-The nice thing here is that "has leaves" is much more likely to appear in a [Corpus](Corpus.md) than "a tree if leaves". This is good because if your n-gram does not appear at all in the corpus the probability will be 0. 
+The nice thing here is that "has leaves" is much more likely to appear in a [Corpus](../Data/Corpus.md) than "a tree if leaves". This is good because if your n-gram does not appear at all in the corpus the probability will be 0. 
 
 ### Pros
 - Easy to estimate transitions, reduces sparsity. 
@@ -20,7 +20,7 @@ The nice thing here is that "has leaves" is much more likely to appear in a [Cor
 - The chance that you don't find the n-gram in the corpus is the smallest as possible.
 
 ### Cons
-- Throws away a lot of information as can be seen above. Tree gives a lot of information much more than has. But you could filter words like has out with [normalization](Normalization.md) because that in general does not give a lot of information. 
+- Throws away a lot of information as can be seen above. Tree gives a lot of information much more than has. But you could filter words like has out with [normalization](../Data/Normalization.md) because that in general does not give a lot of information. 
 
 
 ### Maximum likelihood 

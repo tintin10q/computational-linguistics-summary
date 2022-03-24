@@ -17,9 +17,9 @@ You could also ban substitutions (and replace them with delete-insert) which bas
 
 ## Examples 
 
-![Pasted image 20220217165311](Pasted%20image%2020220217165311.webp)
+![Pasted image 20220217165311](../images/Pasted%20image%2020220217165311.webp)
 
-![Pasted image 20220217165328](Pasted%20image%2020220217165328.webp)
+![Pasted image 20220217165328](../images/Pasted%20image%2020220217165328.webp)
 
 ## How to find the shortest path
 
@@ -50,10 +50,10 @@ Then we **trace back** our steps and favour the substitution every time we can.
 
 ## Graphically
 
-![Pasted image 20220217170600](Pasted%20image%2020220217170600.webp)
+![Pasted image 20220217170600](../images/Pasted%20image%2020220217170600.webp)
 
 \# is the empty string. Moving over the diagonal is a substitution, so you could count this as 2. You can go fast by first only considering the outer layers. This is the simplest where you just go from the empty string to the other word. Then use this information when making decisions. Then when going further the number only goes up if the letter is not the same. If the number is the same the number goes down.
 
 You have to be able to solve problems like this on the exam:
 
-![Pasted image 20220217171236](Pasted%20image%2020220217171236.webp)
+![Pasted image 20220217171236](../images/Pasted%20image%2020220217171236.webp)

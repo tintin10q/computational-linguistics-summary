@@ -1,7 +1,7 @@
 # Naive Bayes Classifier
 Using Bayesian statistics to decide on a class. Given this what would the class be if we consider the chance for all classes. You take the percentage for that has the highest class. There are also 2 assumptions you have to make.
 
-This is the simplest linear generative probabilistic [clasifier](Classification/Classification.md). Given a document d, it returns a probability of certainly so that is nice.
+This is the simplest linear generative probabilistic [clasifier](../Classification.md). Given a document d, it returns a probability of certainly so that is nice.
 
 Given a document d, it returns the class c with the highest posterior probability given the document. Because the probability of a document is constant we can simply the Bayes rule to $$c = \text{argmax}_{c \in C}~p(c|d)$$
 For text the assumptions are bag of words and naive Bayes. 
@@ -9,14 +9,14 @@ For text the assumptions are bag of words and naive Bayes.
 ## Bag of words 
 Bag of words assumption says that you deal with a bag of words instead of a text. A bag is a set where items can occur multiple times. A multi set. 
 
-![Pasted image 20220215090517](Pasted%20image%2020220215090517.webp)
+![Pasted image 20220215090517](../../images/Pasted%20image%2020220215090517.webp)
 
 ## Naive Bayes assumption
 Here you assume that the tokens in the bag are all independent based on the class. So a class doesn't cause that words are in it. At least that is what we assume. Because this allows us to just multiply probabilities. 
 
 The second is commonly called the naive Bayes assumption: this is the conditional independence assumption that the probabilities P( fi |c)
 
-![Pasted image 20220215090607](Pasted%20image%2020220215090607.webp)
+![Pasted image 20220215090607](../../images/Pasted%20image%2020220215090607.webp)
 
 If you don't assume this you  can't multiply them because you also need to multiply the probability of them both occurring at the same time. 
 
@@ -116,7 +116,7 @@ Then we smooth so add 1.
 
 Now we can make probabilities from this:
 
-![Pasted image 20220216154345](Pasted%20image%2020220216154345.webp)
+![Pasted image 20220216154345](../../images/Pasted%20image%2020220216154345.webp)
 
 Now we can Test lets say we have: "I liked the movie a lot!"
 
@@ -138,4 +138,4 @@ argmax(p(neg|test), p(pos|test)) = 0.0297 = neg
 We assign the label neg to the test text.
 
 # Naieve Bayes for language models 
-Are Naive bayes a good fit for [language models](Language%20Modeling.md)? No they are not. With langauge models we try to predict how fluent a sentence is. For this we exploit the previous sequence. Because of the bag of words assumption we throw all this information away. 
+Are Naive bayes a good fit for [language models](../../Prediction/Language%20Modeling.md)? No they are not. With langauge models we try to predict how fluent a sentence is. For this we exploit the previous sequence. Because of the bag of words assumption we throw all this information away. 
