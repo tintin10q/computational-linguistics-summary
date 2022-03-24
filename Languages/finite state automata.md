@@ -1,4 +1,4 @@
-# Finite State Automatejoijioj
+# Finite State Automate
 
 Finite state atomata is to a network with finate states. 
 

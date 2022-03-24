@@ -26,7 +26,7 @@ Out of all the sequences of n words, how likely is sequence A? Out of all sequen
 
 We can calculate this with : $$p(\text{leaves}|\text{A tree has }) = \text{c}\frac{\text{leaves}}{\text{c(a tree has)}}$$
 
-Chance of number given A tree has. Here c is a count function which counts how many times "a tree has" appears (regardless of continuation) in the big [[corpus]] and how many times it is followed by "leaves" in the corpus. Then you divide them to get a probability. This is always between 0…1 because the continuation is at most all the times, and then you get x/x = 1
+Chance of number given A tree has. Here c is a count function which counts how many times "a tree has" appears (regardless of continuation) in the big [[Data/Corpus|]] and how many times it is followed by "leaves" in the corpus. Then you divide them to get a probability. This is always between 0…1 because the continuation is at most all the times, and then you get x/x = 1
 
 
 ### Probabilities for sequences 

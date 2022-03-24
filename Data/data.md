@@ -2,6 +2,6 @@
 
 I will eat what you eat, even if I have never eaten it before.
 
-- 14 [tokens](Token.md) (16 with punctuation).
-- 12 [types](Type.md) (eat and eat are of one type, and the two I as well.)
-- 11 [lemmas](Lemma.md) (eat and eaten are the same lemma (not the same type))
+- 14 [[Token]] (16 with punctuation).
+- 12 [[Type]] (eat and eat are of one type, and the two I as well.)
+- 11 [[Lemma]] (eat and eaten are the same lemma (not the same type))

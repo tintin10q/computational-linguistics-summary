@@ -1,4 +1,4 @@
-# Corpuss
+# Corpus
 
 The main resource for data are corpora.
 

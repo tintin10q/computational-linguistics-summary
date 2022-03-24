@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "README.md",
+            "file": "Languages.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Languages.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "4a0bd48fa0336008",
   "lastOpenFiles": [
-    "README.md",
-    "Prediction.md",
     "Languages.md",
     "index.md",
-    "Data.md",
-    "Classification.md",
-    "Prediction/Viterbi Algorithm.md",
-    "Prediction/Smoothing.md",
+    "Prediction/markov assumption.md",
+    "Prediction/Markov models.md",
+    "Prediction/Overfitting.md",
     "Prediction/Prediction.md",
-    "Prediction/perplexity.md"
+    "Languages/Parts of Speech.md",
+    "Languages/Regular expression.md",
+    "Languages/regular languages.md",
+    "Data.md"
   ]
 }
