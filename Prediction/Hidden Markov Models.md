@@ -1,26 +1,26 @@
 # Hidden Markov Models 
-This is like a [markov model](Markov%20models.md) but we also care about hidden states. In PoS taggging we don't observe the states we want to predict as we do in [Language Modeling](Language%20Modeling.md). Basically the [PoS](../Languages/Parts%20of%20Speech.md) tags are hidden. We observe a sequence of words and want to find the best sequence of tags for that particular sequence of words out of all possible sequence of tags.
+This is like a [markov model](Markov%20models.md) but we also care about hidden states. In PoS tagging we don't observe the states we want to predict as we do in [Language Modeling](Language%20Modeling.md). Basically the [PoS](Parts%20of%20Speech.md) tags are hidden. We observe a sequence of words and want to find the best sequence of tags for that particular sequence of words out of all possible sequence of tags.
 
 A Hidden Markov Model (HMM) consists of the following components:
 - Q - A finite set of N states.
 - A - A state transition probability matrix.
-- $\pi$ - An initial probability distrobution.
+- $\pi$ - An initial probability distribution.
 - O - A sequence of T observations.
-- B - An overservation likelihood matrix. Probability for a specific observation. 
+- B - An observation likelihood matrix. Probability for a specific observation. 
 
-The last 2 of these are what is different from [Markov models](Markov%20models.md). But the difference is that we use Q, A and $\pi$ for the hidden states. So the states in Q are not visible to anymore. With O and B we encode what we know or what is visible. We do know that Q contains BoS and EoS.
+The last 2 of these are what is different from [Markov models](Markov%20models.md). But the difference is that we use Q, A and $\pi$ for the hidden states. So the states in Q are not visible to any more. With O and B we encode what we know or what is visible. We do know that Q contains BoS and EoS.
 
 ## Components
 
 ### Q
-Rather than consisting of words or engram, Q consits of PoS tags. So, Q contains the states of the HMM. This also includes BoS and EoS. 
+Rather than consisting of words or engram, Q consists of PoS tags. So, Q contains the states of the HMM. This also includes BoS and EoS. 
 
 ### A
 
-A is a |Q|-by-|Q| matrix, where each cell $A_{ij}$ inidicates the probability of moving from state $i \in Q$ to state $j \in Q$. This means that we need some corpus with annotated data where we can observe PoS tags.
+A is a |Q|-by-|Q| matrix, where each cell $A_{ij}$ indicates the probability of moving from state $i \in Q$ to state $j \in Q$. This means that we need some corpus with annotated data where we can observe PoS tags.
 
-We can do the estimation using maximum likelyhood estimages. The formula of that is: $$p(t_{i}, t_{i-n:i-1}) = \frac{c(t_{i-n:i-1}, t_{i})}{c(t_{i-n:i-1})}$$
-c is a count function. So you devide the cocurancy frequency of the current tags by the frequency of the preceding tags. That gives you the probabilaty the tag given the preceding tags. 
+We can do the estimation using maximum likelihood estimates. The formula of that is: $$p(t_{i}, t_{i-n:i-1}) = \frac{c(t_{i-n:i-1}, t_{i})}{c(t_{i-n:i-1})}$$
+c is a count function. So you divide the occupancy frequency of the current tags by the frequency of the preceding tags. That gives you the probability the tag given the preceding tags. 
 
 ### $\pi$
 Similarly to the [Markov Chain](Markov%20models.md) $\pi$ encodes the probability that each state $q\in Q$ follows the BoS symbol. $\pi$ can be fixed in advance if you want to put constraints on what can come at the start, or you can estimate it from a corpus. So instead of words is about tags. 
@@ -34,20 +34,20 @@ B is another matrix. It is of size |Q|-by-|O|, where each cell $b_{qo}$ indicate
 
 To compute B, we need to find out how often each word occurs tagged with a particular PoS tag in a corpus. Again this needs annotated data.
 
-So B encodes the probability that a certain word occurs since we observed a certain tag. Given that we observed a noun, how likely is it that this noun is exaclty dog for instance and not aardvark. 
+So B encodes the probability that a certain word occurs since we observed a certain tag. Given that we observed a noun, how likely is it that this noun is exactly dog for instance and not aardvark. 
 
 This is also calculated with ML: $$p(w_{i}|t_{i}) = \frac{c(t_{i},w_{i})}{c(t_{i})}$$
 
-This devides the number of times a specific word is tagged as a certain tag. 
+This divides the number of times a specific word is tagged as a certain tag. 
 
-So we want to know the likeliest tag for a word, but we compute the likeliest word after observing a tag. This is like [Bayes rule](../Classification/Native%20baiyes/Bayes%20rule.md). We aim for the posterior but compute the likelihood and the prior, and then estimate the posterior. 
+So we want to know the likeliest tag for a word, but we compute the likeliest word after observing a tag. This is like [Bayes rule](Bayes%20rule.md). We aim for the posterior but compute the likelihood and the prior, and then estimate the posterior. 
 
 
 ## Assumptions 
 Both of these assumptions simplify the problem to make it possible to compute. 
 
 ### Markov Assumption
-The probility of the next tag is only determined by the local history, not the whole sequence.
+The probability of the next tag is only determined by the local history, not the whole sequence.
 
 ### Output independence 
 The probability of a word only depends on the state that produced the corresponding tag, not on any other state or word. 

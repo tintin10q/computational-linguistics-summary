@@ -1,9 +1,10 @@
 # Context free grammars
+
 The context free grammars are grammars where you can form rules of the form:
 
 - N = (N $\cup$ $\sum$)*
 
-The left hand side can only be ONE non terminal. The right hand side can be any ordered combination of terminals and non termianls, of any length. 
+The left-hand side can only be ONE non-terminal. The right-hand side can be any ordered combination of terminals and non-terminals, of any length. 
 
 Context free grammars are much more expressive than [regular languages](regular%20languages.md).
 

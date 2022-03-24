@@ -4,48 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "5bdbc50d5c571c52",
+        "id": "41880457f25b3b20",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "index.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
-        "id": "7c773676b3e6f80a",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Data/index.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
-        "id": "b6ebfb647b8db9af",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Languages/Grammar.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
-        "id": "9dd78c65611d4d71",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Data/Corpus.md",
+            "file": "Other/Learning.md",
             "mode": "source",
             "source": false
           }
@@ -105,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Languages/Grammar.md",
+                "file": "Other/Learning.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,17 +86,17 @@
     "direction": "horizontal",
     "width": 303
   },
-  "active": "b6ebfb647b8db9af",
+  "active": "41880457f25b3b20",
   "lastOpenFiles": [
+    "Other/Learning.md",
     "Languages/Grammar.md",
-    "Data/Type.md",
-    "Data/index.md",
-    "Data/Corpus.md",
-    "index.md",
-    "Languages/finite state automata.md",
     "Languages/Edit distance.md",
-    "Languages/Context free grammars.md",
-    "Languages/Constituency.md",
-    "Languages/CKY.md"
+    "Languages/finite state automata.md",
+    "Data/Corpus.md",
+    "Data/Data.md",
+    "Data/data.md",
+    "Data/index.md",
+    "Data/Lemma.md",
+    "Data/Levels of analysis.md"
   ]
 }

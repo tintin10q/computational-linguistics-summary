@@ -10,10 +10,10 @@ There are 4 topics:
 
 There are also some notes that are not in a topic. These are:
 
-- [Goals](Other/Goals.md)
-- [Learning](Other/Learning.md)
-- [Things that he said come at the exam](Other/Things%20that%20he%20said%20come%20at%20the%20exam.md)
-- [Questions](Prediction/Questions.md)
+- [Goals](Goals.md)
+- [Learning](Learning.md)
+- [Things that he said come at the exam](Things%20that%20he%20said%20come%20at%20the%20exam.md)
+- [Questions](Other/Questions.md)
 
 ![network](network.webp)
 
@@ -31,6 +31,6 @@ here:
 - [Tikkie](https://tikkie.me/pay/tvc88f91200qmq9fujar)
 
 
-![Tikkie qr code valid till april 4](images/tikkies.webp)
+![Tikkie qr code valid till april 4](tikkies.webp)
 
 >Every model is wrong, but some models are usefull.

@@ -4,9 +4,9 @@ Natural languages are languages that are:
 - Conventional 
 - A set of related systems
 - There is redundancy 
-- Subjected to changed a lot
+- Subjected to change a lot
 - Context dependent. 
-- Ambigious
+- [Ambiguos](Languages/Ambiguity.md)
 
 It in't 
 - Formal logic
@@ -15,13 +15,15 @@ It in't
 
 ## Examples 
 
-Examples of natural langauges are:
+Examples of natural languages are:
 - English 
 - Dutch
 - Spanish 
-- Japaneese
-- Chineese
+- Japanese
+- Chinese
 - German 
+- Spanish
+- ....
 
 
 Natural languages often follow a [Zipfian Distribution](Zipfian%20Distribution.md).
