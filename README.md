@@ -31,6 +31,6 @@ here:
 - [Tikkie](https://tikkie.me/pay/tvc88f91200qmq9fujar)
 
 
-![Tikkie qr code valid till april 4](tikkies.webp)
+![Tikkie qr code valid till april 16](tikkies.webp)
 
 >Every model is wrong, but some models are usefull.
