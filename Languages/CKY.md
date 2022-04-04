@@ -1,10 +1,10 @@
 # CKY algoritm 
-The CKV algorithm is a dynamic programming solution to parsing [Context free grammars](Languages/Context%20free%20grammars.md). 
+The CKV algorithm is a dynamic programming solution to parsing [Context free grammars](Context%20free%20grammars.md). 
 
 ## Example
 
-### A grammer
-This grammar is in [Chomsky Normal Form](Languages/Chomsky%20Normal%20Form.md):
+### A grammar
+This grammar is in [Chomsky Normal Form](Chomsky%20Normal%20Form.md):
 
 - S -> AB | BC
 - A -> BA | a
@@ -33,7 +33,7 @@ def CKYparser(string: str, grammar: 'Grammar'):
 ```
 
 
-So we have a table with a row for each input string. So lets take input = abba
+So we have a table with a row for each input string. So let's take input = abba
 
 |     | a   | b   | b   | a   |
 | --- | --- | --- | --- | --- |
@@ -45,7 +45,7 @@ So we have a table with a row for each input string. So lets take input = abba
 
 
 What are the rules where a appears on the right side?
-This is A and C. So we fill these non terminals into the table.
+This is A and C. So we fill these non-terminals into the table.
 
 |     | a   | b   | b   | a   |
 | --- | --- | --- | --- | --- |
@@ -68,7 +68,7 @@ Now we do the same for b.
 
 Now you want to put in the cell between the cell with A, C and B the rules that contain combinations of those non-terminals on the right-hand side. The possible combinations are: AB and CB. The thing to the left has to come first. Now we basically try to find a constituent of a and b.
 
-The possiblities are S and C so lets fill it in.
+The possibilities are S and C so lets fill it in.
 
 |     | a   | b   | b   | a   |
 | --- | --- | --- | --- | --- |
@@ -78,7 +78,7 @@ The possiblities are S and C so lets fill it in.
 | x   | x   | x   | x   |     |
 | x   | x   | x   | x   | x   |
 
-Now the bottom of the next row is B again just like before. This is the only non terminal that can come from b. 
+Now the bottom of the next row is B again just like before. This is the only non-terminal that can come from b. 
 
 |     | a   | b   | b   | a   |
 | --- | --- | --- | --- | --- |
@@ -98,7 +98,7 @@ But now we have to fill in the things above the b in the row. To do this we only
 | x   | x   | x   | x   |     |
 | x   | x   | x   | x   | x   |
 
-If we do this we can repeat what we did before and look at sequences of non terminals in the grammar of BB. If we would find this nonterminal you would fill it in and move one cell up in the row. Do you feel the abstraction building? There is no BB so we put empty set $\emptyset$. 
+If we do this we can repeat what we did before and look at sequences of non-terminals in the grammar of BB. If we found this non-terminal you would fill it in and move one cell up in the row. Do you feel the abstraction building? There is no BB, so we put empty set $\emptyset$. 
 
 
 |     | a    | b    | b           | a   |
@@ -109,7 +109,7 @@ If we do this we can repeat what we did before and look at sequences of non term
 | x   | x    | x    | x           |     |
 | x   | x    | x    | x           | x   |
 
-Now we move up again. However, now we have to combine this cell with a lot of other cells because if you look from the right then you do include the whole collumn. Because basically the lowest cell in in the second b row is saying we can rewrite b to B. Then the one above that says can we rewrite BB? No. The one above that should look for SB or CB. Because you try to rewrite what came before. However, SB or CB do not exist in the grammar so it is empty set again. 
+Now we move up again. However, now we have to combine this cell with a lot of other cells because if you look from the right then you do include the whole column. Because basically the lowest cell in the second b row is saying we can rewrite b to B. Then the one above that says can we rewrite BB? No. The one above that should look for SB or CB. Because you try to rewrite what came before. However, SB or CB do not exist in the grammar, so it is empty set again. 
 
 |     | a    | b    | b           | a   |
 | --- | ---- | ---- | ----------- | --- |
@@ -129,7 +129,7 @@ Now we can basically fill in the table. The first is simple how can you write a.
 | x   | x    | x    | x           | A,C | 
 | x   | x    | x    | x           | x   |
 
-Then the cell above it looks for BA or BC. BA occures in A and BC occcures in S. So we write S and A. 
+Then the cell above it looks for BA or BC. BA occurs in A and BC occurs in S. So we write S and A. 
 
 |     | a    | b    | b           | a    |
 | --- | ---- | ---- | ----------- | ---- |
@@ -139,7 +139,7 @@ Then the cell above it looks for BA or BC. BA occures in A and BC occcures in S.
 | x   | x    | x    | x           | A,C  |
 | x   | x    | x    | x           | x    |
 
-For the next one we check  BS and BA. BA occures in A and BS does not occure.  So we put A. So we looked at marked cells.
+For the next one we check  BS and BA. BA occurs in A and BS does not occur.  So we put A. So we looked at marked cells.
 
 |     | a    | b    | b           | a    |
 | --- | ---- | ---- | ----------- | ---- |
@@ -151,7 +151,7 @@ For the next one we check  BS and BA. BA occures in A and BS does not occure.  S
 
 For the last one we have to check all the cells in the top row with A. 
 
-So we check for AA, CA, SA and CA. All these rules do not occure so its $\emptyset$
+So we check for AA, CA, SA and CA. All these rules do not occur so its $\emptyset$
 
 |     | a    | b    | b           | a    |
 | --- | ---- | ---- | ----------- | ---- |
@@ -166,4 +166,4 @@ We conclude that the word is not in the language.
 
 Ok so you basically want to look at all the cells left of a cell you are checking. 
 
-![Pasted image 20220314195726](images/Pasted%20image%2020220314195726.webp)
+![Pasted image 20220314195726](../images/Pasted%20image%2020220314195726.webp)

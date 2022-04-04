@@ -1,0 +1,27 @@
+{
+    "name": "Computational Linguistics Summary",
+    "short_name": "Computational Linguistics Summary",
+    "short_name": "CL Summary",
+   "display": "standalone",
+   "orientation": "any",
+   "scope": "/",
+   "start_url": "/",
+   "catogories":["education"],
+   "description":"The summary for the Computational Linguistics course of Tilburg University (midterm)",
+   "lang":"en-GB",
+    "icons": [
+        {
+            "src": "/images/icons/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/icons/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#25acff",
+    "background_color": "#25acff",
+    "display": "standalone"
+}

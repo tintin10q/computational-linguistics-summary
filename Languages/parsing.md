@@ -6,7 +6,7 @@ Parsing can be described by a problem statement.
 
 Given a grammar G and a string s. Does s belong to L(G). Or s∈L(G)
 
-L is a function that returns the [language](app://obsidian.md/language) from a [grammar](app://obsidian.md/grammar).
+L is a function that returns the [languages](Languages/Languages.md) from a [grammar](Grammar.md).
 
 If the parser thinks this is the case we also want a proof or evidence that this is the case. This usually takes the form of a [parse tree](parsetree.md). So this is a tree to go from the grammar to s!
 
