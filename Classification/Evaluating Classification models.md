@@ -60,7 +60,7 @@ F-Measure combines precision and recall into a new shiny formula. F-Measure is d
 
 This is the formula:
 
-$$F~Measure = \frac{(\beta^{2} + 1) \cdot Precision \cdot Recall}{\beta^{2}  \cdot Precision \cdot Recall}$$
+$$F~Measure = \frac{(\beta^{2} + 1) \cdot Precision \cdot Recall}{\beta^{2}  \cdot Precision + Recall}$$
 
 The idea of the $\beta$ is a weight that you can use to make either precision or recall more important. If you do $\beta \gt 1$ you make recall more important and $\beta \lt 1$ than you make precision more important.
 
