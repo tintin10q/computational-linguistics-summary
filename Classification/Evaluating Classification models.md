@@ -94,7 +94,7 @@ def recall(contingency_table, label):
     
     tp = result[index]
     
-    fn = sum(map(lambda x : x[[len(ct))](ct|True if i == index else False for i in range(len(ct|[len(ct|[len(ct|[len(ct))](ct))]])))]])), ct.T))
+    fn = sum(map(lambda x : x[[len(ct)]](ct|True if i == index else False for i in range(len(ct|[len(ct|[len(ct|[len(ct)](ct))])])), ct.T))
     
     return tp / (tp + fn)
     
@@ -111,7 +111,7 @@ def F_measure(contingency_table, label, Beta=1):
 When there are more than two classes, we compute the F-measure for all classes separately and then average them assigning equal importance. **This is useful when good performance is necessary in all the classes**, regardless of the frequency in which they appear. Because if you do it like this one class that has bad performance will decrease the averaged F1 score a lot. 
 
 ### Micro averaging
-With micro averaging you collect all the decisions for all the classes in a single [contingency table](contingency%20table.md) and then compute precision and recall from that table. This is usefull when good performance is more imporatnt for the most frequent classes. 
+With micro averaging you collect all the decisions for all the classes in a single [Contingency table](Contingency%20table.md) and then compute precision and recall from that table. This is usefull when good performance is more imporatnt for the most frequent classes. 
 
 ## Statisical test
 You can often not use statistical test like t-test because often classification samples are not normally distrobuted. 

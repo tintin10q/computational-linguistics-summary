@@ -1,0 +1,69 @@
+template:
+    iconUrl: /favicon.svg
+    theme: blue
+
+page:
+  siteTitle: Computational Linguistics Summary
+  description: The summary for the Computational Linguistics course of Tilburg University by Quinten.
+  headHtml: |
+    <script>
+      window.MathJax = {
+        startup: {
+          ready: () => {
+            MathJax.startup.defaultReady();
+          }
+        }
+      };
+    </script>
+    <script>
+    
+    let registerServiceWorker = async () => {
+          if ('serviceWorker' in navigator) 
+          {
+            try 
+            {
+              const registration = await navigator.serviceWorker.register('/sw.js', {scope: '/',});
+          if (registration.installing) 
+          {
+            console.log('Service worker installing');
+          } 
+          else if (registration.waiting) 
+          {
+            console.log('Service worker installed');
+          } 
+          else if (registration.active) 
+          {
+            console.log('Service worker active');
+          }
+        } 
+        catch (error) 
+        {
+          console.error(`Registration failed with ${error}`);
+        }
+      }
+    };
+    registerServiceWorker();
+    </script>
+    <script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-tomorrow.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/combine/npm/prismjs@1.23.0/prism.min.js,npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <meta property="og:image" itemprop="image" content="http://computational-linguistics-summary.xyz/images/icons/social.png">
+    <meta property="og:image:secure_url" itemprop="image" content="https://computational-linguistics-summary.xyz/images/icons/social.png">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="https://computational-linguistics-summary.xyz/network.webp">
+    <meta property="twitter:url" content="https://computational-linguistics-summary.xyz/">
+    <meta property="twitter:title" content="Computational Linguistics Summary">
+    <meta property="twitter:description" content="The summary for the Computational Linguistics course of Tilburg University by Quinten.">
+    <meta property="twitter:image" content="https://computational-linguistics-summary.xyz/images/icons/social.png">
+    <!-- PWA Meta tags -->
+    <link rel="manifest" href="/manifest.webmanifest"> 
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+    <link rel="manifest" href="/images/icons/site.webmanifest">
+    <link rel="mask-icon" href="/images/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/images/icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="msapplication-config" content="/images/icons/browserconfig.xml">
+    <meta name="theme-color" content="#25acff">
+    <meta property="og:updated_time" content="1648065256" />

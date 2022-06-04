@@ -1,7 +1,7 @@
 # Markov models 
 When you actually try to implement a language model you are implementing a Markov model or a Markov Chain.
 
-A Markov model is any model which makes use of the [markov assumption](markov%20assumption.md). A Markov model is defined by:
+A Markov model is any model which makes use of the [Markov assumption](Markov%20assumption.md). A Markov model is defined by:
 
 - A set of history states **Q** $\set{q_{1},q_{2}, q_{3}, ..., q_{n}}$ 
 - A set of predicted states **R** $\set{r_{1},r_{2}, r_{3}, ..., r_{m}}$ (What you try to predict)

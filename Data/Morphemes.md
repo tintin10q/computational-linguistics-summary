@@ -18,7 +18,7 @@ Stemming is when you remove all the affixes of a stem. It doesn't have to be the
 
 So stemming only removes affixes, lemmatization goes to the lemma. 
 
-Sometimes a word with affixes occurs seperatly in the dictionary. For instance the word "lemmatization". If you stem this you get lemma. If you lemmatize it you get "lemmatization" because lemmatization also occurs sepeartly in the dictionary (with the affixes). 
+Sometimes a word with affixes occurs separately in the dictionary. For instance the word "lemmatization". If you stem this you get lemma. If you lemmatize it you get "lemmatization" because lemmatization also occurs separately in the dictionary (with the affixes). 
 
 So sometimes stemming is more disruptive sometimes lemmatization is more disruptive it depends on the dictionary and the kind of affixes. 
 
@@ -27,7 +27,7 @@ So sometimes stemming is more disruptive sometimes lemmatization is more disrupt
 ## Inflectional
 The inflectional affixes don't create new words in the dictionary. This means that they are removed by lemmatization. They tend to encode number, tense, aspect, gender, case. Inflectional affixes are fully productive. This means that with any (regular) verb, noun etc you can add these to indicate the meaning. You can always add +ed to a verb to indicate the past. You can always indicate more than one by adding an -s. One human multiple humans. 
 
-So words of the same class can get the same inflectional affixes. These affixes are morphines. Irregular words can not. For instance one sheep and multiple sheep.
+So words of the same class can get the same inflectional affixes. These affixes are morphine's. Irregular words can not. For instance one sheep and multiple sheep.
 
 ## Derivational 
 The derivational affixes create new words in the dictionary. They do this by either changing the grammatical category of the word which changes the meaning of the word. Or by encoding things like negation, nominalization, reiteration ... which directly changes the meaning of the word.
@@ -46,7 +46,7 @@ The derivational affixes create new words in the dictionary. They do this by eit
 Sometimes you can also combine stems together to produce new meaning. For instance 
 - fire + fighter = firefighter
 - tele + vision = television
-- moter + bike = moterbike
+- motor + bike = motorbike
 
 These types of words are called compounds. In Dutch, it's called dubbel worden, double words. 
 

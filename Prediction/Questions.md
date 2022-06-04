@@ -2,15 +2,15 @@
 
 - Can you define symbols?
 
-- Can you explain what sparcity is with probability distributions? 
-	- This is that you have many things that don't occure often but because there are many things that don't ocure often together they still make up a large part of the probability points. This is baiscally what uncertancy is.  
+- Can you explain what sparsity is with probability distributions? 
+	- This is that you have many things that don't occur often but because there are many things that don't occur often together they still make up a large part of the probability points. This is basically what uncertainty is.  
 
 - Can you explain why there is more then one BoS and EoS?
 
 	- Can you explain again what you mean that you can only comparing the perplexity of different models if you use the same test set? 
 		- I think here the idea is that if you don't have the same test set that you get vastly different perplexity scores not matter what and it becomes meaningless. 
 		
-		  - Why UNK if you also have dictionaries or lexicons. Can you not just use those to have no need for unk or atleast reduce it. Because new words can appear that are not in the lexicon. 
+		  - Why UNK if you also have dictionaries or lexicons. Can you not just use those to have no need for unk or at least reduce it. Because new words can appear that are not in the lexicon. 
 		  - What did you mean by probability mass. 
 
 
@@ -23,6 +23,6 @@ You have one of something, and you can chop it up into infinite pieces, and you 
 
 If you put the same amount into every bin you have maximum entropy!
 
-# Sparcity 
-Sparcity is that you have a lot of events that have a low probability of occuring. 
+# Sparsity 
+Sparsity is that you have a lot of events that have a low probability of occurring. 
 

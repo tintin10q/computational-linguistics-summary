@@ -12,7 +12,7 @@ There are also some notes that are not in a topic. These are:
 
 - [Goals](Goals.md)
 - [Learning](Learning.md)
-- [Things that he said come at the exam](Things%20that%20he%20said%20come%20at%20the%20exam.md)
+- [Things that he said come at the midterm](Other/Things%20that%20he%20said%20come%20at%20the%20midterm.md)
 - [Questions](Other/Questions.md)
 
 ![network](network.webp)

@@ -1,0 +1,4 @@
+# Association measure
+When using [Co-occurrence](Co-occurrence.md) to create  a [Vector Space](Vector%20Space.md) from a corpus, you are just assigning the same value to each word which occurs in the [context](Context.md) along a target word. However, some surface forms in the context might provide more information than others. Basically, the raw frequency counts don't take into account the information provided by the context.  To overcome this, it is useful to apply an association measure. 
+
+The idea is to **warp the [Co-occurrence](Co-occurrence.md) patterns** to weigh the more informative contexts more and the useless ones less (or not at all). One way to compute these weights is with the [Point wise mutual information (PMI)](Point%20wise%20mutual%20information%20(PMI).md).

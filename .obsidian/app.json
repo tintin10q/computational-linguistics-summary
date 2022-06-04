@@ -2,6 +2,17 @@
   "vimMode": true,
   "alwaysUpdateLinks": true,
   "promptDelete": false,
-  "legacyEditor": true,
-  "livePreview": true
+  "legacyEditor": false,
+  "livePreview": true,
+  "spellcheck": true,
+  "spellcheckLanguages": [
+    "nl",
+    "en-GB"
+  ],
+  "useMarkdownLinks": true,
+  "newLinkFormat": "relative",
+  "spellcheckDictionary": [
+    "Word2vec",
+    "Word2Vec"
+  ]
 }

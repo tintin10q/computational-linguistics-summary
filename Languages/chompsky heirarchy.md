@@ -13,4 +13,4 @@ The Chomsky hierarchy species types of languages.
 	-	Equivalent to regular expressions 
 
 	
-Type 2 and 3 is treated in this course with [regular languages](regular%20languages.md) and [Regular expression](Regular%20expression.md) and [Context free grammars](Context%20free%20grammars.md).
+Type 2 and 3 is treated in this course with [Regular Languages](Regular%20Languages.md) and [Regular expression](Regular%20expression.md) and [Context free grammars](Context%20free%20grammars.md).

@@ -1,2 +1,2 @@
 # Token
-A token is every entry in a corpus. The idea is that nothing is the *same*. If you have the sentence "The boys like boys who like apples" then the word boys occures multiple times but we consider it a different token. 
+A token is every entry in a corpus. The idea is that nothing is the *same*. If you have the sentence "The boys like boys who like apples" then the word boys occurs multiple times but we consider it a different token. 

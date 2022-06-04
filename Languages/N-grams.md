@@ -11,7 +11,7 @@ A word N-Gram is a sequence of n words:
 
 
 ## Encoding position
-[Naive Bayes Classifier](../Classification/Native%20baiyes/Naive%20Bayes%20Classifier.md) is bad for making [language models](../Prediction/Language%20Modeling.md) because the bag of words assumption but the idea where it splits of the words to normalize the probability can also be used for making language models. 
+[Naïve Bayes Classifier](../Classification/Native%20baiyes/Naïve%20Bayes%20Classifier.md) is bad for making [language models](../Prediction/Language%20Modeling.md) because the bag of words assumption but the idea where it splits of the words to normalize the probability can also be used for making language models. 
 
 ## Predicting N-grams
 A great use case for N-grams is using them for language models. 
@@ -37,7 +37,7 @@ Because there are probably a lot more sequences of the length then the sequence 
 So every time you multiply the probability of the word by the probability of the sequence before it. This you repeat for the entire sequence. 
 
 ### Problems 
-Language is infinite which makes language models age, but it also means that you can come up with sequences that are not in the corpus. The higher the n of an n-gram the lower the chance that the n-gram appears at all in the corpus. Or the larger the n-gram, the higher the chance that we won't find it anywhere in a finite corpus. This is solved by assuming the [markov assumption](../Prediction/markov%20assumption.md).
+Language is infinite which makes language models age, but it also means that you can come up with sequences that are not in the corpus. The higher the n of an n-gram the lower the chance that the n-gram appears at all in the corpus. Or the larger the n-gram, the higher the chance that we won't find it anywhere in a finite corpus. This is solved by assuming the [Markov assumption](../Prediction/Markov%20assumption.md).
 
 ### Log space
 Whenever you deal with chained probabilities it is best to convert all probabilities to logs so that we can sum instead of multiplying and avoid having very little numbers. This is a risk because of underflow. (Computers can't deal well with very small numbers). Another benefit is that we can sum instead of having to multiply. 

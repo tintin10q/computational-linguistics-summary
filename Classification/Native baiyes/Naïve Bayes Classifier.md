@@ -1,29 +1,27 @@
-# Naive Bayes Classifier
+# Naïve Bayes Classifier
 Using Bayesian statistics to decide on a class. Given this what would the class be if we consider the chance for all classes. You take the percentage for that has the highest class. There are also 2 assumptions you have to make.
 
-This is the simplest linear generative probabilistic [clasifier](../Classification.md). Given a document d, it returns a probability of certainly so that is nice.
+This is the simplest linear generative probabilistic [classifier](../Classification.md). Given a document d, it returns a probability of certainly so that is nice.
 
 Given a document d, it returns the class c with the highest posterior probability given the document. Because the probability of a document is constant we can simply the Bayes rule to $$c = \text{argmax}_{c \in C}~p(c|d)$$
-For text the assumptions are bag of words and naive Bayes. 
+For text the assumptions are bag of words and naïve Bayes. 
 
 ## Bag of words 
 Bag of words assumption says that you deal with a bag of words instead of a text. A bag is a set where items can occur multiple times. A multi set. 
 
 ![Pasted image 20220215090517](../../images/Pasted%20image%2020220215090517.webp)
 
-## Naive Bayes assumption
+## Naïve Bayes assumption
 Here you assume that the tokens in the bag are all independent based on the class. So a class doesn't cause that words are in it. At least that is what we assume. Because this allows us to just multiply probabilities. 
 
-The second is commonly called the naive Bayes assumption: this is the conditional independence assumption that the probabilities P( fi |c)
+The second is commonly called the naïve Bayes assumption: this is the conditional independence assumption that the probabilities P( fi |c)
 
 ![Pasted image 20220215090607](../../images/Pasted%20image%2020220215090607.webp)
 
 If you don't assume this you  can't multiply them because you also need to multiply the probability of them both occurring at the same time. 
 
 ## Prior 
-Prior is what you thought beforehand of how likely the output class will be. It is like bias. It is like the naive classifier if you could not consider any data. So you would just simply say OK the language is Chinese because that is the most spoken.
-
-![Pasted image 20220215090454.png](Pasted%20image%2020220215090454.png)
+Prior is what you thought beforehand of how likely the output class will be. It is like bias. It is like the naïve classifier if you could not consider any data. So you would just simply say OK the language is Chinese because that is the most spoken.
 
 The prior probabilities for each class are approximated as $p(c) = \frac{N_{\text{classes}}}{N_{\text{documents}}}$ 
 
@@ -44,11 +42,11 @@ F is the entire set of features. Otherwise, the probabilities are wrong if you o
 If you don't have a word in the training set then you can't assign probabilities to it. So you basically just have to remove these words from the input.
 
 ## Stop Word  
-Some words occure super often and so are uninformative so you can also just filter them out. For instance "the" occures so often it really doesn't tell you much. But if you try to classify languages you wouldn't want to remove these. 
+Some words occur super often and so are uninformative so you can also just filter them out. For instance "the" occurs so often it really doesn't tell you much. But if you try to classify languages you wouldn't want to remove these. 
 
 # Example 
 
-Lets say you want to do sentement detection.
+Lets say you want to do sentiment detection.
 
 You have these sentences
 The movie was awful!  
@@ -137,5 +135,5 @@ argmax(p(neg|test), p(pos|test)) = 0.0297 = neg
 ```
 We assign the label neg to the test text.
 
-# Naieve Bayes for language models 
-Are Naive bayes a good fit for [language models](../../Prediction/Language%20Modeling.md)? No they are not. With langauge models we try to predict how fluent a sentence is. For this we exploit the previous sequence. Because of the bag of words assumption we throw all this information away. 
+# Naïeve Bayes for language models 
+Are Naïve Bayes a good fit for [language models](../../Prediction/Language%20Modeling.md)? No they are not. With language models we try to predict how fluent a sentence is. For this we exploit the previous sequence. Because of the bag of words assumption we throw all this information away. 

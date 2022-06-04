@@ -39,6 +39,10 @@ With extrinsic evaluation you evaluate how much impact a model has on a downstre
  
  A good language model will **fit the new data well**. This means it will usually predict the correct word type or assign a high probability to the sequences in the new data. This type of evaluation is called [perplexity](perplexity.md). 
  
- # Bidirectional models 
+ ### Bidirectional models 
  
  So far this described a model which looks at what came before so on the left. You can also look it what comes at the right. When you start in the middle of the text. 
+
+
+## Techniques 
+Techniques for language modelling discussed include [Naïve Bayes](../Classification/Native%20baiyes/Naïve%20Bayes%20Classifier.md) (doesn't really take preceding words into account), [Markov chain models](Markov%20models.md) (we do take preceding words into account with n-grams), [Probabilistic Context Free Grammar](../Languages/Probabilistic%20Context%20Free%20Grammar.md) (using production rules to expand non terminals to terminals to generate language) and [Feed forward neural networks (FFNN)](Feed%20forward%20neural%20networks%20(FFNN).md) and [Recurrent neural network (RNN)](Recurrent%20neural%20network%20(RNN).md) and [Transformers](Transformers.md). 

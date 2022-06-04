@@ -1,1 +1,10 @@
-{}
+{
+  "obsidian-autocomplete-plugin:autocomplete-scan-current-file-default": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "."
+    }
+  ]
+}

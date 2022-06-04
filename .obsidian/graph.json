@@ -36,7 +36,7 @@
       }
     },
     {
-      "query": "is",
+      "query": "Semantic",
       "color": {
         "a": 1,
         "rgb": 5431473
@@ -53,6 +53,6 @@
   "repelStrength": 9.43820224719101,
   "linkStrength": 0.52247191011236,
   "linkDistance": 144,
-  "scale": 0.8360386601669945,
-  "close": false
+  "scale": 0.8360386601669956,
+  "close": true
 }

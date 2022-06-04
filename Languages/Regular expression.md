@@ -1,6 +1,6 @@
 # Regular expression
 
-Regular expressions are a domain specific [language](Languages/Languages.md) for the concise description and parsing of [regular languages](regular%20languages.md). 
+Regular expressions are a domain specific [language](Languages/Languages.md) for the concise description and parsing of [Regular Languages](Regular%20Languages.md). 
 
 Regular languages officially start and end with /. So you have /regular expression/. Often you leave these / out.
 
@@ -26,7 +26,7 @@ Now you can have groups at any position. So if we want to pare: [god, bod] then 
 - A → oB
 - B → d
 
-There is special syntax for ranges /[a-z]od/ here we can parse any lowercase letter of the [alphabet](Languages/Alphabeth.md) followed by od. These ranges are defined by the [ASCII](https://en.wikipedia.org/wiki/ASCII) number of the symbol which happens to be convenient. Some common ranges:
+There is special syntax for ranges /[a-z]od/ here we can parse any lowercase letter of the [alphabet](Alphabet.md) followed by od. These ranges are defined by the [ASCII](https://en.wikipedia.org/wiki/ASCII) number of the symbol which happens to be convenient. Some common ranges:
 - [A-z] is all letters lowercase uppercase
 - [0-9] is all numbers 0 to 9 
 - [4-7] is all numbers 7 to  7. 

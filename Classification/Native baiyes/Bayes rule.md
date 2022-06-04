@@ -27,8 +27,8 @@ So when they tried to prove that the sun is the middle of the solar system the b
 ## Posterior p(c|d)
 This is how likely it is that you have an example of class c given the instance you are seeing. This is what we are after. You get this when running the formula. 
 
-# Naive Bayes
-Naive bayes than works by calculating like this:
+# Naïve Bayes
+Naïve Bayes than works by calculating like this:
 
 $$C = \text{argmax}_{c \in C} P(c) \prod_{f \in F} p(f|c)$$
 

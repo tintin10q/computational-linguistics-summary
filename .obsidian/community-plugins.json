@@ -3,8 +3,8 @@
   "cm-editor-syntax-highlight-obsidian",
   "quick-latex",
   "obsidian-icon-shortcodes",
-  "obsidian-languagetool-plugin",
   "obsidian-text-expander",
   "wikilinks-to-mdlinks-obsidian",
-  "obsidian-link-converter"
+  "obsidian-link-converter",
+  "obsidian-languagetool-plugin"
 ]

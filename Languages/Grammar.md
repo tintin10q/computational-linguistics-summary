@@ -9,7 +9,7 @@ Formally you have:
 - P - A finite set of production rules 
 - $S \in N$ A distinguished start non-terminal state from N. 
 
-The symbol from the [alphabets](Alphabeth.md) are also called **terminals**. $\epsilon$ is also a terminal. Remember epsilon is the empty input.
+The symbol from the [alphabets](Alphabet.md) are also called **terminals**. $\epsilon$ is also a terminal. Remember epsilon is the empty input.
 
 The grammar makes use of auxiliary symbol which is called **non-terminals**. These are not part of the alphabet and hence cannot be part of the final word/sentence. Thenon-terminalss are supposed to be replaced with terminals when your parsing. This is called a rewrite rule.Non-terminalss can be of two types. 
 
@@ -19,9 +19,9 @@ The grammar makes use of auxiliary symbol which is called **non-terminals**. The
 ![Pasted image 20220314185901](../images/Pasted%20image%2020220314185901.webp)
 
 
-Thegrammarr rules are kind of defined like inductive rules.
+The grammar rules are kind of defined like inductive rules.
 
-The idea is that youreplacee thenon-terminalss with a parse tree or an abstract syntax tree. This abstract syntax you can then evaluate. 
+The idea is that you replace the non-terminals with a parse tree or an abstract syntax tree. This abstract syntax you can then evaluate. 
 
 
 The start state is nice because if you can get from an input to the start state by following the rewrite rules then you know your input is in the language. The start state represents to most abstract place in your language. 
@@ -29,7 +29,7 @@ The start state is nice because if you can get from an input to the start state 
 We usually read the rules left to right, butt you can always go back if you want. 
 
 ## Writing down the rules
-There are differentt ways to write downs the rules. There are also different formats. Once such format is the  [Chomsky Normal Form](Chomsky%20Normal%20Form.md).
+There are different ways to write downs the rules. There are also different formats. Once such format is the  [Chomsky Normal Form](Chomsky%20Normal%20Form.md).
 
 Also remember that the rules in a grammar for a language HAS to be finite. Otherwise, you would also have to consider another rule. 
 
@@ -130,7 +130,7 @@ The reason we do a letter first is that this way the compiler does not get confu
 
 # Fragment of C #
 
-With this we can actually define the whole of C# woah.
+With this we can actually define programming languages grammar to.
 
 Var -> Identifier
 Op -> Sign 
@@ -142,11 +142,11 @@ Expr -> Integer
 	| Expr Op Expr
 
 
-# How in haskell?
+# How in Haskell?
 
 Represent the non terminals as data types. 
 
-The concrete syntax is the syntax like above the abstract is how you would define it in haskell with data types. 
+The concrete syntax is the syntax like above the abstract is how you would define it in Haskell with data types. 
 
 ![Pasted image 20211127142739](../images/Pasted%20image%2020211127142739.webp)
 

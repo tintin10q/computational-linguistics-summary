@@ -8,7 +8,7 @@ A corpus is a **computer readable** collection of linguistic productions. Text, 
 
 
 ## Variants of Corpus 
-So structured data. Copora are made by different people this also makes them vary a lot. 
+So structured data. Corpora are made by different people this also makes them vary a lot. 
 
 - Who produced it?
 	-	Age, gender, education, ethnicity....

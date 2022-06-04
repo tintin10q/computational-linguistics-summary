@@ -12,7 +12,7 @@ We can express this in a tuple of 5 things.
 
 (X, Q, d, S, F)
 
-- X is an input [alphabeth](Languages/Alphabeth.md) 
+- X is an input [alphabeth](Alphabet.md) 
 - Q is a set of states
 - d is a transition function of type Q -> X -> Q
 - a start state S $\in$ Q

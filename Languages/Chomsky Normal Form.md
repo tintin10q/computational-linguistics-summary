@@ -13,4 +13,4 @@ These are the bullet points from the slide. A grammar is in CNF if:
 - There are no rules generating the empty string
 - Rules have either terminals or sequence of two non-terminals as the right-hand side.
 
-You can rewrite any [Context free grammars](Context%20free%20grammars.md) to Chomsky normal form. This means you can also rewrite any [regular grammar](regular%20languages.md) to Chomsky normal form.
+You can rewrite any [Context free grammars](Context%20free%20grammars.md) to Chomsky normal form. This means you can also rewrite any [regular grammar](Regular%20Languages.md) to Chomsky normal form.

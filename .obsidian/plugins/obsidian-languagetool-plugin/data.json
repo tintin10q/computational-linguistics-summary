@@ -1,8 +1,8 @@
 {
-  "serverUrl": "http://localhost:8081",
-  "urlMode": "custom",
+  "serverUrl": "https://api.languagetool.org",
+  "urlMode": "standard",
   "glassBg": true,
-  "shouldAutoCheck": true,
-  "pickyMode": false,
+  "shouldAutoCheck": false,
+  "pickyMode": true,
   "staticLanguage": "en"
 }

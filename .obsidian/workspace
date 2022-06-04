@@ -1,0 +1,103 @@
+{
+  "main": {
+    "id": "c4b3ee7d2564f675",
+    "type": "split",
+    "children": [
+      {
+        "id": "2557ec7caa74a99d",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Prediction/Transformers.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "83ffd34007a6d14a",
+    "type": "split",
+    "children": [
+      {
+        "id": "fb027601fa7f806a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0bb314c1b2f2ccce",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "00e4ba83d8ab1a7e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "0add5649e00f5d26",
+    "type": "split",
+    "children": [
+      {
+        "id": "1f7ffd4d2970bf59",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "193d20acca098262",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Prediction/Transformers.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "2557ec7caa74a99d",
+  "lastOpenFiles": [
+    "Prediction/Transformers.md",
+    "Prediction/Recurrent neural network (RNN).md",
+    "Data/Words.md",
+    "Prediction/Vanishing gradient problem.md",
+    "Prediction/Recurrence.md",
+    "images/RNN2.png",
+    "images/RNN.png",
+    "images/tikkies.webp",
+    "Classification/index.md",
+    "Classification/Evaluating Classification models.md"
+  ]
+}

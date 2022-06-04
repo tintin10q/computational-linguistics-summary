@@ -17,3 +17,10 @@ This way you can keep abstracting parts of language.
 
 ## Coordination
 Constituencies can be put behind each other without problems. You could have a grammar rule PP = POSTCODEPOSTCODE, and it would be fine. This is often used as a test of constituency. If two phrases can be coordinated without violating any rules, then they are constituents
+
+
+### Evaluation
+
+Recall (correct in hypothesis over correct in gold standard), precision (correct in hypothesis over hypothesized) and f1 is used.
+
+A constituent is labelled as correct if there is a constituent in the gold standard with the exact same starting point, end point and non terminal symbol.  
