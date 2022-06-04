@@ -52,6 +52,9 @@ But how do we feed the context to the model? Some contexts might be different si
 So if you have *I like banana*, and you want to predict *like* you get *I ___ banana* which gives the context bag {"I",  "banana"}. Then you average the vectors of I and banana to get the input vector like, and then you train the model to predict like.
 
 ## Comparing CBoW and SGNS
+
+![CBOW and Skipgram](../images/Pasted%20image%2020220605011501.png)
+
 ### Rare words
 
 **CBoW** maximizes the probability of the target word given the context. Hence, given the context *yesterday was a really ___ day*, CBoW will get rewarded more often for predicting *beautiful* or *nice*, then for saying delightful. As delightful appears less in [language](../Languages/Languages.md) than *nice* and *beautiful*. 
@@ -107,3 +110,4 @@ What can you do about this? This is still an active research field. There seem t
 
 ## Summary
 We use neural networks to learn better word vectors by optimizing hidden layers to yield better prediction in a binary classification task. Given a source and a target word, predict whether the target is a co-occurring word or a foil. After learning, the hidden layer for each word encodes its semantic representation as learned from text. You have to be careful with biases.
+

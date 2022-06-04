@@ -46,3 +46,6 @@ With extrinsic evaluation you evaluate how much impact a model has on a downstre
 
 ## Techniques 
 Techniques for language modelling discussed include [Naïve Bayes](../Classification/Native%20baiyes/Naïve%20Bayes%20Classifier.md) (doesn't really take preceding words into account), [Markov chain models](Markov%20models.md) (we do take preceding words into account with n-grams), [Probabilistic Context Free Grammar](../Languages/Probabilistic%20Context%20Free%20Grammar.md) (using production rules to expand non terminals to terminals to generate language) and [Feed forward neural networks (FFNN)](Feed%20forward%20neural%20networks%20(FFNN).md) and [Recurrent neural network (RNN)](Recurrent%20neural%20network%20(RNN).md) and [Transformers](Transformers.md). 
+
+
+![Language modeling progression](../images/Pasted%20image%2020220605011349.png)

@@ -50,18 +50,20 @@ So this means there are a lot of weights to learn. However it is more efficient 
 These matrixes are called the attention I think. 
 
 ## Multi head attention 
-You can vary the score function. Different ways of scoring might make more sense for different tasks depending on whether you focus on syntax, semantics, discourse. For all these tasks you can compute different matrixes or attentions for each word when they play a certain role. You can even have attentions for when you want an attention for when both syntax and discourse are important. So each type of relation has its own weights which is its own attention. With this the model size increases but it is not so bad because you can [learn](../Other/Learning.md) the weights in parallel. 
+You can vary the score function. Different ways of scoring might make more sense for different tasks depending on whether you focus on syntax, semantics, discourse. For all these tasks, you can compute different matrixes or attentions for each word when they play a certain role. You can even have attentions for when you want an attention for when both syntax and discourse are important. So each type of relation has its own weights, which is its own attention. With this the model size increases, but it is not so bad because you can [learn](../Other/Learning.md) the weights in parallel. 
 
-Each set of self-attention layers is called a *head*. So it is called multi head attention because you use multiple types of attention together which is multiple heads.
+Each set of self-attention layers is called a *head*. So it is called multi head attention because you use multiple types of attention together, which is multiple heads.
 
 ## Losing word order
 So for some reason using attention is good... but it is not clear how or why. 
 
-Anyways getting rid of recurrence seems to solve the vanishing gradients problem by training a matrix for each value in a sequence for different goals. Then if you want to do something with the value you use the attention matrix to get an embedding which is good for that goal? 
+Anyways getting rid of recurrence seems to solve the vanishing gradients' problem by training a matrix for each value in a sequence for different goals. Then if you want to do something with the value, you use the attention matrix to get an embedding which is good for that goal? 
 
-However, by removing recurrence you lose the positional information. The transformer architecture doesn't take the order into account anymore. So even though a transformer can deal with sequences of any length which means it doesn't need the [Markov assumption](Markov%20assumption.md). What the model gets is more a bag of words then a sequence. This means that if you do the above example of He is biting the ?? and instead do Is he biting the ?? you would still get apple both times. The exact same output. So by dropping recurrence word order information is lost. For this example it doesn't matter because apple is still right but if you would give a random order of the sentence you would still get apple. This is a problem because the word order of most languages is quite predictable or quite constraint.
+However, by removing recurrence, you lose the positional information. The transformer architecture doesn't take the order into account anymore. So even though a transformer can deal with sequences of any length, which means it doesn't need the [Markov assumption](Markov%20assumption.md). What the model gets is more a bag of words than a sequence. This means that if you do the above example of He is biting the ?? And instead do Is he biting the ?? You would still get apple both times. The exact same output. So by dropping recurrence, word order information is lost. For this example it doesn't matter because apple is still right, but if you would give a random order of the sentence you would still get apple. This is a problem because the word order of most languages is quite predictable or quite constraint.
 
-So you get position information back?  You just encode the position of the item in the sequence as a continues value that preserves order the information. So basically you **add a feature to the input which encodes the position**. Often this is done with the sine or cosine functions. 
+So you get position information back?  You just encode the position of the item in the sequence as a continues value that preserves order of the information. So basically you **add a feature to the input which encodes the position**. Often this is done with the sine or cosine functions. 
+
+![Transformer slide from the guest lecture](../images/Pasted%20image%2020220605011623.png)
 
 ## Applications 
 Using the architecture outlined above the most powerfull NLP models in the world have been created. Some of the most popular ones are:
@@ -69,7 +71,8 @@ Using the architecture outlined above the most powerfull NLP models in the world
 	- and variants variants like RoBERTam XLNet (bigger) and DistilBERT (smaller)
 - GPT (Generative Pre-trained Transformer) by OpenAI (microsoft) 
 	- GTP-1 to GTP-3 
-	- These are the most popular in the world right now
+	- These are the most popular in the world right now.
+
 
 # Philosophical questions 
 These models caused a transformer revolution because they perform so well. This sparks debates about what these models can and can't do, and how close they are to achieve human-like linguistic abilities and even general Artificial Intelligence. 
@@ -82,4 +85,10 @@ Open questions:
 
 
 ## The paper
-BERT especially has been studied a lot and this was covered in the last lecture. The study of the BERT model is informally refered to as BERTOLOGY.
+BERT especially has been studied a lot and this was covered in the last lecture. The study of the BERT model is informally referred to as BERTOLOGY. This lecture consisted of the lecturer asking questions about the paper which you were supposed to answer in groups. The questions and answers are below.
+
+Question 1: What is the advantage of the BERT model:
+- More paralizable 
+- No vanishing gradient problem. 
+
+...

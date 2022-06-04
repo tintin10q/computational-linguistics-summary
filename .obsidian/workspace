@@ -90,14 +90,14 @@
   "active": "2557ec7caa74a99d",
   "lastOpenFiles": [
     "Prediction/Transformers.md",
-    "Prediction/Recurrent neural network (RNN).md",
-    "Data/Words.md",
-    "Prediction/Vanishing gradient problem.md",
-    "Prediction/Recurrence.md",
-    "images/RNN2.png",
-    "images/RNN.png",
-    "images/tikkies.webp",
-    "Classification/index.md",
-    "Classification/Evaluating Classification models.md"
+    "Prediction/Markov models.md",
+    "Prediction/Questions.md",
+    "Semantic-Similarity/Association measure.md",
+    "Semantic-Similarity/Co-occurrence.md",
+    "Semantic-Similarity/Connotations.md",
+    "Semantic-Similarity.md",
+    "images/Pasted image 20220605011315.png",
+    "Prediction/Interpretability.md",
+    "Semantic-Similarity/Word2Vec.md"
   ]
 }
