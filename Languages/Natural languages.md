@@ -1,29 +1,22 @@
 # Natural languages 
 
-Natural languages are languages that are:
+Natural languages are [languages](Languages.md) that are:
+
 - Conventional 
 - A set of related systems
 - There is redundancy 
-- Subjected to change a lot
+- Subjected to change over time
 - Context dependent. 
-- [Ambiguos](Ambiguity.md)
+- [Ambiguous](Ambiguity.md)
+- Follow a [Zipfian Distribution](Zipfian%20Distribution.md) with their [words](../Data/Words.md).
 
-It in't 
+Natural languages aren't:
 - Formal logic
 - A Programming language
 - A Machine language 
+- Mostly static
+- [unambiguous](Ambiguity.md)
 
 ## Examples 
 
-Examples of natural languages are:
-- English 
-- Dutch
-- Spanish 
-- Japanese
-- Chinese
-- German 
-- Spanish
-- ....
-
-
-Natural languages often follow a [Zipfian Distribution](Zipfian%20Distribution.md).
+Examples of natural languages are: English – Dutch – Spanish - Japanese – Chinese – German – Spanish etc.

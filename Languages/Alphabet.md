@@ -15,9 +15,9 @@ Some examples:
 - {if, else, raise, for, while, return, try} $\cup$ ASCII set 
 
 ## Examples
-Given that the alphabet is almost always finite we can consider sequences of elements from the alphabet.  
+Given that the alphabet is almost always finite, we can consider sequences of elements from the alphabet.  
 
-For instance if the alphabets is {a, b, c} you can have sequences like this:
+For instance, if the alphabets is {a, b, c} you can have sequences like this:
 - a
 - b
 - c 

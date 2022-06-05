@@ -1,6 +1,6 @@
 # Regular expression
 
-Regular expressions are a domain specific [language](Languages/Languages.md) for the concise description and parsing of [Regular Languages](Regular%20Languages.md). 
+Regular expressions are a domain specific [language](Languages/Languages.md) for the concise description and [parsing](Parsing.md) of [regular Languages](Regular%20Languages.md). 
 
 Regular languages officially start and end with /. So you have /regular expression/. Often you leave these / out.
 

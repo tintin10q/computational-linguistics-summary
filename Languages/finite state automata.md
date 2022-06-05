@@ -51,7 +51,7 @@ Another way to do this is that you add a transition state that always goes. So t
 
 NFA are closed under:
 - union
-- concatentation
+- concatenation
 - intersection
 - star closure
 - complement
@@ -59,4 +59,4 @@ NFA are closed under:
 Being closed under an operation means that if we take languages defined by NFA we can build another NFA which recognizes the language defined by applying the operation.
 
 # Lookahead 
-Sometimes you have finiate state machines that only go forward. In this case you need to have lookahead to decide what you have to choose. This slows everything down. But you can paralize this. But really this is more of a problem with pushdown automata. You can always define a finite state machine that does not need lookahead. Calculating lookahead is not really that simple. 
+Sometimes you have finite state machines that only go forward. In this case you need to have lookahead to decide what you have to choose. This slows everything down. But you can paralyze this. But really this is more of a problem with pushdown automata. You can always define a finite state machine that does not need lookahead. Calculating lookahead is not really that simple. 

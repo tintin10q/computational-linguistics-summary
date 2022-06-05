@@ -94,4 +94,4 @@ Question 1: What is the advantage of the BERT model:
 - More paralizable 
 - No vanishing gradient problem. 
 
-...
+

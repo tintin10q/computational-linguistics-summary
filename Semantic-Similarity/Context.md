@@ -8,3 +8,4 @@ This is very much the same as the [Lesk similarity](../Data/Thesaurus.md). There
 This approximates meaning. Basically the computer can never grasp the meaning of a word, but it can know if two words are likely to mean the same / are [synonyms](../Languages/Synonyms.md) because the vectors are close. 
 
 Contexts can be any size you want. You can take an entire document as a context or for instance a sentence. 
+
