@@ -1,7 +1,7 @@
 # Word2Vec
 The Word2Vec model is a popular way to use [neural networks](../Prediction/Feed%20forward%20neural%20networks%20(FFNN).md) to create [word Embeddings](Embeddings.md). Using neural networks, you can immediately get dense vectors instead of the space vectors you get with [counting based methods](Co-occurrence.md). But this is true for all neural network. 
 
-Word2Vec comes has **two possible architectures**. One of them is called skip gram with negative sampling (SKNS) this tries to predict the words in the context from the target word. The other one is continues bag of words (CBoW) which tries to predict the target word from the context. With both methods we don't care about the actual predictions but rather the hidden layers which are created. These are selected as the embeddings. This is called representational learning. Let's now go in more detial below. 
+Word2Vec comes has **two possible architectures**. One of them is called skip gram with negative sampling (SKNS) this tries to predict the words in the context from the target word. The other one is continues bag of words (CBoW) which tries to predict the target word from the context. With both methods we don't care about the actual predictions but rather the hidden layers which are created. These are selected as the embeddings. This is called representational learning. Let's now go in more detail below. 
 
 ![CVoW vs SGNS](../images/Pasted%20image%2020220604014153.png)
 

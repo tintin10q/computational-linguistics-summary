@@ -8,7 +8,7 @@ The chain of recurrence allows avoiding the [Markov assumption](Prediction/Marko
 
 This is great because then you can also use different lengths of input once you have a model. 
 
-You don't have to do smoothing with RNN because you can represent the input words to an RNN as [embeddings](Semantic-Similarity/Embeddings.md) which project words into a [continues space](Semantic-Similarity/Vector%20Space.md) where we can leverage [similarity](Semantic-Similarity/Similarity.md) relations to guess how our new ngram should behave in case you did not see it yet. Also, because you input one token at the time, the chance of finding words you have not seen yet is smaller. So is it not RNN themselves which avoid the smoothing, but the combination of RNN and embeddings. 
+You don't have to do smoothing with RNN because you can represent the input words to an RNN as [embeddings](Semantic-Similarity/Embeddings.md) which project words into a [continues space](Semantic-Similarity/Vector%20Space.md) where we can leverage [similarity](Semantic-Similarity/Similarity.md) relations to guess how our new n-gram should behave in case you did not see it yet. Also, because you input one token at the time, the chance of finding words you have not seen yet is smaller. So is it not RNN themselves which avoid the smoothing, but the combination of RNN and embeddings. 
 
 ## A new set of weights 
 To make recurrent neural networks a new type of weights is needed. A RNN normally consists out of 3 sets of weights. 

@@ -41,7 +41,7 @@ So we have a table with a row for each input string. So let's take input = abba
 | X   | X   |     |     |     |
 | X   | X   | X   |     |     |
 | X   | X   | X   | X   |     |
-| X   | X   | X   | X   | X   | 
+| X   | X   | X   | X   | X   |
 
 
 What are the rules where a appears on the right side?

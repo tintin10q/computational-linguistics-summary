@@ -90,14 +90,14 @@
   "active": "2557ec7caa74a99d",
   "lastOpenFiles": [
     "README.md",
-    "network.webp",
-    "Semantic-Similarity.md",
-    "Prediction.md",
-    "Languages.md",
     "index.md",
-    "Data.md",
-    "Classification.md",
-    "Data/data.md",
-    "Languages/Alphabet.md"
+    "Languages/CKY.md",
+    "Languages/Parsing.md",
+    "Languages/Languages.md",
+    "Languages/Constituency.md",
+    "Prediction/Recurrent neural network (RNN).md",
+    "Prediction/Smoothing.md",
+    "Prediction/Prediction.md",
+    "Prediction/Perplexity.md"
   ]
 }

@@ -1,5 +1,5 @@
 # Topics 
-Hi, this is the summary for the Computational Linguistics (800962-B-6) course from Tilburg University created by Quinten Cabo. 
+Hi, this is the summary for the Computational Linguistics  [(800962-B-6)](https://uvt.osiris-student.nl/#/onderwijscatalogus/extern/examenprogramma/16322/8B218-2021?taal=en) course from Tilburg University created by Quinten Cabo. 
 
 There are 5 topics:
 

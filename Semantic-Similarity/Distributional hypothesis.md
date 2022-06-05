@@ -4,7 +4,9 @@ The **distributional hypothesis** says that [words](../Data/Words.md) which are 
 
 For instance, *eye doctor* and *oculist* are a [synonym](Synonyms.md). However, a computer doesn't know this without looking at for instance a [thesaurus](../Data/Thesaurus.md). With the distributional hypothesis, a computer can also [learn](../Other/Learning.md) which words are similar semantically by looking if they appear in the same places and context in sentences. 
 
-So the distributional hypothesis says that two words are more similar when the overlap of their contexts is large. 
+So the distributional hypothesis says that two words are more similar when the overlap of their contexts is large.
+
+Models which use the distributional hypothesis are called distributed semantic models (DSM).
 
 > **You shall know a word by the company it keeps**
 > J.R. Firth (1957)
@@ -43,3 +45,4 @@ Ultimately this leads to lower [similarity](Similarity.md) scores because the pa
 So these models don't deal well with [Ambiguity](../Languages/Ambiguity.md). Or maybe they deal too well with it? 
 
 [Transformers](../Prediction/Transformers.md) are able to deal with this well. The idea is to compute the embeddings on the fly. Instead of all beforehand.   
+
