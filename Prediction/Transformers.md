@@ -65,6 +65,9 @@ So you get position information back?  You just encode the position of the item 
 
 ![Transformer slide from the guest lecture](../images/Pasted%20image%2020220605011623.png)
 
+## Other explanation 
+If you (like me) are still a bit confused about transformers then read [https://jalammar.github.io/illustrated-transformer/](https://jalammar.github.io/illustrated-transformer/) which has a good explination with also more pictures. 
+
 ## Applications 
 Using the architecture outlined above the most powerfull NLP models in the world have been created. Some of the most popular ones are:
 - BERT (Bidirectional Encoder Representations from Transformers) by Google
