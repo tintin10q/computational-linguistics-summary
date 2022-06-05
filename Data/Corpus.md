@@ -1,14 +1,9 @@
 # Corpus
 
-The main resource for data are corpora.
-
-You have one corpus. And there are multiple corpora. 
-
-A corpus is a **computer readable** collection of linguistic productions. Text, speech, gestures.
-
+The main resource for data are corpora.  A corpus is a **computer readable** collection of linguistic productions. Text, speech, gestures. You have **one corpus** and there are **multiple corpora**.
 
 ## Variants of Corpus 
-So structured data. Corpora are made by different people this also makes them vary a lot. 
+So structured data. Corpora are made by different people, this also makes them vary a lot. 
 
 - Who produced it?
 	-	Age, gender, education, ethnicity....
@@ -22,7 +17,7 @@ So structured data. Corpora are made by different people this also makes them va
 These questions make corpora vary.
 
 ## Choosing a corpus based on this is important.
-Sentences in languages are mostly infinite. This is why choosing a corpus that is representative of the phenomenon you want to model is very important. Your model will only be as good as the data you base it on. 
+Sentences in languages are mostly infinite. This is why selecting a corpus that is **representative** of the phenomenon you want to model is very important. Your model will only be as good as the data you base it on. 
 
 ## Properties of a corpus
 - Crawled/manually curated 
@@ -35,4 +30,4 @@ Sentences in languages are mostly infinite. This is why choosing a corpus that i
 - Written/spoken/mixed/video (the modal)
 - Single language/multi-language/parallel 
 	- Parallel is when the different languages talk about the same things. 
-...
+- ...

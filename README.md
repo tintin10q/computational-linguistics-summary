@@ -33,4 +33,4 @@ here:
 
 ![Tikkie qr code valid till around 18 june](tikki.webp)
 
->Every model is wrong, but some models are usefull.
+>Every model is wrong, but some models are useful.

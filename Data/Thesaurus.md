@@ -41,7 +41,7 @@ So lets bird has information content of 0.5 and mammal has the information conte
 
 Now let's say the information content of vehicle is 0.3 and entity is 0.01 and living is 0.09. This makes the Resnic similarity between car and plant $0.3 + 0.01 + 0.09 = 0.4$. 
 
-So, according to Resnic, whale and finch are more than twice as similar as plant and car. If you had just used path length then they would have been the same lenght. 
+So, according to Resnic, whale and finch are more than twice as similar as plant and car. If you had just used path length, then they would have been the same lenght. 
 
 ## Lesk similarity
 This type of similarity looks at the lexical overlap of the glosses of words. Two words are more similar the higher the lexical overlap between the glosses.

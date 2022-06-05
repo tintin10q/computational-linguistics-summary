@@ -1,5 +1,5 @@
 # Contingency table 
-A contingency table shows all the classifications that have been done with the real value. In a contingency table you can see exactly how things were wrongly classified as what. 
+A contingency table shows all the classifications that have been done with the real value. In a contingency table, you can see exactly how things were wrongly classified as what. 
 
 # Example
 Here is an example table in a result when classifying languages.

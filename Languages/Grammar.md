@@ -1,17 +1,17 @@
-# Grammers 
-A grammar is a language for defining [languages](../Languages.md).  If you write rules for a language then these rules are also called the grammar. The individual rules you write are called a production. Grammars define the structure of the [sentences](../Data/Sentences.md) in the language.
+# Grammars 
+A grammar is a language for defining [languages](../Languages.md).  If you write rules for a language, then these rules are also called the grammar. The individual rules you write are called a production. Grammars define the structure of the [sentences](../Data/Sentences.md) in the language.
 
-A grammar consists of multiple productions. Productions can be seen as rewrite rules. If the left side matches you can replace it with the other side. Also, if you already have something that is part of the language you can make more things in the language.
+A grammar consists of multiple productions. Productions can be seen as rewrite rules. If the left side matches, you can replace it with the other side. Also, if you already have something that is part of the language, you can make more things in the language.
 
 Formally you have:
 - N - A finite set of non-terminals (states)
-- $\sum\limits$ - A finite set terminals, disjoint from N 
+- $\sum\limits$ - A finite set of terminals, disjoint from N 
 - P - A finite set of production rules 
 - $S \in N$ A distinguished start non-terminal state from N. 
 
-The symbol from the [alphabets](Alphabet.md) are also called **terminals**. $\epsilon$ is also a terminal. Remember epsilon is the empty input.
+The symbol from the [alphabets](Alphabet.md) are also called **terminals**. $\epsilon$ is also a terminal. Remember, epsilon is the empty input.
 
-The grammar makes use of auxiliary symbol which is called **non-terminals**. These are not part of the alphabet and hence cannot be part of the final word/sentence. Thenon-terminalss are supposed to be replaced with terminals when your parsing. This is called a rewrite rule.Non-terminalss can be of two types. 
+The grammar makes use of auxiliary symbol which is called **non-terminals**. These are not part of the alphabet and hence cannot be part of the final word/sentence. The non-terminals are supposed to be replaced with terminals when you're parsing. This is called a rewrite rule. Non-terminals can be of two types. 
 
 - Pre-terminals like PrN and V are [Parts of Speech](Parts%20of%20Speech.md). Or atomic non-terminals. The production rules indicate which sequences they can generate.
 - [Constituents](Constituency.md) (NP and VP) are abstract units which absolve complex syntactic functions. 
@@ -24,12 +24,12 @@ The grammar rules are kind of defined like inductive rules.
 The idea is that you replace the non-terminals with a parse tree or an abstract syntax tree. This abstract syntax you can then evaluate. 
 
 
-The start state is nice because if you can get from an input to the start state by following the rewrite rules then you know your input is in the language. The start state represents to most abstract place in your language. 
+The start state is nice because if you can get from an input to the start state by following the rewrite rules, then you know your input is in the language. The start state represents to most abstract place in your language. 
 
 We usually read the rules left to right, butt you can always go back if you want. 
 
 ## Writing down the rules
-There are different ways to write downs the rules. There are also different formats. Once such format is the  [Chomsky Normal Form](Chomsky%20Normal%20Form.md).
+There are different ways to write down the rules. There are also different formats. Once such format is the [Chomsky Normal Form](Chomsky%20Normal%20Form.md).
 
 Also remember that the rules in a grammar for a language HAS to be finite. Otherwise, you would also have to consider another rule. 
 
