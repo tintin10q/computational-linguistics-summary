@@ -1,7 +1,7 @@
 # Topics 
-Hi, this is the summary for computational linguistics course from Tilburg University (for now up till the midterm) created by Quinten Cabo. 
+Hi, this is the summary for the Computational Linguistics (800962-B-6) course from Tilburg University created by Quinten Cabo. 
 
-There are 4 topics:
+There are 5 topics:
 
 - [Data](Data.md)
 - [Classification](Classification.md)
