@@ -88,10 +88,12 @@ Open questions:
 
 
 ## The paper
-BERT especially has been studied a lot and this was covered in the last lecture. The study of the BERT model is informally referred to as BERTOLOGY. This lecture consisted of the lecturer asking questions about the paper which you were supposed to answer in groups. The questions and answers are below.
+BERT especially has been studied a lot and this was covered in the a lecture. The study of the BERT model is informally referred to as BERTOLOGY. This lecture consisted of the lecturer asking questions about the paper which you were supposed to answer in groups. For instance a question like this: 
 
 Question 1: What is the advantage of the BERT model:
-- More paralizable 
+- More parallelable 
 - No vanishing gradient problem. 
+
+Marieke was kind enough to send me the questions and answers to these questions, and they can be found in the [Bert Lecture file](../Other/Bert%20Lecture.md) (Other/Bert Lecture.md)
 
 
