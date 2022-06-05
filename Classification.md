@@ -6,5 +6,6 @@ This is the **classification** topic. The notes in this topic are:
 - [Naïve Bayes Classifier](Classification/Native%20baiyes/Naïve%20Bayes%20Classifier.md)
 - [Contingency table](Classification/Contingency%20table.md)
 - [Evaluating Classification models](Classification/Evaluating%20Classification%20models.md)
+- [Logistic Regression](Classification/Logistic%20Regression.md)
 
 You can also go back to the [Topics](README.md).

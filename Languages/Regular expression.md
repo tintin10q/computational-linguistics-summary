@@ -15,7 +15,7 @@ The grammar for this language looks like this:
 Regular languages can be expressions in regular expressions which can be expressed in [finite state automata](finite%20state%20automata.md). This is great because this makes regular expressions really fast to parse.
 
 ## Symbols
-You can parse symbols at a position by just including them in the regular expression /hello/ [parses](parsing.md) the word hello. But what if we want to parse multiple words. Then we have to define a regular expression where one position of the sentence can have multiple symbols. This is done with symbol ranges.
+You can parse symbols at a position by just including them in the regular expression /hello/ [parses](Parsing.md) the word hello. But what if we want to parse multiple words. Then we have to define a regular expression where one position of the sentence can have multiple symbols. This is done with symbol ranges.
 
 ### Symbol Ranges
 

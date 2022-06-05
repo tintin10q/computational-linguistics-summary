@@ -1,5 +1,5 @@
 {
-  "collapse-filter": false,
+  "collapse-filter": true,
   "search": "",
   "showTags": false,
   "showAttachments": false,
@@ -8,51 +8,58 @@
   "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "line:(languages)",
+      "query": "path:Data",
       "color": {
         "a": 1,
-        "rgb": 3138644
+        "rgb": 5431425
       }
     },
     {
-      "query": "grammar",
+      "query": "path:Classification",
       "color": {
         "a": 1,
         "rgb": 14725458
       }
     },
     {
-      "query": "Data",
+      "query": "path:Languages",
       "color": {
         "a": 1,
-        "rgb": 11657298
+        "rgb": 14701276
       }
     },
     {
-      "query": "probability",
+      "query": "path:Prediction",
       "color": {
         "a": 1,
-        "rgb": 5397472
+        "rgb": 5401056
       }
     },
     {
-      "query": "Semantic",
+      "query": "path:Semantic-Similarity",
       "color": {
         "a": 1,
-        "rgb": 5431473
+        "rgb": 14701138
+      }
+    },
+    {
+      "query": "path:/",
+      "color": {
+        "a": 1,
+        "rgb": 2783839
       }
     }
   ],
   "collapse-display": false,
   "showArrow": true,
   "textFadeMultiplier": 0,
-  "nodeSizeMultiplier": 1,
-  "lineSizeMultiplier": 2.21966292134831,
+  "nodeSizeMultiplier": 1.00842696629213,
+  "lineSizeMultiplier": 2.08202247191011,
   "collapse-forces": false,
-  "centerStrength": 0.48876404494382,
-  "repelStrength": 9.43820224719101,
-  "linkStrength": 0.52247191011236,
-  "linkDistance": 144,
-  "scale": 0.8360386601669956,
+  "centerStrength": 0.634831460674157,
+  "repelStrength": 11.9101123595506,
+  "linkStrength": 0.904494382022472,
+  "linkDistance": 170,
+  "scale": 0.8360386601669959,
   "close": true
 }

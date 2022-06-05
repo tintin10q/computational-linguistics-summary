@@ -8,7 +8,7 @@ The left-hand side can only be ONE non-terminal. The right-hand side can be any 
 
 Context free grammars are much more expressive than [Regular Languages](Regular%20Languages.md).
 
-You can [parse](parsing.md) context free grammars with parser combinators, parser generators or the [CKY](CKY.md) algorithm which might just be a parser combinator.  
+You can [parse](Parsing.md) context free grammars with parser combinators, parser generators or the [CKY](CKY.md) algorithm which might just be a parser combinator.  
 
 ## Context 
 The context are the parts of a discourse that surround a word or passage and can throw light on its meaning. So the [words](../Data/Words.md) or [tokens](../Data/Token.md) around the words or tokens you are analysing. 

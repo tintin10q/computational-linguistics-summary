@@ -7,13 +7,13 @@ There are 4 topics:
 - [Classification](Classification.md)
 - [Prediction](Prediction.md)
 - [Languages](Languages.md)
+- [Semantic-Similarity](Semantic-Similarity.md)
 
 There are also some notes that are not in a topic. These are:
 
 - [Goals](Goals.md)
 - [Learning](Learning.md)
-- [Things that he said come at the midterm](Other/Things%20that%20he%20said%20come%20at%20the%20midterm.md)
-- [Questions](Other/Questions.md)
+- [Things that he said come at the exam](Other/Things%20that%20he%20said%20come%20at%20the%20exam.md)
 
 ![network](network.webp)
 
@@ -28,9 +28,9 @@ If you appreciate my summaries and you want to thank me then you can support me
 here: 
 
 - [PayPal](https://www.paypal.me/quintencabo)
-- [Tikkie](https://tikkie.me/pay/tvc88f91200qmq9fujar)
+- [Tikkie](https://tikkie.me/pay/c3cp0dcfd8mautn8ud79)
 
 
-![Tikkie qr code valid till april 16](tikkie.webp)
+![Tikkie qr code valid till around 18 june](tikki.webp)
 
 >Every model is wrong, but some models are usefull.

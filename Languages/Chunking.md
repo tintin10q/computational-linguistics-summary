@@ -1,5 +1,5 @@
 # Chunking
-Sometimes you don't need the full parse tree of a sentence but you only need the main building blocks of a sentence. This is also called shallow or partial [parsing](parsing.md). 
+Sometimes you don't need the full parse tree of a sentence but you only need the main building blocks of a sentence. This is also called shallow or partial [Parsing](Parsing.md). 
 
 Chunking stays on the surface level. There is only one layer of non terminals. But the non terminals can not be rewritten to other non terminals. 
 

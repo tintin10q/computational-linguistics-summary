@@ -1,5 +1,6 @@
 # Semantic-Similarity 
-This includes the following topics:
+This is the **semantic similarity** topic. The notes in about this topic are:
+
 - [Association measure](Semantic-Similarity/Association%20measure.md)
 - [Co-occurrence](Semantic-Similarity/Co-occurrence.md)
 - [Connotations](Semantic-Similarity/Connotations.md)
@@ -15,3 +16,6 @@ This includes the following topics:
 - [Vector Space](Semantic-Similarity/Vector%20Space.md)
 - [Word similarity](Semantic-Similarity/Word%20similarity.md)
 - [Word2Vec](Semantic-Similarity/Word2Vec.md)
+
+
+You can also go back to the [Topics](README.md)

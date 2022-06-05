@@ -37,7 +37,7 @@ With extrinsic evaluation you evaluate how much impact a model has on a downstre
  
  So how do we do intrinsic evaluation? You feed the model new data and check how well it predicts each token in the sentences and how well it scores sentence probabilities. 
  
- A good language model will **fit the new data well**. This means it will usually predict the correct word type or assign a high probability to the sequences in the new data. This type of evaluation is called [perplexity](perplexity.md). 
+ A good language model will **fit the new data well**. This means it will usually predict the correct word type or assign a high probability to the sequences in the new data. This type of evaluation is called [Perplexity](Perplexity.md). 
  
  ### Bidirectional models 
  

@@ -9,7 +9,7 @@ So you can see the second part (p(y|X)) means the chance of y given X. Or the ch
 
 
 ## Getting the probability of a parse tree
-With a PCFG it is possible to calculate the probability of a whole [parse tree](parsetree.md). So how is this done? With this formula: $$P(T, s) = \prod^{|T|}_{i=1}{p(RHS_i|LHS_i)}$$
+With a PCFG it is possible to calculate the probability of a whole [parse tree](Parse%20Tree.md). So how is this done? With this formula: $$P(T, s) = \prod^{|T|}_{i=1}{p(RHS_i|LHS_i)}$$
 > T = the parse tree 
 > s = a sentence 
 > p(T,s) = the joint probability of the parse and the sentence

@@ -32,7 +32,7 @@ Looking at this table really makes it more concrete. The idea is that the sum of
 ## Fine tuning
 How do you decide on the n-gram size? The [lambda's](Smoothing.md)? Which [discounting](Smoothing.md) method you will use? What k will you use if you use Laplace etc.
 
-We can do this like any other machine learning problem. In this case the loss/cost/error function is [perplexity](perplexity.md) and we want to minimize it. Try to minimize the perplexity of the dev set by tuning the hyperparameters.  
+We can do this like any other machine learning problem. In this case the loss/cost/error function is [Perplexity](Perplexity.md) and we want to minimize it. Try to minimize the perplexity of the dev set by tuning the hyperparameters.  
 
 
 ## Trade of

@@ -24,7 +24,7 @@ The process of **automatically** assigning PoS tags to words in a corpus. This p
 
 First of all why not just have a list of words and their PoS tags? We could even use dictionaries for this. We can't do this because of [ambiguity](Ambiguity.md). PoS tagging aims to resolve this ambiguity.  
 
-PoS tagging is useful for [parsing](parsing.md), named entity recognition and coreference resolution and more!
+PoS tagging is useful for [Parsing](Parsing.md), named entity recognition and coreference resolution and more!
 
 ## Baseline
 Most of the [types](../Data/Type.md) in a corpus are nouns. The baseline is to assume everything is a noun. This will get you an accuracy of around 60% on types, but much lower on tokens.  

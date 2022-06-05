@@ -7,13 +7,13 @@ There are 4 topics:
 - [Classification](Classification.md)
 - [Prediction](Prediction.md)
 - [Languages](Languages.md)
+- [Semantic-Similarity](Semantic-Similarity.md)
 
 There are also some notes that are not in a topic. These are:
 
 - [Goals](Goals.md)
 - [Learning](Learning.md)
-- [Things that he said come at the midterm](Other/Things%20that%20he%20said%20come%20at%20the%20midterm.md)
-- [Questions](Other/Questions.md)
+- [Things that he said come at the exam](Other/Things%20that%20he%20said%20come%20at%20the%20exam.md)
 
 ![network](network.webp)
 
@@ -31,6 +31,8 @@ here:
 - [Tikki€](https://tikkie.me/pay/tvc88f91200qmq9fujar)
 
 
-![Tikkie qr code valid till april 4](tikkies.webp)
+
+![Tikkie qr code valid till around 18 june](tikki.webp)
+
 
 >Every model is wrong, but some models are useful.

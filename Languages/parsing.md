@@ -8,7 +8,7 @@ Given a grammar G and a string s. Does s belong to L(G). Or s∈L(G)
 
 L is a function that returns the [languages](Languages/Languages.md) from a [grammar](Grammar.md).
 
-If the parser thinks this is the case we also want a proof or evidence that this is the case. This usually takes the form of a [parse tree](parsetree.md). So this is a tree to go from the grammar to s! But it can also make a [Dependency graph](Dependency%20Parsing.md).
+If the parser thinks this is the case we also want a proof or evidence that this is the case. This usually takes the form of a [parse tree](Parse%20Tree.md). So this is a tree to go from the grammar to s! But it can also make a [Dependency graph](Dependency%20Parsing.md).
 
 ![Pasted image 20220314184733](Pasted%20image%2020220314184733.webp)
 
