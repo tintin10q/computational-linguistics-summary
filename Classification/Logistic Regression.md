@@ -1,10 +1,10 @@
 # Logistic Regression 
 
-Logistic regression gives you the probability of a discrete outcome. You can know how sure the model is of predicting something. 
+Logistic regression gives you the probability of a discrete outcome. You can know how sure the model is of predicting a certain class. 
 
-In the case of computational linguistics, we classify our surface level items, let's say words, as discrete units. We can use logistic regression to uncover the probability of a word instead of just [counting words](../Semantic-Similarity/Co-occurrence.md). 
+In the case of computational linguistics, we classify our surface level items, let's say words, as discrete units. We can use logistic regression to uncover the probability of a word given some input instead of just [counting words](../Semantic-Similarity/Co-occurrence.md). 
 
-Logistic regression looks like this: $$z = \mathbf{x} \cdot \mathbf{w} + b$$
+The math for logistic regression looks like this: $$z = \mathbf{x} \cdot \mathbf{w} + b$$
 - $\mathbf{x}$ is the feature representation of one input data point. For instance, a word as an [embedding](Embeddings.md) or a [connotations](Connotations.md) vector.
 - $\mathbf{w}$ is a vector of weights assigned to each feature depending on the importance of each feature.
 - $b$ is the bias term. This is an offset you start off with. The bias is a scaler you add to all the items of a weight vector. 
@@ -16,7 +16,7 @@ Logistic regression is also a **probabilistic classifier**. Rather than providin
 
 ![Probabilistic classifier](../images/Pasted%20image%2020220603190300.png)
 
-To get make a logistic regression, we need 4 components:
+To get make a logistic regression, we need 4 components: 
 
 ## Feature representation 
 A **feature representation**: a vector of numeric or symbolic features which encodes each input item. 
@@ -62,11 +62,12 @@ The cross entropy score is also known as **negative log likelihood**.  The cross
 ## Optimizer 
 An *optimizer* updates the model based on the errors in the decisions it makes. Basically, based on the output of the objective function, it updates the weights. For instance, with gradient descent or an evolutionary approach. For example, you could use the derivative of the loss function to go move the weights into the direction which lowers the loss. 
 
+-----
+
 ## Linear boundaries
 
 A major downside of logistic regression that it can only make linear decision boundaries even though the problem could just be not linearly separable, for instance like the picture below: 
 
 ![Xor seperation](../images/Pasted%20image%2020220603200910.png)
 
-To overcome this problem, you have to turn to [feed forward neural networks (FFNN)](../Prediction/Feed%20forward%20neural%20networks%20(FFNN).md). Basically, connecting multiple logistic regression models together. It is called feed forward because the output of a lower layer only affect higher layers and do not feed back into the same layer or lower layers. 
-
+To overcome this problem, you have to turn to [feed forward neural networks (FFNN)](../Prediction/Feed%20forward%20neural%20networks%20(FFNN).md). Basically, connecting multiple logistic regression models together to create non-linearity. It is called feed forward because the output of a lower layer only affect higher layers and do not feed back into the same layer or lower layers. When you do have future layers affecting previous layers you have a [Recurrent neural network (RNN)](../Prediction/Recurrent%20neural%20network%20(RNN).md).

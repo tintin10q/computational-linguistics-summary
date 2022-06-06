@@ -1,7 +1,6 @@
 # Markov models 
-When you actually try to implement a language model you are implementing a Markov model or a Markov Chain.
 
-A Markov model is any model which makes use of the [Markov assumption](Markov%20assumption.md). A Markov model is defined by:
+A Markov model is any [language Model](Language%20Modeling.md) model which makes use of the [Markov assumption](Markov%20assumption.md). Markov models make use of: 
 
 - A set of history states **Q** $\set{q_{1},q_{2}, q_{3}, ..., q_{n}}$ 
 - A set of predicted states **R** $\set{r_{1},r_{2}, r_{3}, ..., r_{m}}$ (What you try to predict)
@@ -9,7 +8,7 @@ A Markov model is any model which makes use of the [Markov assumption](Markov%20
 - An initial probability distribution $\pi$
 
 ## States
-In a bigram model, Q and R are the same set. With larger n-gram models they are not the same. Q is bigger than R because the histories are longer. 
+In a bigram model, Q and R are the same set. With larger [N-grams](../Languages/N-grams.md) models, they are not the same. Q is bigger than R because the histories are longer. 
 
 A difference between Q and R is that Q will contain the BoS while R contains the EoS.
 
@@ -27,15 +26,17 @@ So usually this a row in A with only beginning of sequence symbols. It is the in
 
 ![Pasted image 20220223185953](../images/Pasted%20image%2020220223185953.webp)
 
-Looking at this table really makes it more concrete. The idea is that the sum of the entire row is one. The sum of a collum does not have to be one. 
+Looking at this table really makes it more concrete. The idea is that the sum of the entire row is one. The sum of a column does not have to be one. 
 
 ## Fine tuning
-How do you decide on the n-gram size? The [lambda's](Smoothing.md)? Which [discounting](Smoothing.md) method you will use? What k will you use if you use Laplace etc.
 
-We can do this like any other machine learning problem. In this case the loss/cost/error function is [Perplexity](Perplexity.md) and we want to minimize it. Try to minimize the perplexity of the dev set by tuning the hyperparameters.  
+How do you decide on the n-gram size? Which [discounting](Smoothing.md) method you will use? What k will you use if you use Laplace [smoothing](Smoothing.md)? etc.
+
+We can do this like any other machine learning problem. In this case the loss/cost/error function is [perplexity](Perplexity.md), and we want to minimize it. Try to minimize the perplexity of the dev set by tuning the hyperparameters.  
 
 
 ## Trade of
+
 Higher N-grams are more constraining and precise, but more scarce. If we have 20k [types](../Data/Type.md), then there are:
 - 20K$^2$ bigrams = $4*10^8$. 
 - 20K$^{3}$ trigrams = $8 * 10^{12}$. 

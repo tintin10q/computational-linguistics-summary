@@ -14,7 +14,6 @@ Because natural language follows a [Zipfian Distribution](../Languages/Zipfian%2
 
 Because there are few words that appear often and a lot of words that appear once or twice in a corpus the sequences that contain rare words are frequent. So transitions with rare words are frequent but hard to predict. Because you can't just have of the same words. So how do you estimate rare transitions?
 
-
 ## Solutions
 How do we deal with this all this?
 

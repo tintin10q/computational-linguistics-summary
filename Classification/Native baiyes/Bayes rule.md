@@ -69,7 +69,7 @@ Ask:
 | is class   |             |             |
 | not class  |             |             |
 
-So he will say something like if it has the feature the probability that it has the class is 0.3. With that you can fill in the table. 
+So he will say something like if it has the feature, the probability that it has the class is 0.3. With that, you can fill in the table. 
 
 | x          | has-feature | not feature |
 |------------|-------------|-------------|
@@ -88,7 +88,7 @@ Then you can fill in the other side of the table. You have to do this for all th
      - p(c) = Change of class (1)
      - documents in class / total documents 
    - Posterior = class given the document
-     - He describes a document and you need to find the probability 
+     - He describes a document, and you need to find the probability 
      - Now we do the formula: Prior $\cdot \Pi$ p(d|c) 
      - p(d|c) is chance of datapoint given class 
      - Don't panic just look p(d|c) up in the tables you made.
@@ -138,7 +138,7 @@ and only alphabetic characters.
 
 If you have time double check the tables. (The ones you made)
 
-**Now the probability of cyber bullying**
+**Now the probability of Cyber Bullying**
 
 - Prior * $\Pi$ p(d|c)
 - Prior * p(cursing|bully) * p(alpha|bully)
