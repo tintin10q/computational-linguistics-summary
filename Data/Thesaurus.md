@@ -37,11 +37,11 @@ So in the example above, the Resnick similarity of whale and lion is lower than 
 So the less frequent the lowest common subsume is in a corpus, the higher the information content it has and the higher the Resnik similarity between two synsets.
 
 ### Example
-So lets bird has information content of 0.5 and mammal has the information content of 0.2 and animal has an information content of 0.1 then the Resnik similarity between whale and finch is $0.5 + 0.2 + 0.1 = 0.9$. 
+So lets bird has information content of 0.5 and mammal has the information content of 0.2 and animal has an information content of 0.1 then the Resnik similarity between whale and finch is $0.5 + 0.2 + 0.1 = 0.8$. 
 
 Now let's say the information content of vehicle is 0.3 and entity is 0.01 and living is 0.09. This makes the Resnic similarity between car and plant $0.3 + 0.01 + 0.09 = 0.4$. 
 
-So, according to Resnic, whale and finch are more than twice as similar as plant and car. If you had just used path length, then they would have been the same lenght. 
+So, according to Resnic, whale and finch are twice as similar as plant and car. If you had just used path length, then they would have been the same in similarity. 
 
 ## Lesk similarity
 This type of similarity looks at the lexical overlap of the glosses of words. Two words are more similar the higher the lexical overlap between the glosses.
