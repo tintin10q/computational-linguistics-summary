@@ -29,7 +29,7 @@ This is how likely it is that you have an example of class c given the instance 
 
 # Naïve Bayes
 
-Naïve Bayes than works by calculating like this:
+Naïve Bayes works by calculating like this:
 
 $$C = \text{argmax}_{c \in C} P(c) \prod_{f \in F} p(f|c)$$
 
@@ -44,7 +44,7 @@ $$C = \text{argmax}_{c \in C}~log(p(c)) \sum_{f \in F} log(p(f|c))$$
 You leave out the bottom division because you assume independence. This way, the probability of a point appearing is always 1. X divided by 1 is X.
 
 
-## How to do a Bayesian Classification Question 
+# How to do a Bayesian Classification Question 
 
 f3 help: Bayes Rule Bayesian Classification Basian question baysian bayias
 
