@@ -20,10 +20,11 @@ There are also some notes that are not in a topic. These are:
 
 ![network](network.webp)
 
-![Time line of creating the notes](images/timeline.mp4)
 
 
-https://user-images.githubusercontent.com/24190849/172181536-56f2cde6-9682-4f2c-a3a5-c7ed3dae0db2.mp4
+https://user-images.githubusercontent.com/24190849/172182045-0a225ef8-b56c-4190-be9e-6895417ee45e.mp4
+
+
 
 # Disclaimer 
 Although I have tried my best to make sure this summary is correct, I will take no responsibility for mistakes that might lead to you having a lower grade. 
