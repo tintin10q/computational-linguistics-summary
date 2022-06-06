@@ -97,10 +97,8 @@ The value of each cell at successive states is computed by **multiplying the cur
 
 So to find the most probably continuation for, we want to multiply (multiply not dot product) the current word in the trellis with the entire A matrix (without the BoS) and take the max. 
 
-$$\max(
-\begin{array}{ccc} \text{DOG} \\
-\begin{bmatrix} 0.5 \\ 0 \\ 0 \\ 0 \end{bmatrix}
-\end{array} * \begin{array}{ccc} \text{A Matix - BOS} \\ \begin{bmatrix} 0 & 0.2 & 0.8  & 0 \\ 0 & 0.3 & 0.6 & 0 \\ 0 & 0 & 0 & 0.5 \\ 0.5 & 0.1 & 0.2 & 0 \end{bmatrix}\end{array}) = \max(\begin{array}{ccc} \text{Result} \\ \begin{bmatrix} 0 & 0.1 & 0.4  & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \end{bmatrix}\end{array}) =0.4$$
+$$\max(\begin{bmatrix} 0.5 \\ 0 \\ 0 \\ 0 \end{bmatrix}
+*\begin{bmatrix} 0 & 0.2 & 0.8  & 0 \\ 0 & 0.3 & 0.6 & 0 \\ 0 & 0 & 0 & 0.5 \\ 0.5 & 0.1 & 0.2 & 0 \end{bmatrix}) = \max( \begin{bmatrix} 0 & 0.1 & 0.4  & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \end{bmatrix}) =0.4$$
 
 If the matrix doesn't render see [this image](../images/Pasted%20image%2020220308194114.webp).
 
