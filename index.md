@@ -13,10 +13,10 @@ There are also some notes that are not in a topic. These are:
 
 - [Goals](Goals.md)
 - [Learning](Learning.md)
-- [Things that he said come at the exam](Other/Things%20that%20he%20said%20come%20at%20the%20exam.md)
 - [Bert Lecture](Other/Bert%20Lecture.md)
 - [Quiz Questions](Other/Quiz%20Questions.md)
 - [Practice Questions](Other/Practice%20Questions.md)
+- [Things that he said come at the exam](Other/Things%20that%20he%20said%20come%20at%20the%20exam.md)
 
 Is this summary based on a web of notes and explanations to wordy for you? Then there is also [Aurea's linear summary](Other/Computational-Linguistics-Aurea.pdf) which uses  short paragraphs and bullet points instead. 
 
