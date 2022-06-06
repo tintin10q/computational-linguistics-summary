@@ -4,7 +4,7 @@ Morphemes are the smallest meaning bearing unit of languages. But this is contro
 
 When doing [lemmatization](Lemma.md), you turn a word into its lemma form. The lemma of apes is ape. Here, you removed the 's'. The parts you removed were **affixes**, and the part that stays behind is the **stem**. Both stems and affixes are **morphemes**. 
 
-- **Stems** is the mean meaning bearing unit in a word.
+- **Stems** is the main meaning bearing unit in a word.
 - **Affixes** are the strings that modify stems in some way.
 
 For something to be a morpheme, it has to have meaning. For instance, if you have walk then if you remove anything of this:  
@@ -12,6 +12,9 @@ For something to be a morpheme, it has to have meaning. For instance, if you hav
 >['alk', 'Tlk', 'Tak', 'Tal', 'lk', 'ak', 'al', 'k', 'l', 'k', 'a', 'l', 'a', 'lk', 'Tk', 'Tl', 'k', 'l', 'k', 'T', 'l', 'T', 'ak', 'Tk', 'Ta', 'k', 'a', 'k', 'T', 'a', 'T', 'al', 'Tl', 'Ta', 'l', 'a', 'l', 'T', 'a', 'T']
 
 These all have no meaning. 
+
+## Inflected 
+When affixes are added to a stem, the word becomes **inflected**. For example, if you have the stem green then green**er** is an **inflected** version of green. Another example is house and houses (houses is inflected). 
 
 ## Stemming
 
