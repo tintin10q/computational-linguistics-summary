@@ -18,6 +18,8 @@ There are also some notes that are not in a topic. These are:
 - [Quiz Questions](Other/Quiz%20Questions.md)
 - [Practice Questions](Other/Practice%20Questions.md)
 
+Is this summary based on a web of notes and explanations to wordy for you? Then there is also [Aurea's linear summary](Other/Computational-Linguistics-Aurea.pdf) which uses  short paragraphs and bullet points instead. 
+
 ![network](network.webp)
 
 # Disclaimer 
