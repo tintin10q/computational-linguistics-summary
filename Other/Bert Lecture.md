@@ -6,13 +6,10 @@ BERTology. (Bidirectional Encoder Representations from Transformers). Headings a
   
 ## Advantages of BERT as compared to other (neural net) language models.
 
-BERT is better at dealing with longer sentences (long-range dependencies). This is because it is a transformer model (not a neural net, not exactly deep learning). Problem with recurrent neural nets: vanishing gradient problem. This means that if you go too far back in the input, it gets multiplied by the 0-1 parameters over and over again and gets smaller and smaller; this makes it so that the model stops learning. The BERT model (transformer) doesn’t have this issue, as it uses a different version of recurrence.
-
-  
+BERT is better at dealing with longer sentences (long-range dependencies). This is because it is a transformer model (not a neural net, not exactly deep learning). Problem with recurrent neural nets: [Vanishing gradient problem](../Prediction/Vanishing%20gradient%20problem.md). This means that if you go too far back in the input, it gets multiplied by the 0-1 parameters over and over again and gets smaller and smaller; this makes it so that the model stops learning. The BERT model (transformer) doesn’t have this issue, as it uses a different version of recurrence.
 
 Parallel processing is also efficient in BERT given the right hardware. The model is pre-trained on a huge amount of data, and it is very big; the architecture itself is efficient (more than LSTM) but very big.
 
-  
 
 ## Explain the workflow of BERT.
 
@@ -41,8 +38,6 @@ My guess: maybe the MLM unsupervised learning leads to this difficulty and the o
 
 The model might also improve when training on structure and relationship (tagged) data, rather than pure unsupervised learning. Humans might have a specific reasoning ability that is not built into the model. A lot of knowledge and reasoning and world-awareness is known by people, which is not built into our language. This means the data the model is trained on is not complete with this inferred information; we don’t say ‘I walk into the house because the house is bigger than I am’. When we say ‘I walk into the house’, there is a natural implication and social understanding that the house is indeed bigger than I am. The model does not have this information in the training data and as such cannot (does not) learn the reasoning.
 
-  
-
 ## If you have a BERT model with vectors that reflect semantic relations, then which part of the model represents the semantic similarity space? (Higher layers, intermediate, combinations?)
 
 Semantic information is represented throughout the model’s layers. In later stages, it involves tokens (individual occurrences of words) and in earlier layers, the semantic value of the word more generally speaking. Then there is also the vector space which collapses the semantic information into a sort of ‘cone’ shape in the vector space.
@@ -57,4 +52,4 @@ In the end, language is used to communicate; semantics (what does it _mean_) is 
 
 ## Why is overparametrization a problem?
 
-Typically, the more parameters a model has, the more it can learn, though it can also lead to overfitting. However, with BERT the problem is more so that the enormous amount of parameter also leads to intense computational complexity and electricity use. This is an environmental concern, especially as long as the majority of power is not generated in a clean (green) way. It also leads to differences between countries, companies and individuals with more vs less resources (financial, hardware, human). Reproducibility is also a big issue; the bigger the model, the harder it is to reproduce and do science on whether it is really that good or if they be lyin’ to us.
+Typically, the more parameters a model has, the more it can learn, though it can also lead to [overfitting](../Prediction/Overfitting.md). However, with BERT the problem is more so that the enormous amount of parameter also leads to intense computational complexity and electricity use. This is an environmental concern, especially as long as the majority of power is not generated in a clean (green) way. It also leads to differences between countries, companies and individuals with more vs less resources (financial, hardware, human). Reproducibility is also a big issue; the bigger the model, the harder it is to reproduce and do science on whether it is really that good or if they be lyin’ to us.
