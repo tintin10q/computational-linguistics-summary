@@ -1,7 +1,8 @@
 # Word2Vec
-The Word2Vec model is a popular way to use [neural networks](../Prediction/Feed%20forward%20neural%20networks%20(FFNN).md) to create [word Embeddings](Embeddings.md). Using neural networks, you can immediately get dense vectors instead of the space vectors you get with [counting based methods](Co-occurrence.md). But this is true for all neural network. 
+The Word2Vec model is a popular way to use [neural networks](../Prediction/Feed%20forward%20neural%20networks%20(FFNN).md) to create [word Embeddings](Embeddings.md). Using neural networks, you can immediately get dense vectors instead of the space vectors you get with [counting based methods](Co-occurrence.md).  
 
-Word2Vec comes has **two possible architectures**. One of them is called skip gram with negative sampling (SKNS) this tries to predict the words in the context from the target word. The other one is continues bag of words (CBoW) which tries to predict the target word from the context. With both methods we don't care about the actual predictions but rather the hidden layers which are created. These are selected as the embeddings. This is called representational learning. Let's now go in more detail below. 
+Word2Vec has **two possible architectures**. One of them is called **skip gram with negative sampling (SKNS)** this tries to predict the words in the context from the target word. The other one is **continues bag of words (CBoW)** which tries to predict the target word from the context. 
+With both methods we don't care about the actual predictions but rather the hidden layers which are created as a result of training for good predictions. **The hidden layers are selected as the embeddings**. This is called representational learning. Let's now go in more detail below. 
 
 ![CVoW vs SGNS](../images/Pasted%20image%2020220604014153.png)
 
@@ -108,6 +109,6 @@ For instance, if in your corpora fathers are more often doctors and mothers are 
 
 What can you do about this? This is still an active research field. There seem to be two ways either change the data to represent society in the way that we want. For instance you can apply [Normalization](../Data/Normalization.md) and replace all sex words like girl or boy with SEX for instance. Or you can try to subtract a special bias vector. Or you can try to change the model which actively debias things they find in the data. 
 
-## Summary
-We use neural networks to learn better word vectors by optimizing hidden layers to yield better prediction in a binary classification task. Given a source and a target word, predict whether the target is a co-occurring word or a foil. After learning, the hidden layer for each word encodes its semantic representation as learned from text. You have to be careful with biases.
+## Summary of Word2Vec
+With word2vec we use neural networks to learn better word embeddings by optimizing hidden layers to yield better prediction in a binary classification task. Given a source and a target word, predict whether the target is a co-occurring word or a foil. After learning, the hidden layer for each word encodes its semantic representation as learned from text. This is called representation learning. You have to be careful with biases.
 

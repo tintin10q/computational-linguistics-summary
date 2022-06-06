@@ -1,7 +1,8 @@
 # Markov Assumption 
-The Markov assumption says (in the language modelling domain) that <b>the conditional probability of a word appearing next in the sequence can be approximated by <u>looking at its local history instead of the entire history</u></b>. In this case the preceding history is an [n-gram](../Languages/N-grams.md) of words which indicates how far you look back. This can be expressed with maths: $$p(W_{1},...,W_{m}) `\approx \prod^{m}_{i = 1}(p(W_{i}|W_{i-n:i-1}))$$
+The Markov assumption says (in the language modelling domain) that <b>the conditional probability of a word appearing next in the sequence can be approximated by <u>looking at its local history instead of the entire history</u></b>. In this case the preceding history is an [n-gram](../Languages/N-grams.md) of words which indicates how far you look back. This can be expressed with maths: $$p(W_{1},...,W_{m}) \approx \prod^{n}_{i = 1}(p(W_{i}|W_{i-n~:~i-1}))$$
+Here W is a sequence of words. $W_1$ is the first word in this sequence. $W_m$ is the last word in this sequence. We don't explicitly define m to indicate that the sequence can be arbitrarily large. You can approach ($\approx$) the probability ($p$) of the sequence $W$ appearing by multiplying ($\prod$) the probability of n words which came before it. 
 
-The sequence of symbols you consider trying to predict the next symbols is called the [context](../Semantic-Similarity/Context.md). The bigger the N in N-gram the bigger the context.
+The sequence of symbols you consider trying to predict the next symbols is called the [context](../Semantic-Similarity/Context.md). The context is defined by [N-grams](../Languages/N-grams.md). The bigger the N in N-gram the bigger the context you consider.
 
 So basically don't look at the entire history, but just look at the context (an N-gram at the end). 
 

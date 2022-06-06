@@ -42,7 +42,7 @@ This would mean that a word's [Co-occurrence](Co-occurrence.md) with different c
 
 Ultimately this leads to lower [similarity](Similarity.md) scores because the part of the vector which is high because of sense 1 will lower the similarity of sense 2. Both cancel each other out and lower the similarity for the other sense.  
 
-So these models don't deal well with [Ambiguity](../Languages/Ambiguity.md). Or maybe they deal too well with it? 
+So these models don't deal well with [ambiguity](../Languages/Ambiguity.md). Or maybe they deal too well with it? 
 
 [Transformers](../Prediction/Transformers.md) are able to deal with this well. The idea is to compute the embeddings on the fly. Instead of all beforehand.   
 

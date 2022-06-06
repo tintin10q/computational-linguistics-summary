@@ -14,3 +14,7 @@ Jaccard is used to compare [Co-occurrence](Co-occurrence.md) sets.  [Euclidian d
 ![Cosine vs Euclidian](../images/Pasted%20image%2020220602232429.png)
 
 In this figure above, if a vector is high in y it occurs often with pet and high in x occurs high in road.  The absolute distance between possum and monocycle is very small, but the angle is large. While the angle of cat and possum is more similar, which is also correct.  
+
+Here is a more fun image:
+
+![Distance measures](../images/Pasted%20image%2020220606220120.png)

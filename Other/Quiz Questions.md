@@ -148,10 +148,10 @@ In a dataset consisting of 100 tweets, 20 contain instances of cyberbullying. Fo
 
 Consider a test tweet with at least a curse word and only alphabetic characters. What is the probability of the test tweet being an instance of cyberbullying?
 
-- A: 0.8 * 0.8 * 0.3 
-- B: 0.8 * 0.2 * 0.7 
-- C: 0.2 * 0.8 * 0.3 
-- D: 0.2 * 0.2 * 0.7 
+- A: 0.8 $*$ 0.8 $*$ 0.3 
+- B: 0.8 $*$ 0.2 $*$ 0.7 
+- C: 0.2 $*$ 0.8 $*$ 0.3 
+- D: 0.2 $*$ 0.2 $*$ 0.7 
  
 ## Question 10
 
@@ -174,7 +174,7 @@ Consider a test tweet with at least a curse word and only alphabetic characters.
 6. A: An NBC doesn't track feature co-presence 
 7. B: Child
 8. D: 0.2
-9. C: 0.2 * 0.8 * 0.3 
+9. C: 0.2 $*$ 0.8 $*$ 0.3 
 10. D: No
 
 

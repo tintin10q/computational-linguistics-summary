@@ -140,23 +140,23 @@ If you have time double check the tables. (The ones you made)
 
 **Now the probability of Cyber Bullying**
 
-- Prior * $\Pi$ p(d|c)
-- Prior * p(cursing|bully) * p(alpha|bully)
-- 0.2 * 0.8 * 0.3
+- Prior $*$ $\Pi$ p(d|c)
+- Prior $*$ p(cursing|bully) * p(alpha|bully)
+- 0.2 $*$ 0.8 $*$ 0.3
 
 Consider a test tweet **with a curse** word and **only alphabetic characters**. Would an NBC using these features classify it as cyberbullying?
 
 > **Tip:** Use python in the notebooks to calculate things quick!
 
 - Find probability of test tweet being cyberbullying
-    - Prior-bully * $\Pi$ p(d|c)
-    - Prior-bully * p(cursing|bully) * p(alpha|bully)
-    - 0.2 * 0.8 * 0.3
+    - Prior-bully $*$ $\Pi$ p(d|c)
+    - Prior-bully $*$ p(cursing|bully) * p(alpha|bully)
+    - 0.2 $*$ 0.8 $*$ 0.3
     - 0.048
 - Find probability of test tweet not being cyberbullying
-    - Prior-not-bully * $\Pi$ p(d|c)
-    - Prior-not-bully * p(cursing|not-bully) * p(alpha|not-bully)
-    - 0.8 * 0.2 * 0.7
+    - Prior-not-bully $*$ $\Pi$ p(d|c)
+    - Prior-not-bully $*$ p(cursing|not-bully) $*$ p(alpha|not-bully)
+    - 0.8 $*$ 0.2 $*$ 0.7
     - 0.111
 - What is the highest one?
   - 0.111 so the class is **not bullying**

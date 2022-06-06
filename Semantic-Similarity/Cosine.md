@@ -25,3 +25,5 @@ So then this is also true:$$\textbf{v} \cdot \textbf{w} = |\textbf{v}||\textbf{w
 This means we calculate the **cosine** metric between two vectors **v** and **w** as: $$\text{cosine}(\textbf{v},\textbf{w}) = \frac{\textbf{v} \cdot \textbf{w}}{|\textbf{v}||\textbf{w}|} = \frac{\sum\limits^N_{i=1}{v_iw_i}}{\sqrt{\sum\limits^N_{i=1}{v_i^2}}\sqrt{\sum\limits^N_{i=1}{w_i^2}}}$$
 These are all the same. Even though the most to the right looks daunting, it is just the dot product on top and the vector length calculations expressed with the sum sigma notation.
 
+
+![Cosine distance](../images/Pasted%20image%2020220606220028.png)

@@ -1,5 +1,5 @@
 # Recurrent neural networks (RNN)
-A recurrent neural network is a neural network which uses [recurrence](Recurrence.md) to take into account previous states. Instead of relying on n-grams and a [Markov assumption,](Prediction/Markov%20assumption.md) there is a **chain of recurrence**. The idea is to update some hidden layers in the neural network based on values of other hidden layers. 
+A recurrent neural network is a neural network which uses [recurrence](Recurrence.md) to take into account previous states. Instead of relying on n-grams and the [Markov assumption,](Prediction/Markov%20assumption.md) there is a **chain of recurrence**. The idea is to update some hidden layers in the neural network based on values of other (later) hidden layers. 
 
 Instead of parsing the input into [N-grams](Languages/N-grams.md) and giving those as input, you select an input sequence and give the network one token of the sequence at a time. Each time, the hidden layers will update and update the previous layers based on the further layers. This causes previous words to influence the current prediction through recurrence. The words you feed into the model before you make the prediction are called the **chain of recurrence**. The chain of recurrence usually (almost) goes back to the beginning of a sequence, which is typically a sentence. We say almost because the most recent words affect the current state more than the words further away.
 
@@ -36,9 +36,9 @@ This information is coming from the current input (embedding) and the hidden lay
 When predicting tags or labels, you will need to have the correct label for training, as the loss function needs to know what the correct answer is. This requires annotation, which is expensive. With language prediction you don't need annotation because you can just use an existing text to have a correct answer. This kind of prediction can also be done with [ FFNN](Feed%20forward%20neural%20networks%20(FFNN).md) however they don't remember the context.
 
 ## Stacking layers.
-We can stack as many recurrent hidden layers as we want (but the more, the slower the training). You can also stack the neural networks themselves, just like with [Logistic Regression](Classification/Logistic%20Regression.md). In this case, you could use the entire sequence of outputs from one RNN as the input to a next RNN or different type of neural network. The Neural networks are mostly **self-contained modules** which can be combined in an infinite number of ways, however you should motivate this because running NN can be or is expensive. 
+We can stack as many recurrent hidden layers as we want (but the more, the slower the training). You can also stack the neural networks themselves, just like with [Logistic Regression](Classification/Logistic%20Regression.md). In this case, you could use the entire sequence of outputs from one RNN as the input to a next RNN or different type of neural network. The Neural networks are mostly **self-contained modules** which can be combined in an infinite number of ways, however you should motivate layer choices because the bigger the NN the more expensive running it gets. 
 
-What stacking does, it computes a slightly more abstract version of the input than the last version. This is especially useful if you have noisy data. We would like the network to learn how to use the abstract feature bundles from the input. The lower layers are tuned towards something closer to the signal, while the higher layers are tuned to more and more abstract features.  This is also how your brain does it, with vision and sound going through multiple layers. 
+In essence stacking computes a slightly more abstract version of the input than the last version. This is especially useful if you have noisy data. We would like the network to learn how to use the abstract feature bundles from the input. The lower layers are tuned towards something closer to the signal, while the higher layers are tuned to more and more abstract features.  This is also how your brain does it, with vision and sound going through multiple layers. 
 
 ### Bidirectional 
 RNN do not only go forward (left to right) but they can also go in the reverse. You can decide in which order you process the input sequence. You can go left to right or right to left. You could even have read middle out if you want. This will result in different dependencies. 
@@ -108,4 +108,4 @@ These types of models are usually made out of two connected subnetworks. The fir
 
 You might see this as a model taking in the label from a seq2label model and then predicting a sequence from that.
 
-Nowadays the underlying neural network architecture of these has changed, but the idea is still the same. 
+Nowadays, the underlying neural network architecture of these has changed, but the idea is still the same. 

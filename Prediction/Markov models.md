@@ -1,6 +1,8 @@
 # Markov models 
 
-A Markov model is any [language Model](Language%20Modeling.md) model which makes use of the [Markov assumption](Markov%20assumption.md). Markov models make use of: 
+A Markov model is any [language Model](Language%20Modeling.md) model which makes use of the [Markov assumption](Markov%20assumption.md). A Markov model is also called Markov chain. 
+
+Markov models make use of: 
 
 - A set of history states **Q** $\set{q_{1},q_{2}, q_{3}, ..., q_{n}}$ 
 - A set of predicted states **R** $\set{r_{1},r_{2}, r_{3}, ..., r_{m}}$ (What you try to predict)
