@@ -97,10 +97,7 @@ The value of each cell at successive states is computed by **multiplying the cur
 
 So to find the most probably continuation for, we want to multiply (multiply not dot product) the current word in the trellis with the entire A matrix (without the BoS) and take the max. 
 
-$$\max(\begin{bmatrix} 0.5 \\ 0 \\ 0 \\ 0 \end{bmatrix}
-*\begin{bmatrix} 0 & 0.2 & 0.8  & 0 \\ 0 & 0.3 & 0.6 & 0 \\ 0 & 0 & 0 & 0.5 \\ 0.5 & 0.1 & 0.2 & 0 \end{bmatrix}) = \max( \begin{bmatrix} 0 & 0.1 & 0.4  & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \end{bmatrix}) =0.4$$
-
-If the matrix doesn't render see [this image](../images/Pasted%20image%2020220308194114.webp).
+![Matrix image](../images/viterbi-matrix.png)
 
 Now the max is 0.4. Now we multiply this with the emission probability of the current word (dog) so we get: 0.4 * [0, 0, 0.5, 0.1] = [0, 0, 0.2, 0.04]. This becomes the new column in the trellis. 
 
