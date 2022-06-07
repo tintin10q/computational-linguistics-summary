@@ -1,3 +1,7 @@
 dist/*
 obsidian/workspace
 .obsidian
+tmp
+tmp/
+tmp/*
+.idea
