@@ -21,41 +21,39 @@ So what you can read from this table is that 4030 German words were classified a
 
 So that is how you read these tables. 
 
-Here was my code to create the [Evaluating Classification models](Evaluating%20Classification%20models.md) scores.
+Here is example code to create the [evaluating classification models](Evaluating%20Classification%20models.md) scores.
 
 
 ```python
-def precision(contingency_table, label):
-    index = labels2ids[label]
-    result = contingency_table.T[index]
-    
-    tp = result[index]
-    
-    mask = np.ones(len(result), bool)
-    mask[index] = False
-    
-    fp = sum(result[mask])
-    
-    return tp / (tp + fp)
+def perf_measure(y_actual, y_hat):
+    TP = 0
+    FP = 0
+    TN = 0
+    FN = 0
+
+    for i in range(len(y_hat)): 
+        if y_actual[i]==y_hat[i]==1:
+           TP += 1
+        if y_hat[i]==1 and y_actual[i]!=y_hat[i]:
+           FP += 1
+        if y_actual[i]==y_hat[i]==0:
+           TN += 1
+        if y_hat[i]==0 and y_actual[i]!=y_hat[i]:
+           FN += 1
+
+    return TP, FP, TN, FN
+
+def precision(y_actual, y_hat):
+	TP, FP, TN, FN = perf_measure(y_actual, y_hat)
+    return TP / (TP + FP)
 
 
 def recall(contingency_table, label):
-    ct = contingency_table
-    index = labels2ids[label]
-    
-    result = ct.T[index]
-    
-    tp = result[index]
-    
-    fn = sum(map(lambda x : x[[len(ct))](ct|True if i == index else False for i in range(len(ct|[len(ct|[len(ct|[len(ct))](ct))]])))]])), ct.T))
-    
-    return tp / (tp + fn)
-    
+	TP, FP, TN, FN = perf_measure(y_actual, y_hat)
+    return TP / (TP + FN)
 
-
-def F_measure(contingency_table, label, Beta=1):
-    P = precision(contingency_table, label)
-    R = recall(contingency_table, label)
+def F_measure(y_actual, y_hat, Beta=1):
+    P = precision(y_actual, y_hat)
+    R = recall(y_actual, y_hat)
     return ((Beta**2 + 1) * P*R) / (Beta**2 * P + R)
 ```
-
