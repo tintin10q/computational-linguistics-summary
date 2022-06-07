@@ -16,7 +16,7 @@ The grammar makes use of auxiliary symbol which is called **non-terminals**. The
 - Pre-terminals like PrN and V are [Parts of Speech](Parts%20of%20Speech.md). Or atomic non-terminals. The production rules indicate which sequences they can generate.
 - [Constituents](Constituency.md) (NP and VP) are abstract units which absolve complex syntactic functions. 
 
-![Pasted image 20220314185901](../images/Pasted%20image%2020220314185901.png)
+![Tree of parts of speech tags](../images/Pasted%20image%2020220314185901.png)
 
 
 The grammar rules are kind of defined like inductive rules.
@@ -56,19 +56,19 @@ Usually the non-terminals are capitalized.
 
 ## Palindrome example
 
-![Pasted image 20211127131012](../images/Pasted%20image%2020211127131012.png)
+![Palindrome grammar](../images/Pasted%20image%2020211127131012.png)
 
 The idea is that it sort of does not matter what P is here. 
 
 When still talking about palindrome. 
 
-![Pasted image 20211127130856](../images/Pasted%20image%2020211127130856.png)
+![Palindrome grammar rewritten](../images/Pasted%20image%2020211127130856.png)
 
 S is a start. 
 
 So you can define a grammar like this:
 
-![Pasted image 20211127131455](../images/Pasted%20image%2020211127131455.png)
+![Defining grammar rules](../images/Pasted%20image%2020211127131455.png)
 
 This is an example of a grammar which only allows strings of a and b.
 
@@ -78,18 +78,19 @@ In this course we are only looking at context free languages. There are a lot of
 
 You can also have more grammars for the same language. 
 
-![Pasted image 20211127131955](../images/Pasted%20image%2020211127131955.png)
+![Grammars example](../images/Pasted%20image%2020211127131955.png)
 
 This makes sense because the CPU also looked very different for everyone. 
 
 ## More examples with digit
-![Pasted image 20211127132201](../images/Pasted%20image%2020211127132201.png)
+
+![Digit grammar](../images/Pasted%20image%2020211127132201.png)
 
 Here there is one non-terminal Dig that can be rewritten to each digit. 
 
 We can also now define Digs which is at least two digits. With this we can define any sequence of numbers. 
 
-![Pasted image 20211127132647](../images/Pasted%20image%2020211127132647.png)
+![Making constituents with dig](../images/Pasted%20image%2020211127132647.png)
 
 So we can do Digs → Dig* to say Digs is 0 or more Dig
 
@@ -142,14 +143,4 @@ Expr -> Integer
 	| Expr Op Expr
 
 
-# How in Haskell?
-
-Represent the non terminals as data types. 
-
-The concrete syntax is the syntax like above the abstract is how you would define it in Haskell with data types. 
-
-![Pasted image 20211127142739](../images/Pasted%20image%2020211127142739.png)
-
-You can also take the tree and bring it back to the string. 
-
-![Pasted image 20211127142855](../images/Pasted%20image%2020211127142855.png)
+![Concrete and abstract syntax](../images/Pasted%20image%2020211127142739.png)

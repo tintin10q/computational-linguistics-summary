@@ -26,28 +26,26 @@ The opposite of rule based systems is supervised [learning](../Other/Learning.md
 
 ## Types of supervised learning classifiers 
 
-### Discriminative classifiers
+### Discriminative Classifiers
 
 Discriminative classifiers learn which features best predict a certain class. 
 
 VS 
 
-### Generative classifiers
+### Generative Classifiers
 
 Generative classifiers learn a model of how the data are generated and could because of this also generate new data. Classification happens by choosing the class that most likely generated the data. It's like the reverse.
 
-![Pasted image 20220216114704](../images/Pasted%20image%2020220216114704.png)
+![Generative vs Discriminative Classifiers](../images/Pasted%20image%2020220216114704.png)
 
-### Linear classifiers
+### Linear Classifiers
 
 Linear classifiers can only draw a linear decision boundary. 
 
 ### Non-Linear classifiers
 Non-Linear classifiers can draw a non-linear decision boundary. 
 
-![Pasted image 20220216114812](../images/Pasted%20image%2020220216114812.png)
-
-----
+![Linear vs Non Linear Classifier](../images/Pasted%20image%2020220216114812.png)
 
 
 

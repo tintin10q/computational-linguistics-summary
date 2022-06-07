@@ -35,7 +35,7 @@ There is special syntax for ranges /[a-z]od/ here we can parse any lowercase let
 If you don't care what the symbol of a position in the word is then you can use the . wildcard. So /h.i/ can match hai hoi hbi etc. The only thing the . does not match with is a newline character. This is like an enter or maybe \\n. 
 
 ### Negation
-If you use ^ at the start of a character range than everything that is not this range matched. So you say [\^0-4] then everything that is not in the set $\set{0,1,2,3,4}$ is parsed. 
+If you use ^ at the start of a character range than everything that is not this range matched. So you say [\^0-4] then everything that is not in the set $\{0,1,2,3,4\}$ is parsed. 
 
 
 ## Counters (repeating)

@@ -27,7 +27,7 @@ You can look at this by saying that you reserve some probability mass for unknow
 ## The zero probability transition problem
 Replacing words that the model hasn't seen before with a special token solves part of the problem but what if the model encounters a transition that it has not seen before? This means an N-Gram that doesn't appear in the transition matrix. Then the model will think that the probability of it occurring is zero. As soon as this happens the model will get stuck because [Markov models](Markov%20models.md) uses the Markov chains which means that if you multiply by 0 or take the log of 0 you get problems. So we can not afford the probability of a word or transition to be 0. 
 
-![Pasted image 20220224152619](../images/Pasted%20image%2020220224152619.png)
+![Probability distributions before smoothing](../images/Pasted%20image%2020220224152619.png)
 
 In this example the continuation painful, horrible and boring is zero and that is a problem. 
 
@@ -35,7 +35,7 @@ To solve this zero probability transition problem we apply **smoothing**.
 
 If we were to apply smoothing on the model from the picture from before we would get:
 
-![Pasted image 20220224152946](../images/Pasted%20image%2020220224152946.png)
+![Probability distributions after smoothing](../images/Pasted%20image%2020220224152946.png)
 
 Now everything is above zero. 
 
@@ -49,7 +49,7 @@ Where N is the number of tokens, V is the number of types and c is a count of ho
 
 In the lecture Laplace smoothing is called a quick and dirty solution. Because with large vocabularies and not so high frequencies, smoothed probability are too different from the non-smoothed ones. This is because there are only 100 percentage points to give out and even if we assign a little probability to unobserved transitions, there are still really a lot of unobserved transitions. This makes it so that the probability distribution shifts a lot. This is captured in the image below:
 
-![Pasted image 20220224154616](../images/Pasted%20image%2020220224154616.png)
+![Result of Laplace parsing](../images/Pasted%20image%2020220224154616.png)
 
 We want that what we don't observe gets a small probability but because there are so many things we didn't observe adding 1 to every count makes what we didn't observe a lot more likely than we would like. 
 

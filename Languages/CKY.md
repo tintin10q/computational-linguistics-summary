@@ -6,12 +6,12 @@ The CKV algorithm is a dynamic programming solution to parsing [Context free gra
 ```python
 def CKYparser(string, grammar):
 	for j in 1:length(string)  
-		for all rules A | A→s[j] ∊ℒ  
-			table[j-1,j] = table[j-1,j] ⋃A  
+		for all rules A | A→s[j] in ℒ  
+			table[j-1,j] = table[j-1,j] union A  
 		for i in reverse(0:j-2):  
 			for k in i+1:j-1  
-				for all rules A→BC ∊ ℒ and B ∊ table[i,k] and C ∊ table[k,j]  
-					table[i,j] = table[i,j] ⋃A  
+				for all rules A→BC in ℒ and B in table[i,k] and C in table[k,j]  
+					table[i,j] = table[i,j] union A  
 	return table
 ```
 
@@ -111,13 +111,13 @@ But now we have to fill in the things above the b in the row. To do this, we onl
 | x   | x    | x   | x   |     |
 | x   | x    | x   | x   | x   |
 
-If we do this, we can repeat what we did before and look at sequences of non-terminals in the grammar of BB. If we found this non-terminal, you would fill it in and move one cell up in the row. Do you feel the abstraction building? There is no BB, so we put empty set (∅). 
+If we do this, we can repeat what we did before and look at sequences of non-terminals in the grammar of BB. If we found this non-terminal, you would fill it in and move one cell up in the row. Do you feel the abstraction building? There is no BB, so we put empty set ($\emptyset$). 
 
 
 |     | a    | b    | b   | a   |
 | --- | ---- | ---- | --- | --- |
 | x   | A, C | S, C |     |     |
-| x   | x    | B    | ∅   |     |
+| x   | x    | B    | $\emptyset$   |     |
 | x   | x    | x    | B   |     |
 | x   | x    | x    | x   |     |
 | x   | x    | x    | x   | x   |
@@ -126,8 +126,8 @@ Now we move up again. However, now we have to combine this cell with a lot of ot
 
 |     | a    | b    | b   | a   |
 | --- | ---- | ---- | --- | --- |
-| x   | A, C | S, C | ∅   |     |
-| x   | x    | B    | ∅   |     |
+| x   | A, C | S, C | $\emptyset$   |     |
+| x   | x    | B    | $\emptyset$   |     |
 | x   | x    | x    | B   |     |
 | x   | x    | x    | x   |     |
 | x   | x    | x    | x   | x   |
@@ -136,8 +136,8 @@ Now we can basically fill in the table. The first is simple, how can you write a
 
 |     | a    | b    | b           | a   |
 | --- | ---- | ---- | ----------- | --- |
-| x   | A, C | S, C | ∅ |     |
-| x   | x    | B    | ∅ |     |
+| x   | A, C | S, C | $\emptyset$ |     |
+| x   | x    | B    | $\emptyset$ |     |
 | x   | x    | x    | B           |     |
 | x   | x    | x    | x           | A, C | 
 | x   | x    | x    | x           | x   |
@@ -146,8 +146,8 @@ Then the cell above it looks for BA or BC. BA occurs in A and BC occurs in S. So
 
 |     | a    | b    | b   | a    |
 | --- | ---- | ---- | --- | ---- |
-| x   | A, C | S, C | ∅   |      |
-| x   | x    | B    | ∅   |      |
+| x   | A, C | S, C | $\emptyset$   |      |
+| x   | x    | B    | $\emptyset$   |      |
 | x   | x    | x    | B   | S, A |
 | x   | x    | x    | x   | A,C  |
 | x   | x    | x    | x   | x    |
@@ -156,8 +156,8 @@ For the next one, we check BS and BA. BA occurs in A and BS does not occur.  So 
 
 |     | a    | b              | b   | a                 |
 | --- | ---- | -------------- | --- | ----------------- |
-| x   | A, C | S, C           | ∅   |                   |
-| x   | x    | <mark>B</mark> | ∅   | A                 |
+| x   | A, C | S, C           | $\emptyset$   |                   |
+| x   | x    | <mark>B</mark> | $\emptyset$   | A                 |
 | x   | x    | x              | B   | <mark>S, A</mark> |
 | x   | x    | x              | x   | A,C               |
 | x   | x    | x              | x   | x                 |
@@ -168,8 +168,8 @@ So we check for AA, CA, SA and CA. All these rules do not occur, so its $\emptys
 
 |     | a    | b    | b   | a    |
 | --- | ---- | ---- | --- | ---- |
-| x   | A, C | S, C | ∅   | ∅    |
-| x   | x    | B    | ∅   | A    |
+| x   | A, C | S, C | $\emptyset$   | $\emptyset$    |
+| x   | x    | B    | $\emptyset$   | A    |
 | x   | x    | x    | B   | S, A | 
 | x   | x    | x    | x   | A,C  |
 | x   | x    | x    | x   | x    |
@@ -177,4 +177,4 @@ So we check for AA, CA, SA and CA. All these rules do not occur, so its $\emptys
 We conclude that the word is not in the language. 
 
 
-![Pasted image 20220314195726](../images/Pasted%20image%2020220314195726.png)
+![Try it yourself](../images/Pasted%20image%2020220314195726.png)

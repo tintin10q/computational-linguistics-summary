@@ -130,7 +130,7 @@ So as you can see, we need 3 pieces of information each time.
 
 So let's continue:
 
-![Pasted image 20220308195301](../images/Pasted%20image%2020220308195301.png)
+![Calculating Chases col with Viterbi](../images/Pasted%20image%2020220308195301.png)
 
 We found that 0.1 is the highest after multiplication. Then we multiply it with the emission which is [0, 0, 0, 0.8] so 0.1 * [0, 0, 0, 0, 0.8] which becomes [0, 0, 0, 0.08]. Now we can fill that in, and we should mark the third column.
 

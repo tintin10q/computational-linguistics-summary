@@ -31,7 +31,7 @@ Whenever you get results from your model, you get:
 
 From these, we can come up with intrinsic evaluations.
 
-![Pasted image 20220216130019](../images/Pasted%20image%2020220216130019.png)
+![Confusion matrix](../images/Pasted%20image%2020220216130019.png)
 
 ## Accuracy 
 
@@ -63,11 +63,11 @@ F-Measure combines precision and recall into a new, shiny formula. F-Measure is 
 
 This is the formula:
 
-$$F~Measure = \frac{(\beta^{2} + 1) \cdot Precision \cdot Recall}{\beta^{2}  \cdot Precision + Recall}$$
+$$F~Measure = \frac{(β^{2} + 1) \cdot Precision \cdot Recall}{β^{2}  \cdot Precision + Recall}$$
 
-The idea of the $\beta$ is a weight that you can use to make either precision or recall more important. If you do $\beta \gt 1$ you make recall more important and $\beta \lt 1$ than you make precision more important.
+The idea of the β is a weight that you can use to make either precision or recall more important. If you do β > 1 you make recall more important and β < 1 than you make precision more important.
 
-Typically, you don't make one more significant than the other, and you just set $\beta = 1$. When you don't, you call the F-Measure score the **F1 score**. Setting $\beta$ is mostly based on domain knowledge. If you don't have it, then just set it to 1.
+Typically, you don't make one more significant than the other, and you just set $β = 1$. When you don't, you call the F-Measure score the **F1 score**. Setting β is mostly based on domain knowledge. If you don't have it, then just set it to 1.
 
 
 ### Code 

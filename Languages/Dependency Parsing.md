@@ -5,9 +5,9 @@ If you have jumped to every part of the sentence, then you have parsed the sente
 
 ![Dependency parsing 1](../images/Pasted%20image%2020220526224636.png)
 
-![](../images/Pasted%20image%2020220526224656.png)
+![Dependency parsing 2](../images/Pasted%20image%2020220526224656.png)
 
-![](../images/Pasted%20image%2020220526224725.png)
+![Dependency parsing 3](../images/Pasted%20image%2020220526224725.png)
 
 The description of images above: You start with the root, which then goes into the main verb of the sentence. Then you go to the subject of that verb. Then you get the argument of the verb. Then you get modifiers of the argument. For instance morning. 
 
@@ -29,7 +29,7 @@ Syntactic roles like subject, object. Like the verb
 There are modifiers of heads like blue sky where blue is a modifier of the head sky.  
 
 ## Data structure 
-After you have analysed a sentence, you can store it as a graph. You can store a graph as a set of tuples with two items. $\set{(a,b), (b,c), (c,d)}$. So in this sentence there would be an arc from $a$ to $b$, $b$ to $c$ and $c$ to $d$. 
+After you have analysed a sentence, you can store it as a graph. You can store a graph as a set of tuples with two items. $\{(a,b), (b,c), (c,d)\}$. So in this sentence there would be an arc from $a$ to $b$, $b$ to $c$ and $c$ to $d$. 
 
 We call this here $G$ with $G = (V,A)$ where $V$ is a set of vertices (tokens in the vocabulary or stems and affixes) so like the sentence or what you can connect. $A$ is a labelled ordered pais of vertices (the arcs). This includes the type of the binary relationship as well.   
 

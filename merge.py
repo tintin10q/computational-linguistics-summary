@@ -69,8 +69,7 @@ default_excluded_markdown.append(introduction_file)
 # basename with extension
 # basename = os.path.basename(path)
 
-output_header = r"""
----
+output_header = r"""---
 date: \today
 fontsize: "11pt"
 linestretch: 1.5
@@ -90,10 +89,15 @@ listings-no-page-break: false
 disable-header-and-footer: false
 subparagraph: true
 lang: "en-UK"
-subtitle: "Midterm"
+subtitle: "Midterm & Final"
 author: "Quinten Cabo - quintencabo@gmail.com"
 title: "Computational Linguistics Summary"
 link-citations: true
+variables:
+	header-includes: |
+    	\usepackage[Latin]{ucharclasses}
+    	\newfontfamily\fallbackfont{Gentium Plus} % Or whatever font you prefer.
+    	\setTransitionsFor{LatinExtendedAdditional}{\fallbackfont}{\normalfont}
 ---
 
 Computational Linguistics
@@ -126,10 +130,12 @@ if __name__ == '__main__':
 		output = 'CL-Summary-Merged-Quinten'
 	output_md = output if output.endswith('.md') else output + '.md'
 	
-	default_excluded_markdown.append(output)
+	default_excluded_markdown.append(output_md)
 	
 	tempdir_name = 'EXPORT'
-	
+
+	default_excluded_markdown.append(str(os.path.join(tempdir_name, output_md)))
+
 	wcd = os.getcwd()
 	tmp = os.path.join(wcd, tempdir_name)
 	
@@ -183,6 +189,7 @@ if __name__ == '__main__':
 			text = text.replace(r'.../images', r'../images')
 			text = text.replace(r'../images/', r'')
 			text = text.replace(r'.././images', r'')
+			text = text.replace(r'images/', r'')
 			
 			header = re.search(header_finder, text)
 			
@@ -208,6 +215,9 @@ if __name__ == '__main__':
 			outputfile.write("\n\n") # Add new lines between every file
 		print('Processed:', filename)
 
+	# We now have to go to the export dir to build
+	os.chdir(tempdir_name)
+
 	print(output_in_tmp)
 	
 	print('\033[92mAttempting to run pandoc to generate .tex file\033[0m')
@@ -217,9 +227,19 @@ if __name__ == '__main__':
 	
 	print('\033[92mAttempting to run pandoc to generate .pdf file\033[0m')
 	pdf_output = os.path.join(tmp, output + '.pdf')
-	os.system(f'pandoc -s "{output_in_tmp}" --pdf-engine=xelatex -o "{pdf_output}"')
+	r = os.system(f'pandoc -s "{output_in_tmp}" --pdf-engine=xelatex -o "{pdf_output}"')
+	print('Exit code of pandoc pdf', r )
 	
-	
+	if r == 0:
+		print(f'It seems like pandoc had success. You have a pdf now at {pdf_output}')
+		destination = os.path.join('..', pdf_output)
+
+
 	print('\033[92mAttempting to run pandoc to generate fancy (eisvogel) .pdf file\033[0m')
-	os.system(f'pandoc -s -N --variable "geometry=margin=1.2in" --variable mainfont="Palatino" --variable sansfont="Helvetica" --variable monofont="Menlo" --variable fontsize=12pt --variable version=2.0 "{output_in_tmp}" --pdf-engine=xelatex --toc -o "{pdf_output}"')
-	# print(f'Now run:\npandoceisvogel {output}')
+	pdf_output_eisvogel = os.path.join(tmp, output + '-eisvogel'+'.pdf')
+	r = os.system(f'pandoc {output_md} -o {pdf_output_eisvogel} --columns=50 --citeproc  --number-sections --pdf-engine xelatex --toc --dpi=300 --template=eisvogel --strip-comments')
+	print('Exit code of pandoc with eisvogel is ',r)
+	if r == 0:
+		print(f'It seems like pandoc had success. You have a pdf now in {pdf_output_eisvogel}')
+
+	# If it doesn't find images you probably did not put anything in ![here]()

@@ -15,9 +15,9 @@ The steps are called transformations. You get the edit distance by counting the 
 
 You could also ban substitutions (and replace them with delete-insert) which basically means substitutions count for 2 transformation.
 
-![Pasted image 20220217165311](../images/Pasted%20image%2020220217165311.png)
+![Edit distance alignment example](../images/Pasted%20image%2020220217165311.png)
 
-![Pasted image 20220217165328](../images/Pasted%20image%2020220217165328.png)
+![Edit distance example](../images/Pasted%20image%2020220217165328.png)
 
 ## How to find the shortest path
 
@@ -48,13 +48,13 @@ Then we **trace back** our steps and favour the substitution every time we can.
 
 ## Graphically
 
-![Pasted image 20220217170600](../images/Pasted%20image%2020220217170600.png)
+![Edit distance shortest path](../images/Pasted%20image%2020220217170600.png)
 
 The # is the empty string. Moving over the diagonal is a substitution, so you could count this as 2. You can go fast by first only considering the outer layers. This is the simplest, where you just go from the empty string to the other word. Then use this information when making decisions. Then, when going further, the number only goes up if the letter is not the same. If the number is the same, the number goes down.
 
 You have to be able to solve problems like this on the exam:
 
-![Pasted image 20220217171236](../images/Pasted%20image%2020220217171236.png)
+![Edit distance challenge](../images/Pasted%20image%2020220217171236.png)
 
 ## Minimum Edit distance full tutorial:
 

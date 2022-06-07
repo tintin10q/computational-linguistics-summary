@@ -39,7 +39,7 @@ Grad L2 shows the sensitivity of the model, i.e., how  much a change in input ch
 ## Gradient x Input
 You can also take the gradients and multiply them with the embedded inputs. This arrives at the gradients times input measure. To get a scaler you do the dot product between the embedded input and the gradient times. 
 
-Gradient ⨉ Input shows the saliency, i.e., the marginal effect of each input word on the prediction
+Gradient x Input shows the saliency, i.e., the marginal effect of each input word on the prediction
 
 ## Integrated Gradients
 
@@ -83,7 +83,7 @@ Many models have attention mechanisms. These provide some sense of interpretabil
 
 ## Faithfull metrics 
 
-![](../images/Pasted%20image%2020220605014258.png)
+![Faitfull metrics](../images/Pasted%20image%2020220605014258.png)
 
 ## Language interpretability tool (LIT)
 

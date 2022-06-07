@@ -11,7 +11,7 @@ In the context of computational linguistics (CL) segmentation is the task of spl
 Segmenting speech is harder because it is unclear where the spaces are. Fun fact, spaces were only invented 4 centuries ago!
 
 ## Morphology 
-This studies how words are built up from smaller meaning-bearing units, the [Morphemes](Morphemes.md). The classic view of CL is that a morpheme is the smallest linguistic unit that can carry meaning. This is a controversial point, apparently. Morphological complexity varies between languages more simple or super complex. So the word "apple" is a morphine, which means 🍎. Then if you have "apples" you also have the morpheme s which means more than one apple. 
+This studies how words are built up from smaller meaning-bearing units, the [Morphemes](Morphemes.md). The classic view of CL is that a morpheme is the smallest linguistic unit that can carry meaning. This is a controversial point, apparently. Morphological complexity varies between languages more simple or super complex. So the word "apple" is a morphine, which means 🍎 (that is supposed to be an apple emoji). Then if you have "apples" you also have the morpheme s which means more than one apple. 
 
 The complexity is determined by the amount of morphologic units are in one symbol. 
 

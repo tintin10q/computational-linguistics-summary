@@ -4,8 +4,8 @@ A Markov model is any [language Model](Language%20Modeling.md) model which makes
 
 Markov models make use of: 
 
-- A set of history states **Q** $\set{q_{1},q_{2}, q_{3}, ..., q_{n}}$ 
-- A set of predicted states **R** $\set{r_{1},r_{2}, r_{3}, ..., r_{m}}$ (What you try to predict)
+- A set of history states **Q** $\{q_{1},q_{2}, q_{3}, ..., q_{n}\}$ 
+- A set of predicted states **R** $\{r_{1},r_{2}, r_{3}, ..., r_{m}\}$ (What you try to predict)
 - A transition probability matrix A (size: NxM)
 - An initial probability distribution $\pi$
 
@@ -26,7 +26,7 @@ This is usually just embedded in A by augmenting Q with the BoS state.
 
 So usually this a row in A with only beginning of sequence symbols. It is the initial state.
 
-![Pasted image 20220223185953](../images/Pasted%20image%2020220223185953.png)
+![Transition probability distribution](../images/Pasted%20image%2020220223185953.png)
 
 Looking at this table really makes it more concrete. The idea is that the sum of the entire row is one. The sum of a column does not have to be one. 
 

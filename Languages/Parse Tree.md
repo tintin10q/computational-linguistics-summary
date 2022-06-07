@@ -4,6 +4,6 @@ A parse tree is a proof that you can parse a sentence of a language under a cert
 
 You make a parse tree by using the [grammar](Grammar.md) rules to make a path from the input sequence to non-terminals to terminals. Then you can then visualize these paths with a parse tree.
 
-![Pasted image 20211127140252](Pasted%20image%2020211127140252.png)
+![Parse Tree example](Pasted%20image%2020211127140252.png)
 
 When multiple parse trees exist under a grammar for the same input, you have a grammar with [ambiguity](Ambiguity.md). One way to resolve this ambiguity is by using a [Probabilistic Context Free Grammar](Probabilistic%20Context%20Free%20Grammar.md).
