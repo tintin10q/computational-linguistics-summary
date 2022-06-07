@@ -8,3 +8,6 @@ tmp/*
 export
 export/
 export/*
+EXPORT
+EXPORT/
+EXPORT/*
