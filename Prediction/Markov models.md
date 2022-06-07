@@ -26,7 +26,7 @@ This is usually just embedded in A by augmenting Q with the BoS state.
 
 So usually this a row in A with only beginning of sequence symbols. It is the initial state.
 
-![Pasted image 20220223185953](../images/Pasted%20image%2020220223185953.webp)
+![Pasted image 20220223185953](../images/Pasted%20image%2020220223185953.png)
 
 Looking at this table really makes it more concrete. The idea is that the sum of the entire row is one. The sum of a column does not have to be one. 
 

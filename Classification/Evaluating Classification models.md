@@ -31,7 +31,7 @@ Whenever you get results from your model, you get:
 
 From these, we can come up with intrinsic evaluations.
 
-![Pasted image 20220216130019](../images/Pasted%20image%2020220216130019.webp)
+![Pasted image 20220216130019](../images/Pasted%20image%2020220216130019.png)
 
 ## Accuracy 
 

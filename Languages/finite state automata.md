@@ -6,7 +6,7 @@ If every state has a transition for each possible input than it is **total**.
 
 They are deterministic when each state has only one path for each state.
 
-![Pasted image 20211212163706](Pasted%20image%2020211212163706.webp)
+![Pasted image 20211212163706](Pasted%20image%2020211212163706.png)
 
 We can express this in a tuple of 5 things.
 
@@ -32,18 +32,18 @@ We call deterministic finite automata DFA.
 
 These are actually equivalent. We can express every DFA as a NFA and otherwise. The idea is to make them as NFA and then compile them to DFA, so you can run them without worry.  
 
-![Pasted image 20211212165403](Pasted%20image%2020211212165403.webp)
-![Pasted image 20211212165450](Pasted%20image%2020211212165450.webp)
+![Pasted image 20211212165403](Pasted%20image%2020211212165403.png)
+![Pasted image 20211212165450](Pasted%20image%2020211212165450.png)
 
 ## Example:
 
-![Pasted image 20211212165625](Pasted%20image%2020211212165625.webp)
+![Pasted image 20211212165625](Pasted%20image%2020211212165625.png)
 
 The empty set is like to stop state. 
 
 You can actually simplify it to:
 
-![Pasted image 20211212165811](Pasted%20image%2020211212165811.webp)
+![Pasted image 20211212165811](Pasted%20image%2020211212165811.png)
 
 So this means that you can use the algorithm to turn a NFA into a DFA, but this won't give you the only one or the smallest one. A better way is to do a simulation this gives you the best. 
 

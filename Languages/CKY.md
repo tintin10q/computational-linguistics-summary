@@ -177,4 +177,4 @@ So we check for AA, CA, SA and CA. All these rules do not occur, so its $\emptys
 We conclude that the word is not in the language. 
 
 
-![Pasted image 20220314195726](../images/Pasted%20image%2020220314195726.webp)
+![Pasted image 20220314195726](../images/Pasted%20image%2020220314195726.png)

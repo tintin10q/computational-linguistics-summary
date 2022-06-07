@@ -16,7 +16,7 @@ L is a function that returns the [languages](Languages.md) set from a [grammar](
  
 If the parser thinks this is the case, we also want a proof or evidence that this is the case. This usually takes the form of a [parse tree](Parse%20Tree.md). So this is a tree to go from the grammar to s! But it can also make a [Dependency graph](Dependency%20Parsing.md).
 
-![Pasted image 20220314184733](Pasted%20image%2020220314184733.webp)
+![Pasted image 20220314184733](Pasted%20image%2020220314184733.png)
 
 You can also represent parse trees with brackets. But this is only done because of language limitations. 
 
@@ -57,7 +57,7 @@ Both approaches place certain but different restrictions on the grammar that you
 
 
 ## Complexity 
-![Pasted image 20220314190559](Pasted%20image%2020220314190559.webp)
+![Pasted image 20220314190559](Pasted%20image%2020220314190559.png)
 
 If a parse tree is deep or long, then the sentence tends to be more complex. 
 

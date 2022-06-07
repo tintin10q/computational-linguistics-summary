@@ -20,7 +20,7 @@ There are also some notes that are not in a topic. These are:
 
 Is this summary based on a web of notes and explanations to wordy for you? Then there is also [Aurea's linear summary](Other/Computational-Linguistics-Aurea.pdf) which uses  short paragraphs and bullet points instead. 
 
-![network](network.webp)
+![network](network.png)
 
 # Disclaimer 
 Although I have tried my best to make sure this summary is correct, I will take no responsibility for mistakes that might lead to you having a lower grade. 
@@ -37,7 +37,7 @@ here:
 
 
 
-![Tikkie qr code valid till around 18 june](tikki.webp)
+![Tikkie qr code valid till around 18 june](tikki.png)
 
 
 >Every model is wrong, but some models are useful.

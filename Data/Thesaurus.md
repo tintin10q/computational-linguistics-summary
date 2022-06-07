@@ -16,7 +16,7 @@ So here, the path length between colour and Sky blue and plant is 2.
 
 Here is a bigger tree: 
 
-![Bigger Thesaurus tree](../images/Pasted%20image%2020220213185844.webp) 
+![Bigger Thesaurus tree](../images/Pasted%20image%2020220213185844.png) 
 
 So in this picture, finch is more similar to animal than tree because the path length of finch to animal is 2 while from tree to animal is 3. This picture is a simplification because remember instead of just one word there are always synsets of words which almost mean the same thing. 
 
