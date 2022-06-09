@@ -32,7 +32,10 @@ def find_filenames(extensions: [], excluded: list[str] = None, exclude_regex: st
 	if excluded is None:
 		excluded = []
 	
-	globs = [chain(glob.iglob(f'*.{extension}'), glob.iglob(f'*/**.{extension}')) for extension in extensions]
+	globs = [chain(glob.iglob(f'*.{extension}'),
+	               glob.iglob(f'*/**.{extension}'),
+	               glob.iglob(f'*/*/**.{extension}')
+	               ) for extension in extensions]
 	found = chain(*globs)
 	
 	if excluded or exclude_regex != '(?!)':  # Only apply filter if we actually have something to filter
@@ -133,9 +136,9 @@ if __name__ == '__main__':
 	default_excluded_markdown.append(output_md)
 	
 	tempdir_name = 'EXPORT'
-
+	
 	default_excluded_markdown.append(str(os.path.join(tempdir_name, output_md)))
-
+	
 	wcd = os.getcwd()
 	tmp = os.path.join(wcd, tempdir_name)
 	
@@ -168,6 +171,7 @@ if __name__ == '__main__':
 		output_file.write(output_header)
 		with open(introduction_file, 'r') as introduction_file:
 			output_file.write(introduction_file.read())
+			output_file.write('\n\n')
 	
 	""" Step 3 """
 	print("\033[92mProcessing markdown files:\033[0m")
@@ -175,7 +179,7 @@ if __name__ == '__main__':
 	image_with_spaces_pattern = re.compile(r'(!\[.+]\([.\\/A-z0-9]+)(%20)([A-z 0-9.%]+\))')
 	figure_finder = re.compile(r'!(\[.{0,}])\(\.\/Pasted_image_[0-9]+\.png\)')
 	header_finder = re.compile(r'^# {0,}?[^#](.+)')
-
+	
 	# Go through all the markdown files
 	for filename in find_filenames(['md'], default_excluded_markdown):
 		with open(filename, 'r', encoding='utf-8') as file:
@@ -205,41 +209,34 @@ if __name__ == '__main__':
 					# Don't forget to put [] back
 					text = text.replace(found, f'[{header} {img_index}]')
 					img_index += 1
-					
-					
-					
-					
-					
+		
 		with open(output_in_tmp, 'a+', encoding='utf-8') as outputfile:
 			outputfile.write(text)
-			outputfile.write("\n\n") # Add new lines between every file
+			outputfile.write("\n\n")  # Add new lines between every file
 		print('Processed:', filename)
-
 	# We now have to go to the export dir to build
 	os.chdir(tempdir_name)
-
+	
 	print(output_in_tmp)
 	
 	print('\033[92mAttempting to run pandoc to generate .tex file\033[0m')
 	tex_output = os.path.join(tmp, output + '.tex')
 	os.system(f'pandoc -s "{output_in_tmp}" -o "{tex_output}"')
 	
-	
 	print('\033[92mAttempting to run pandoc to generate .pdf file\033[0m')
 	pdf_output = os.path.join(tmp, output + '.pdf')
 	r = os.system(f'pandoc -s "{output_in_tmp}" --pdf-engine=xelatex -o "{pdf_output}"')
-	print('Exit code of pandoc pdf', r )
+	print('Exit code of pandoc pdf', r)
 	
 	if r == 0:
 		print(f'It seems like pandoc had success. You have a pdf now at {pdf_output}')
 		destination = os.path.join('..', pdf_output)
-
-
+	
 	print('\033[92mAttempting to run pandoc to generate fancy (eisvogel) .pdf file\033[0m')
-	pdf_output_eisvogel = os.path.join(tmp, output + '-eisvogel'+'.pdf')
+	pdf_output_eisvogel = os.path.join(tmp, output + '-eisvogel' + '.pdf')
 	r = os.system(f'pandoc {output_md} -o {pdf_output_eisvogel} --columns=50 --citeproc  --number-sections --pdf-engine xelatex --toc --dpi=300 --template=eisvogel --strip-comments')
-	print('Exit code of pandoc with eisvogel is ',r)
+	print('Exit code of pandoc with eisvogel is ', r)
 	if r == 0:
 		print(f'It seems like pandoc had success. You have a pdf now in {pdf_output_eisvogel}')
 
-	# If it doesn't find images you probably did not put anything in ![here]()
+# If it doesn't find images you probably did not put anything in ![here]()
