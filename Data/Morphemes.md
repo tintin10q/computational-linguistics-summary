@@ -2,7 +2,7 @@
 
 Morphemes are the smallest meaning bearing unit of languages. But this is controversial. 
 
-When doing [lemmatization](Lemma.md), you turn a word into its lemma form. The lemma of apes is ape. Here, you removed the 's'. The parts you removed were **affixes**, and the part that stays behind is the **stem**. Both stems and affixes are **morphemes**. 
+When doing [lemmatization](Lemma.md), you turn a word into its lemma form. The lemma of apes is ape. Here, you removed the 's'. The parts you removed were **affixes**, and the part that stays behind is the **stem**. <u>Both stems and affixes are **morphemes**</u>. 
 
 - **Stems** is the main meaning bearing unit in a word.
 - **Affixes** are the strings that modify stems in some way.

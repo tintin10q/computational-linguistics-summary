@@ -1,6 +1,6 @@
 # Symbols
 
-A symbol is what you decide is your smallest unit. This can be [tokens](Token.md), words etc whatever you want.
+A symbol is what you decide is your smallest unit when doing analysis. This can be [tokens](Token.md), [Words](Words.md) etc whatever you want.
 
 
 
