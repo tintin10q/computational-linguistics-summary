@@ -39,9 +39,5 @@ If you appreciate my summaries and you want to thank me then you can support me
 here: 
 
 - [PayPal](https://www.paypal.me/quintencabo)
-- [Tikki€](https://tikkie.me/pay/c3cp0dcfd8mautn8ud79)
-
-
-![Tikkie qr code valid till around 18 june](tikki.png)
 
 >Every model is wrong, but some models are useful.
